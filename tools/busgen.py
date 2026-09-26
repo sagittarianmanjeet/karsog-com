@@ -101,6 +101,8 @@ def page(slug, title, desc, h1, sub, body, crumbs, faq=None):
 {ld}
 {css}
 {EXTRA}
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P4GZFJ5XQG"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag("js",new Date());gtag("config","G-P4GZFJ5XQG");</script>
 </head>
 <body>
 
