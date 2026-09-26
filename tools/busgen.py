@@ -74,6 +74,14 @@ EXTRA = ('<style>.bt{width:100%;border-collapse:collapse;font-size:.92rem;margin
 NEXT_JS = '''<script>(()=>{const B=JSON.parse(document.getElementById('bd').textContent);const now=new Date(Date.now()+(330+new Date().getTimezoneOffset())*6e4);const m=now.getHours()*60+now.getMinutes();const f=t=>{const[h,x]=t.split(':').map(Number);return h*60+x};const t12=t=>{let[h,x]=t.split(':').map(Number);const a=h<12?'AM':'PM';h=h%12||12;return h+':'+String(x).padStart(2,'0')+' '+a};const up=B.filter(b=>f(b.time)>=m).concat(B.filter(b=>f(b.time)<m).map(b=>Object.assign({},b,{tm:1}))).slice(0,NN);const el=document.getElementById('next');if(!el||!up.length)return;el.innerHTML='<div><small>Next from Karsog by the board (India time):</small></div>'+up.map(b=>{const d=f(b.time)-m+(b.tm?1440:0);const w=d<60?d+' min':Math.floor(d/60)+' h '+(d%60)+' min';return '<div><b>'+t12(b.time)+'</b> → '+(b.dest||'(see board)')+' <small>in '+w+(b.tm?', tomorrow':'')+'</small></div>'}).join('')})();</script>'''
 
 
+KCSS = '.cm{margin-top:1.5rem}.kc-c{border-top:1px solid var(--border,#dcd5c8);padding:.7rem 0}.kc-h span{color:var(--muted,#6a6a5a);font-size:.85em}.kc-c p{margin:.25rem 0 0;white-space:pre-wrap;overflow-wrap:anywhere}.kc-form{display:grid;gap:.6rem;margin-top:1rem;max-width:560px}.kc-form label{display:grid;gap:.25rem;font-weight:600;font-size:.9rem}.kc-form input,.kc-form textarea{font:inherit;font-weight:400;padding:.6rem;border:1px solid var(--border,#dcd5c8);border-radius:8px;width:100%;background:#fff;box-sizing:border-box}.kc-form button{justify-self:start;font:inherit;font-weight:600;padding:.6rem 1.1rem;border:0;border-radius:8px;background:var(--forest,#1c3a1c);color:#fff;cursor:pointer}.kc-form button:disabled{opacity:.6}.kc-msg{margin:0;font-size:.9rem}'
+KC_NOTE = 'Comments are public. Please don’t share Aadhaar, PAN, phone numbers or other personal details.'
+def kc_block(slug):
+    return (f'<section class="cm container"><style>{KCSS}</style><h2>Is this timing still right?</h2>'
+            f'<p>Seen a bus change time, stop running or get cancelled? Tell other travellers here. {KC_NOTE}</p>'
+            f'<div id="kc" data-page="{slug}" data-sitekey="0x4AAAAAAFB76cvJ7UlhXYzU" data-placeholder="e.g. The 11:10 AM bus to Mandi now leaves at 11:30."></div>'
+            f'<script src="/comments.js?v=2" defer></script></section>')
+
 def page(slug, title, desc, h1, sub, body, crumbs, faq=None):
     bc = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
         {"@type": "ListItem", "position": i + 1, "name": n, "item": "https://karsog.com" + u} for i, (n, u) in enumerate(crumbs)]}
@@ -121,6 +129,7 @@ def page(slug, title, desc, h1, sub, body, crumbs, faq=None):
 <div class="container">
 {body}
 </div>
+{kc_block(slug)}
 
 {foot}'''
 

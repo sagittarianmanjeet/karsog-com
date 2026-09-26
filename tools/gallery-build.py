@@ -89,7 +89,7 @@ def gallery(s,ps,title):
         items.append(f'<a href="/photos/{s}/{p["file"]}-1600.webp" data-cap="{esc(c)}"><img src="/photos/{s}/{p["file"]}-800.webp" alt="{esc(alt)}" loading="lazy" width="800" height="533"><span class="c">{esc(nm)}</span></a>')
     cm=''
     if KC_SITEKEY:
-        cm=f'''<section class="cm"><h2>Comments</h2><p>Know this place? Share a name, a story or a correction. Comments appear after approval.</p><div id="kc" data-page="{s}" data-sitekey="{KC_SITEKEY}"></div><script src="/comments.js?v=1" defer></script></section>'''
+        cm=f'''<section class="cm"><h2>Comments</h2><p>Know this place? Share a name, a story or a correction. Comments are public. Please don’t share Aadhaar, PAN, phone numbers or other personal details.</p><div id="kc" data-page="{s}" data-sitekey="{KC_SITEKEY}" data-placeholder="Know this place? Share its name, a story or a correction."></div><script src="/comments.js?v=2" defer></script></section>'''
     return f'<!-- gallery:start -->\n<style>{CSS}</style>\n<section id="photos"><div class="container"><h2>Photos from above</h2><p>{len(ps)} drone photo{"s" if len(ps)>1 else ""} · tap a photo to view it full size.</p><div class="gal">{"".join(items)}</div>{cm}</div></section>\n{LB}\n<!-- gallery:end -->'
 def ld(s,title,ps,g):
     imgs=[{"@type":"ImageObject","contentUrl":f"https://karsog.com/photos/{s}/{p['file']}-1600.webp","caption":cap(p)[1],"creator":{"@type":"Person","name":"Karsog Miles"},"copyrightNotice":"karsog.com"} for p in ps]
