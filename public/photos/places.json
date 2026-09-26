@@ -1,0 +1,191 @@
+[
+ {
+  "slug": "karsog-town",
+  "title": "Karsog Town",
+  "n": 68,
+  "dist": "Karsog town",
+  "cover": "/photos/karsog-town/karsog-town-001-800.webp"
+ },
+ {
+  "slug": "nyara",
+  "title": "Nyara, Kutti & Sanarli",
+  "n": 26,
+  "dist": "Karsog town",
+  "cover": "/photos/nyara/nyara-004-800.webp"
+ },
+ {
+  "slug": "latheri-bhanthal",
+  "title": "Latheri & Bhanthal",
+  "n": 13,
+  "dist": "~3 km north-east",
+  "cover": "/photos/latheri-bhanthal/latheri-bhanthal-012-800.webp"
+ },
+ {
+  "slug": "kelodhar",
+  "title": "Kelodhar",
+  "n": 5,
+  "dist": "~4 km east",
+  "cover": "/photos/kelodhar/kelodhar-010-800.webp"
+ },
+ {
+  "slug": "nanj",
+  "title": "Nanj & Tundal",
+  "n": 18,
+  "dist": "~14 km east",
+  "cover": "/photos/nanj/nanj-019-800.webp"
+ },
+ {
+  "slug": "kotlu-dateha",
+  "title": "Kotlu & Dateha",
+  "n": 11,
+  "dist": "~12 km east",
+  "cover": "/photos/kotlu-dateha/kotlu-dateha-007-800.webp"
+ },
+ {
+  "slug": "khaneol-shahot",
+  "title": "Khaneol Bagra, Shahot & Kandi",
+  "n": 17,
+  "dist": "~12 km south-east",
+  "cover": "/photos/khaneol-shahot/khaneol-shahot-017-800.webp"
+ },
+ {
+  "slug": "luhri-anni",
+  "title": "Luhri, Anni & Firnu",
+  "n": 20,
+  "dist": "~19 km east",
+  "cover": "/photos/luhri-anni/luhri-anni-016-800.webp"
+ },
+ {
+  "slug": "seri-bunglow",
+  "title": "Seri Bunglow",
+  "n": 15,
+  "dist": "~8 km south-east",
+  "cover": "/photos/seri-bunglow/seri-bunglow-034-800.webp"
+ },
+ {
+  "slug": "beludhar",
+  "title": "Beludhar, Damhel Kothi & Sayanj",
+  "n": 24,
+  "dist": "~10 km south-east",
+  "cover": "/photos/beludhar/beludhar-006-800.webp"
+ },
+ {
+  "slug": "kunhoo",
+  "title": "Kunhoo",
+  "n": 9,
+  "dist": "~4 km south",
+  "cover": "/photos/kunhoo/kunhoo-003-800.webp"
+ },
+ {
+  "slug": "tebban",
+  "title": "Tebban",
+  "n": 8,
+  "dist": "~15 km east",
+  "cover": "/photos/tebban/tebban-066-800.webp"
+ },
+ {
+  "slug": "gada-gushaini",
+  "title": "Gada Gushaini",
+  "n": 5,
+  "dist": "~21 km north-east",
+  "cover": "/photos/gada-gushaini/gada-gushaini-073-800.webp"
+ },
+ {
+  "slug": "pokhi-mahog",
+  "title": "Pokhi, Mahog & Somakothi",
+  "n": 6,
+  "dist": "~11 km east",
+  "cover": "/photos/pokhi-mahog/pokhi-mahog-108-800.webp"
+ },
+ {
+  "slug": "bhanera",
+  "title": "Bhanera",
+  "n": 2,
+  "dist": "~4 km east",
+  "cover": "/photos/bhanera/bhanera-125-800.webp"
+ },
+ {
+  "slug": "chhatri",
+  "title": "Chhatri & Lashi",
+  "n": 4,
+  "dist": "~13 km north-east",
+  "cover": "/photos/chhatri/chhatri-135-800.webp"
+ },
+ {
+  "slug": "pangna-fort",
+  "title": "Pangna",
+  "n": 2,
+  "dist": "~8 km west",
+  "cover": "/photos/pangna-fort/pangna-fort-244-800.webp"
+ },
+ {
+  "slug": "bakhrot",
+  "title": "Bakhrot",
+  "n": 1,
+  "dist": "~3 km west",
+  "cover": "/photos/bakhrot/bakhrot-105-800.webp"
+ },
+ {
+  "slug": "tattapani",
+  "title": "Tattapani",
+  "n": 1,
+  "dist": "~19 km south-west",
+  "cover": "/photos/tattapani/tattapani-102-800.webp"
+ },
+ {
+  "slug": "imla-vimla",
+  "title": "Imla Vimla Triveni Sangam",
+  "n": 10,
+  "dist": "Karsog town",
+  "cover": "/photos/imla-vimla/imla-vimla-291-800.webp"
+ },
+ {
+  "slug": "jarli-mata",
+  "title": "Jarli Mata Temple",
+  "n": 8,
+  "dist": "Karsog town",
+  "cover": "/photos/jarli-mata/jarli-mata-338-800.webp"
+ },
+ {
+  "slug": "kao",
+  "title": "Kao",
+  "n": 6,
+  "dist": "Karsog town",
+  "cover": "/photos/kao/kao-326-800.webp"
+ },
+ {
+  "slug": "mamleshwar",
+  "title": "Mamleshwar",
+  "n": 10,
+  "dist": "Karsog town",
+  "cover": "/photos/mamleshwar/mamleshwar-288-800.webp"
+ },
+ {
+  "slug": "chindi",
+  "title": "Chindi",
+  "n": 5,
+  "dist": "Karsog town",
+  "cover": "/photos/chindi/chindi-295-800.webp"
+ },
+ {
+  "slug": "mahunag",
+  "title": "Mahunag",
+  "n": 10,
+  "dist": "~10 km south",
+  "cover": "/photos/mahunag/mahunag-038-800.webp"
+ },
+ {
+  "slug": "janjehli",
+  "title": "Janjehli",
+  "n": 21,
+  "dist": "~12 km north",
+  "cover": "/photos/janjehli/janjehli-031-800.webp"
+ },
+ {
+  "slug": "shikari-devi",
+  "title": "Shikari Devi",
+  "n": 14,
+  "dist": "~11 km north",
+  "cover": "/photos/shikari-devi/shikari-devi-005-800.webp"
+ }
+]

@@ -1,0 +1,11 @@
+{
+  // Cloudflare Worker for this site. Cloudflare builds and deploys automatically on every push to main.
+  // Site files live in ./public — edit those, commit, push.
+  "name": "hidden-dream-fd1f",
+  "compatibility_date": "2026-09-25",
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "404-page",
+    "html_handling": "auto-trailing-slash"
+  }
+}

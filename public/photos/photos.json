@@ -1,0 +1,4855 @@
+[
+ {
+  "source": "001_Laxmi Narayan Temple (Janmashtami)_2026-09-04.jpg",
+  "rank": 1,
+  "slug": "karsog-town",
+  "place": "Laxmi Narayan Temple (Janmashtami)",
+  "near": false,
+  "date": "2026-09-04",
+  "gps": [
+   31.382492712,
+   77.201786867
+  ],
+  "file": "karsog-town-001",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "002_Laxmi Narayan Temple (Janmashtami)_2026-09-04.jpg",
+  "rank": 2,
+  "slug": "karsog-town",
+  "place": "Laxmi Narayan Temple (Janmashtami)",
+  "near": false,
+  "date": "2026-09-04",
+  "gps": [
+   31.382514159,
+   77.201808004
+  ],
+  "file": "karsog-town-002",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "003_Kunhoo Mela_2026-08-08.jpg",
+  "rank": 3,
+  "slug": "kunhoo",
+  "place": "Kunhoo Mela",
+  "near": false,
+  "date": "2026-08-08",
+  "gps": [
+   31.340718164,
+   77.214164423
+  ],
+  "file": "kunhoo-003",
+  "w": 1600,
+  "h": 1200
+ },
+ {
+  "source": "004_Sanarli_2026-07-24.jpg",
+  "rank": 4,
+  "slug": "nyara",
+  "place": "Sanarli",
+  "near": false,
+  "date": "2026-07-24",
+  "gps": [
+   31.405924458,
+   77.205918117
+  ],
+  "file": "nyara-004",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "005_Shikari Devi Temple, Janjehli_2026-09-20.jpg",
+  "rank": 5,
+  "slug": "shikari-devi",
+  "place": "Shikari Devi Temple, Janjehli",
+  "near": false,
+  "date": "2026-09-20",
+  "gps": [
+   31.478427542,
+   77.165670037
+  ],
+  "file": "shikari-devi-005",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "006_Damhel Kothi_2026-08-02.jpg",
+  "rank": 6,
+  "slug": "beludhar",
+  "place": "Damhel Kothi",
+  "near": false,
+  "date": "2026-08-02",
+  "gps": [
+   31.340954,
+   77.294388
+  ],
+  "file": "beludhar-006",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "007_near Kotlu~_2026-07-26.jpg",
+  "rank": 7,
+  "slug": "kotlu-dateha",
+  "place": "Kotlu",
+  "near": true,
+  "date": "2026-07-26",
+  "gps": [
+   31.37305,
+   77.32057
+  ],
+  "file": "kotlu-dateha-007",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "008_Devidarh, Jiuni Valley, Chachyot_2026-09-20.jpg",
+  "rank": 8,
+  "slug": "shikari-devi",
+  "place": "Devidarh, Jiuni Valley, Chachyot",
+  "near": false,
+  "date": "2026-09-20",
+  "gps": [
+   31.475800958,
+   77.122084222
+  ],
+  "file": "shikari-devi-008",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "009_near Kotlu~_2026-07-26.jpg",
+  "rank": 9,
+  "slug": "kotlu-dateha",
+  "place": "Kotlu",
+  "near": true,
+  "date": "2026-07-26",
+  "gps": [
+   31.373036,
+   77.320579
+  ],
+  "file": "kotlu-dateha-009",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "010_Kelodhar_2026-07-26.jpg",
+  "rank": 10,
+  "slug": "kelodhar",
+  "place": "Kelodhar",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.385551593,
+   77.242981498
+  ],
+  "file": "kelodhar-010",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "011_Shikari Devi Parking_2026-09-20.jpg",
+  "rank": 11,
+  "slug": "shikari-devi",
+  "place": "Shikari Devi Parking",
+  "near": false,
+  "date": "2026-09-20",
+  "gps": [
+   31.473250303,
+   77.165523755
+  ],
+  "file": "shikari-devi-011",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "013_Karsog Valley_2026-08-22.jpg",
+  "rank": 13,
+  "slug": "karsog-town",
+  "place": "Karsog Valley",
+  "near": false,
+  "date": "2026-08-22",
+  "gps": [
+   31.38222,
+   77.205206
+  ],
+  "file": "karsog-town-013",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "015_Nyara_2026-08-20.jpg",
+  "rank": 15,
+  "slug": "nyara",
+  "place": "Nyara",
+  "near": false,
+  "date": "2026-08-20",
+  "gps": [
+   31.383313969,
+   77.206747143
+  ],
+  "file": "nyara-015",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "016_Firnu_2026-07-26.jpg",
+  "rank": 16,
+  "slug": "luhri-anni",
+  "place": "Firnu",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.360212,
+   77.37742
+  ],
+  "file": "luhri-anni-016",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "017_Khaneol Bagra_2026-07-27.jpg",
+  "rank": 17,
+  "slug": "khaneol-shahot",
+  "place": "Khaneol Bagra",
+  "near": false,
+  "date": "2026-07-27",
+  "gps": [
+   31.305651485,
+   77.298956692
+  ],
+  "file": "khaneol-shahot-017",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "018_near Anni, Kullu~_2026-07-26.jpg",
+  "rank": 18,
+  "slug": "luhri-anni",
+  "place": "Anni, Kullu",
+  "near": true,
+  "date": "2026-07-26",
+  "gps": [
+   31.450499,
+   77.430499
+  ],
+  "file": "luhri-anni-018",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "019_Nanj_2026-07-26.jpg",
+  "rank": 19,
+  "slug": "nanj",
+  "place": "Nanj",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.341211951,
+   77.345430443
+  ],
+  "file": "nanj-019",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "020_Kotlu_2026-07-26.jpg",
+  "rank": 20,
+  "slug": "kotlu-dateha",
+  "place": "Kotlu",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.366044,
+   77.332836
+  ],
+  "file": "kotlu-dateha-020",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "021_Nyara_2026-08-13.jpg",
+  "rank": 21,
+  "slug": "nyara",
+  "place": "Nyara",
+  "near": false,
+  "date": "2026-08-13",
+  "gps": [
+   31.386209586,
+   77.205910234
+  ],
+  "file": "nyara-021",
+  "w": 1600,
+  "h": 1200
+ },
+ {
+  "source": "023_Kotlu_2026-07-26.jpg",
+  "rank": 23,
+  "slug": "kotlu-dateha",
+  "place": "Kotlu",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.366087361,
+   77.332807495
+  ],
+  "file": "kotlu-dateha-023",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "024_Purana Bazar_2026-08-22.jpg",
+  "rank": 24,
+  "slug": "karsog-town",
+  "place": "Purana Bazar",
+  "near": false,
+  "date": "2026-08-22",
+  "gps": [
+   31.382668,
+   77.201766
+  ],
+  "file": "karsog-town-024",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "025_Khaneol Bagra_2026-07-27.jpg",
+  "rank": 25,
+  "slug": "khaneol-shahot",
+  "place": "Khaneol Bagra",
+  "near": false,
+  "date": "2026-07-27",
+  "gps": [
+   31.305648347,
+   77.298954288
+  ],
+  "file": "khaneol-shahot-025",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "026_Nanj_2026-07-26.jpg",
+  "rank": 26,
+  "slug": "nanj",
+  "place": "Nanj",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.345107,
+   77.350602
+  ],
+  "file": "nanj-026",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "027_Nanj - Tundal, Satluj~_2026-07-26.jpg",
+  "rank": 27,
+  "slug": "nanj",
+  "place": "Nanj - Tundal, Satluj",
+  "near": true,
+  "date": "2026-07-26",
+  "gps": [
+   31.400385,
+   77.385416
+  ],
+  "file": "nanj-027",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "028_Kunhoo Mela_2026-08-08.jpg",
+  "rank": 28,
+  "slug": "kunhoo",
+  "place": "Kunhoo Mela",
+  "near": false,
+  "date": "2026-08-08",
+  "gps": [
+   31.341238,
+   77.213495
+  ],
+  "file": "kunhoo-028",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "029_Nanj_2026-07-26.jpg",
+  "rank": 29,
+  "slug": "nanj",
+  "place": "Nanj",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.341208,
+   77.342116
+  ],
+  "file": "nanj-029",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "030_Nyara_2026-08-20.jpg",
+  "rank": 30,
+  "slug": "nyara",
+  "place": "Nyara",
+  "near": false,
+  "date": "2026-08-20",
+  "gps": [
+   31.382659,
+   77.207712
+  ],
+  "file": "nyara-030",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "031_Raigarh, Janjehli_2026-09-20.jpg",
+  "rank": 31,
+  "slug": "janjehli",
+  "place": "Raigarh, Janjehli",
+  "near": false,
+  "date": "2026-09-20",
+  "gps": [
+   31.464099802,
+   77.197293353
+  ],
+  "file": "janjehli-031",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "032_Purana Bazar_2026-07-24.jpg",
+  "rank": 32,
+  "slug": "karsog-town",
+  "place": "Purana Bazar",
+  "near": false,
+  "date": "2026-07-24",
+  "gps": [
+   31.382597556,
+   77.20172595
+  ],
+  "file": "karsog-town-032",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "033_Kelodhar_2026-07-26.jpg",
+  "rank": 33,
+  "slug": "kelodhar",
+  "place": "Kelodhar",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.385132,
+   77.242616
+  ],
+  "file": "kelodhar-033",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "034_Nag Dhamuni Ji Temple_2026-09-13.jpg",
+  "rank": 34,
+  "slug": "seri-bunglow",
+  "place": "Nag Dhamuni Ji Temple",
+  "near": false,
+  "date": "2026-09-13",
+  "gps": [
+   31.330935379,
+   77.288001973
+  ],
+  "file": "seri-bunglow-034",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "035_Laxmi Narayan Temple (Janmashtami)_2026-07-24.jpg",
+  "rank": 35,
+  "slug": "karsog-town",
+  "place": "Laxmi Narayan Temple (Janmashtami)",
+  "near": false,
+  "date": "2026-07-24",
+  "gps": [
+   31.382412,
+   77.202224
+  ],
+  "file": "karsog-town-035",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "037_Shikari Devi Temple Top, Janjehli_2026-09-20.jpg",
+  "rank": 37,
+  "slug": "shikari-devi",
+  "place": "Shikari Devi Temple Top, Janjehli",
+  "near": false,
+  "date": "2026-09-20",
+  "gps": [
+   31.478315994,
+   77.165798036
+  ],
+  "file": "shikari-devi-037",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "038_Mahunag_2026-09-06.jpg",
+  "rank": 38,
+  "slug": "mahunag",
+  "place": "Mahunag",
+  "near": false,
+  "date": "2026-09-06",
+  "gps": [
+   31.300668814,
+   77.218490671
+  ],
+  "file": "mahunag-038",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "039_Kainchi Mod_2026-07-24.jpg",
+  "rank": 39,
+  "slug": "karsog-town",
+  "place": "Kainchi Mod",
+  "near": false,
+  "date": "2026-07-24",
+  "gps": [
+   31.382056,
+   77.203057
+  ],
+  "file": "karsog-town-039",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "040_Near Mahavan_2026-09-13.jpg",
+  "rank": 40,
+  "slug": "seri-bunglow",
+  "place": "Near Mahavan",
+  "near": false,
+  "date": "2026-09-13",
+  "gps": [
+   31.340111927,
+   77.28567296
+  ],
+  "file": "seri-bunglow-040",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "041_Seri Bhanju Mela, Seri Bunglow_2026-09-15.jpg",
+  "rank": 41,
+  "slug": "seri-bunglow",
+  "place": "Seri Bhanju Mela, Seri Bunglow",
+  "near": false,
+  "date": "2026-09-15",
+  "gps": [
+   31.368977586,
+   77.268275937
+  ],
+  "file": "seri-bunglow-041",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "042_Nanj bridge_2026-07-26.jpg",
+  "rank": 42,
+  "slug": "nanj",
+  "place": "Nanj bridge",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.336311945,
+   77.344380501
+  ],
+  "file": "nanj-042",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "043_Nyara_2026-08-28.jpg",
+  "rank": 43,
+  "slug": "nyara",
+  "place": "Nyara",
+  "near": false,
+  "date": "2026-08-28",
+  "gps": [
+   31.385156,
+   77.206256
+  ],
+  "file": "nyara-043",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "044_Kutti_2026-08-29.jpg",
+  "rank": 44,
+  "slug": "nyara",
+  "place": "Kutti",
+  "near": false,
+  "date": "2026-08-29",
+  "gps": [
+   31.399105322,
+   77.204135852
+  ],
+  "file": "nyara-044",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "045_Janjehli 3_2026-08-16.jpg",
+  "rank": 45,
+  "slug": "janjehli",
+  "place": "Janjehli 3",
+  "near": false,
+  "date": "2026-08-16",
+  "gps": [
+   31.512888,
+   77.223501
+  ],
+  "file": "janjehli-045",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "047_Karsog town_2026-07-23.jpg",
+  "rank": 47,
+  "slug": "karsog-town",
+  "place": "Karsog town",
+  "near": false,
+  "date": "2026-07-23",
+  "gps": [
+   31.382925917,
+   77.209526926
+  ],
+  "file": "karsog-town-047",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "048_Bus stand_2026-08-20.jpg",
+  "rank": 48,
+  "slug": "karsog-town",
+  "place": "Bus stand",
+  "near": false,
+  "date": "2026-08-20",
+  "gps": [
+   31.380228,
+   77.206153
+  ],
+  "file": "karsog-town-048",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "049_Janjehli 3_2026-08-16.jpg",
+  "rank": 49,
+  "slug": "janjehli",
+  "place": "Janjehli 3",
+  "near": false,
+  "date": "2026-08-16",
+  "gps": [
+   31.517637452,
+   77.220767089
+  ],
+  "file": "janjehli-049",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "050_Seri Bunglow_2026-08-02.jpg",
+  "rank": 50,
+  "slug": "seri-bunglow",
+  "place": "Seri Bunglow",
+  "near": false,
+  "date": "2026-08-02",
+  "gps": [
+   31.370318852,
+   77.272025178
+  ],
+  "file": "seri-bunglow-050",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "051_Tundal_2026-07-26.jpg",
+  "rank": 51,
+  "slug": "nanj",
+  "place": "Tundal",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.330948798,
+   77.341118388
+  ],
+  "file": "nanj-051",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "053_Kotlu_2026-07-26.jpg",
+  "rank": 53,
+  "slug": "kotlu-dateha",
+  "place": "Kotlu",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.365072,
+   77.333903
+  ],
+  "file": "kotlu-dateha-053",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "054_Karsog town_2026-08-22.jpg",
+  "rank": 54,
+  "slug": "karsog-town",
+  "place": "Karsog town",
+  "near": false,
+  "date": "2026-08-22",
+  "gps": [
+   31.382866657,
+   77.21000976
+  ],
+  "file": "karsog-town-054",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "056_Nyara_2026-08-20.jpg",
+  "rank": 56,
+  "slug": "nyara",
+  "place": "Nyara",
+  "near": false,
+  "date": "2026-08-20",
+  "gps": [
+   31.384497199,
+   77.208521092
+  ],
+  "file": "nyara-056",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "057_near Khaneol Bagra~_2026-08-02.jpg",
+  "rank": 57,
+  "slug": "khaneol-shahot",
+  "place": "Khaneol Bagra",
+  "near": true,
+  "date": "2026-08-02",
+  "gps": [
+   31.308551315,
+   77.284101792
+  ],
+  "file": "khaneol-shahot-057",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "058_Beludhar_2026-08-02.jpg",
+  "rank": 58,
+  "slug": "beludhar",
+  "place": "Beludhar",
+  "near": false,
+  "date": "2026-08-02",
+  "gps": [
+   31.29824,
+   77.304509
+  ],
+  "file": "beludhar-058",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "059_Firnu_2026-07-26.jpg",
+  "rank": 59,
+  "slug": "luhri-anni",
+  "place": "Firnu",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.360589,
+   77.375464
+  ],
+  "file": "luhri-anni-059",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "060_Kashaul_2026-08-02.jpg",
+  "rank": 60,
+  "slug": "beludhar",
+  "place": "Kashaul",
+  "near": false,
+  "date": "2026-08-02",
+  "gps": [
+   31.349029504,
+   77.247277194
+  ],
+  "file": "beludhar-060",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "061_near Khaneol Bagra~_2026-07-26.jpg",
+  "rank": 61,
+  "slug": "khaneol-shahot",
+  "place": "Khaneol Bagra",
+  "near": true,
+  "date": "2026-07-26",
+  "gps": [
+   31.31068,
+   77.305582
+  ],
+  "file": "khaneol-shahot-061",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "062_Luhri, Kullu_2026-07-26.jpg",
+  "rank": 62,
+  "slug": "luhri-anni",
+  "place": "Luhri, Kullu",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.341343,
+   77.431728
+  ],
+  "file": "luhri-anni-062",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "063_Kuthah, Janjehli_2026-08-16.jpg",
+  "rank": 63,
+  "slug": "janjehli",
+  "place": "Kuthah, Janjehli",
+  "near": false,
+  "date": "2026-08-16",
+  "gps": [
+   31.5283985,
+   77.216193354
+  ],
+  "file": "janjehli-063",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "064_Damhel Kothi_2026-08-02.jpg",
+  "rank": 64,
+  "slug": "beludhar",
+  "place": "Damhel Kothi",
+  "near": false,
+  "date": "2026-08-02",
+  "gps": [
+   31.341499799,
+   77.29543727
+  ],
+  "file": "beludhar-064",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "066_Tebban_2026-08-30.jpg",
+  "rank": 66,
+  "slug": "tebban",
+  "place": "Tebban",
+  "near": false,
+  "date": "2026-08-30",
+  "gps": [
+   31.366066677,
+   77.355023002
+  ],
+  "file": "tebban-066",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "067_near Tebban~_2026-07-26.jpg",
+  "rank": 67,
+  "slug": "tebban",
+  "place": "Tebban",
+  "near": true,
+  "date": "2026-07-26",
+  "gps": [
+   31.352423,
+   77.356739
+  ],
+  "file": "tebban-067",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "068_Janjehli 1_2026-08-16.jpg",
+  "rank": 68,
+  "slug": "janjehli",
+  "place": "Janjehli 1",
+  "near": false,
+  "date": "2026-08-16",
+  "gps": [
+   31.495693201,
+   77.212741373
+  ],
+  "file": "janjehli-068",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "069_Bus stand_2026-09-02.jpg",
+  "rank": 69,
+  "slug": "karsog-town",
+  "place": "Bus stand",
+  "near": false,
+  "date": "2026-09-02",
+  "gps": [
+   31.38219719,
+   77.205071866
+  ],
+  "file": "karsog-town-069",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "070_Beludhar Top_2026-08-02.jpg",
+  "rank": 70,
+  "slug": "beludhar",
+  "place": "Beludhar Top",
+  "near": false,
+  "date": "2026-08-02",
+  "gps": [
+   31.292186,
+   77.294701
+  ],
+  "file": "beludhar-070",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "071_near Mendi~_2026-08-02.jpg",
+  "rank": 71,
+  "slug": "beludhar",
+  "place": "Mendi",
+  "near": true,
+  "date": "2026-08-02",
+  "gps": [
+   31.309736,
+   77.26676
+  ],
+  "file": "beludhar-071",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "072_Beludhar Top_2026-08-02.jpg",
+  "rank": 72,
+  "slug": "beludhar",
+  "place": "Beludhar Top",
+  "near": false,
+  "date": "2026-08-02",
+  "gps": [
+   31.292645451,
+   77.295777804
+  ],
+  "file": "beludhar-072",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "073_Gada Gushaini, Seraj~_2026-08-16.jpg",
+  "rank": 73,
+  "slug": "gada-gushaini",
+  "place": "Gada Gushaini, Seraj",
+  "near": true,
+  "date": "2026-08-16",
+  "gps": [
+   31.557188414,
+   77.299956014
+  ],
+  "file": "gada-gushaini-073",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "074_Anni, Kullu_2026-07-26.jpg",
+  "rank": 74,
+  "slug": "luhri-anni",
+  "place": "Anni, Kullu",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.434726,
+   77.41755
+  ],
+  "file": "luhri-anni-074",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "076_Karsog town_2026-08-08.jpg",
+  "rank": 76,
+  "slug": "karsog-town",
+  "place": "Karsog town",
+  "near": false,
+  "date": "2026-08-08",
+  "gps": [
+   31.382797024,
+   77.210481414
+  ],
+  "file": "karsog-town-076",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "077_Shahot_2026-07-26.jpg",
+  "rank": 77,
+  "slug": "khaneol-shahot",
+  "place": "Shahot",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.308149947,
+   77.314239884
+  ],
+  "file": "khaneol-shahot-077",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "078_Kandi_2026-07-27.jpg",
+  "rank": 78,
+  "slug": "khaneol-shahot",
+  "place": "Kandi",
+  "near": false,
+  "date": "2026-07-27",
+  "gps": [
+   31.346111,
+   77.265144
+  ],
+  "file": "khaneol-shahot-078",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "079_Anni, Kullu_2026-07-26.jpg",
+  "rank": 79,
+  "slug": "luhri-anni",
+  "place": "Anni, Kullu",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.434727053,
+   77.417548322
+  ],
+  "file": "luhri-anni-079",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "080_Luhri, Kullu_2026-07-26.jpg",
+  "rank": 80,
+  "slug": "luhri-anni",
+  "place": "Luhri, Kullu",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.341445,
+   77.4278
+  ],
+  "file": "luhri-anni-080",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "081_Karsog town_2026-08-26.jpg",
+  "rank": 81,
+  "slug": "karsog-town",
+  "place": "Karsog town",
+  "near": false,
+  "date": "2026-08-26",
+  "gps": [
+   31.384765,
+   77.211799
+  ],
+  "file": "karsog-town-081",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "082_Janjehli 1_2026-08-16.jpg",
+  "rank": 82,
+  "slug": "janjehli",
+  "place": "Janjehli 1",
+  "near": false,
+  "date": "2026-08-16",
+  "gps": [
+   31.491837,
+   77.213278
+  ],
+  "file": "janjehli-082",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "083_near Shahot~_2026-07-26.jpg",
+  "rank": 83,
+  "slug": "khaneol-shahot",
+  "place": "Shahot",
+  "near": true,
+  "date": "2026-07-26",
+  "gps": [
+   31.310533,
+   77.306191
+  ],
+  "file": "khaneol-shahot-083",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "084_Karsog~_2026-07-23.jpg",
+  "rank": 84,
+  "slug": "karsog-town",
+  "place": "Karsog",
+  "near": true,
+  "date": "2026-07-23",
+  "gps": null,
+  "file": "karsog-town-084",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "085_Kunhoo Mela_2026-08-08.jpg",
+  "rank": 85,
+  "slug": "kunhoo",
+  "place": "Kunhoo Mela",
+  "near": false,
+  "date": "2026-08-08",
+  "gps": [
+   31.342206,
+   77.21413
+  ],
+  "file": "kunhoo-085",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "086_Janjehli 2_2026-08-16.jpg",
+  "rank": 86,
+  "slug": "janjehli",
+  "place": "Janjehli 2",
+  "near": false,
+  "date": "2026-08-16",
+  "gps": [
+   31.507798,
+   77.213209
+  ],
+  "file": "janjehli-086",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "088_Seri Bhanju Mela, Seri Bunglow_2026-08-02.jpg",
+  "rank": 88,
+  "slug": "seri-bunglow",
+  "place": "Seri Bhanju Mela, Seri Bunglow",
+  "near": false,
+  "date": "2026-08-02",
+  "gps": [
+   31.369613,
+   77.268817
+  ],
+  "file": "seri-bunglow-088",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "089_Gada Gushaini, Seraj~_2026-08-16.jpg",
+  "rank": 89,
+  "slug": "gada-gushaini",
+  "place": "Gada Gushaini, Seraj",
+  "near": true,
+  "date": "2026-08-16",
+  "gps": [
+   31.565076,
+   77.301783
+  ],
+  "file": "gada-gushaini-089",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "090_Sayanj_2026-08-02.jpg",
+  "rank": 90,
+  "slug": "beludhar",
+  "place": "Sayanj",
+  "near": false,
+  "date": "2026-08-02",
+  "gps": [
+   31.342953,
+   77.320498
+  ],
+  "file": "beludhar-090",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "091_Dateha_2026-07-26.jpg",
+  "rank": 91,
+  "slug": "kotlu-dateha",
+  "place": "Dateha",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.330527904,
+   77.336630011
+  ],
+  "file": "kotlu-dateha-091",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "092_Purana Bazar_2026-07-24.jpg",
+  "rank": 92,
+  "slug": "karsog-town",
+  "place": "Purana Bazar",
+  "near": false,
+  "date": "2026-07-24",
+  "gps": [
+   31.382293887,
+   77.198961227
+  ],
+  "file": "karsog-town-092",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "093_Gudah, Thunag_2026-08-16.jpg",
+  "rank": 93,
+  "slug": "janjehli",
+  "place": "Gudah, Thunag",
+  "near": false,
+  "date": "2026-08-16",
+  "gps": [
+   31.439690429,
+   77.195333379
+  ],
+  "file": "janjehli-093",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "094_near Mahunag~_2026-09-06.jpg",
+  "rank": 94,
+  "slug": "mahunag",
+  "place": "Mahunag",
+  "near": true,
+  "date": "2026-09-06",
+  "gps": [
+   31.291895788,
+   77.232882373
+  ],
+  "file": "mahunag-094",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "095_Karsog town (night)_2026-09-02.jpg",
+  "rank": 95,
+  "slug": "karsog-town",
+  "place": "Karsog town (night)",
+  "near": false,
+  "date": "2026-09-02",
+  "gps": [
+   31.380005996,
+   77.20868561
+  ],
+  "file": "karsog-town-095",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "096_Firnu_2026-07-26.jpg",
+  "rank": 96,
+  "slug": "luhri-anni",
+  "place": "Firnu",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.36047117,
+   77.377549122
+  ],
+  "file": "luhri-anni-096",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "097_near Kunhoo Mela~_2026-08-01.jpg",
+  "rank": 97,
+  "slug": "kunhoo",
+  "place": "Kunhoo Mela",
+  "near": true,
+  "date": "2026-08-01",
+  "gps": [
+   31.35347,
+   77.222121
+  ],
+  "file": "kunhoo-097",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "098_near Tebban~_2026-07-26.jpg",
+  "rank": 98,
+  "slug": "tebban",
+  "place": "Tebban",
+  "near": true,
+  "date": "2026-07-26",
+  "gps": [
+   31.352415,
+   77.356566
+  ],
+  "file": "tebban-098",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "100_Karsog~_2026-08-26.jpg",
+  "rank": 100,
+  "slug": "karsog-town",
+  "place": "Karsog",
+  "near": true,
+  "date": "2026-08-26",
+  "gps": null,
+  "file": "karsog-town-100",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Anni, Kullu/011_near Anni, Kullu_2026-07-26.jpg",
+  "rank": 111,
+  "slug": "luhri-anni",
+  "place": "Anni, Kullu",
+  "near": true,
+  "date": "2026-07-26",
+  "gps": [
+   31.45055,
+   77.430439
+  ],
+  "file": "luhri-anni-111",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Anni, Kullu/012_Anni, Kullu_2026-07-26.jpg",
+  "rank": 112,
+  "slug": "luhri-anni",
+  "place": "Anni, Kullu",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.435585,
+   77.419506
+  ],
+  "file": "luhri-anni-112",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Anni, Kullu/013_Anni, Kullu_2026-07-26.jpg",
+  "rank": 113,
+  "slug": "luhri-anni",
+  "place": "Anni, Kullu",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.434733926,
+   77.417548245
+  ],
+  "file": "luhri-anni-113",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Beludhar/020_Beludhar_2026-08-02.jpg",
+  "rank": 120,
+  "slug": "beludhar",
+  "place": "Beludhar",
+  "near": false,
+  "date": "2026-08-02",
+  "gps": [
+   31.295734,
+   77.299265
+  ],
+  "file": "beludhar-120",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Beludhar/021_Beludhar_2026-08-02.jpg",
+  "rank": 121,
+  "slug": "beludhar",
+  "place": "Beludhar",
+  "near": false,
+  "date": "2026-08-02",
+  "gps": [
+   31.296604128,
+   77.299330195
+  ],
+  "file": "beludhar-121",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Beludhar/022_Beludhar_2026-08-02.jpg",
+  "rank": 122,
+  "slug": "beludhar",
+  "place": "Beludhar",
+  "near": false,
+  "date": "2026-08-02",
+  "gps": [
+   31.296604128,
+   77.299330195
+  ],
+  "file": "beludhar-122",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Beludhar Top/023_Beludhar Top_2026-08-02.jpg",
+  "rank": 123,
+  "slug": "beludhar",
+  "place": "Beludhar Top",
+  "near": false,
+  "date": "2026-08-02",
+  "gps": [
+   31.291498,
+   77.29455
+  ],
+  "file": "beludhar-123",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Beludhar Top/024_Beludhar Top_2026-08-02.jpg",
+  "rank": 124,
+  "slug": "beludhar",
+  "place": "Beludhar Top",
+  "near": false,
+  "date": "2026-08-02",
+  "gps": [
+   31.292645451,
+   77.295777804
+  ],
+  "file": "beludhar-124",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Bhanera/025_Bhanera_2026-07-21.jpg",
+  "rank": 125,
+  "slug": "bhanera",
+  "place": "Bhanera",
+  "near": false,
+  "date": "2026-07-21",
+  "gps": [
+   31.366739001,
+   77.246660355
+  ],
+  "file": "bhanera-125",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Bhanera/026_Bhanera_2026-07-21.jpg",
+  "rank": 126,
+  "slug": "bhanera",
+  "place": "Bhanera",
+  "near": false,
+  "date": "2026-07-21",
+  "gps": [
+   31.369616,
+   77.248084
+  ],
+  "file": "bhanera-126",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Bhulah Valley/027_Bhulah Valley_2026-08-16.jpg",
+  "rank": 127,
+  "slug": "janjehli",
+  "place": "Bhulah Valley",
+  "near": false,
+  "date": "2026-08-16",
+  "gps": [
+   31.477235381,
+   77.203166464
+  ],
+  "file": "janjehli-127",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Bhulah Valley/028_Bhulah Valley_2026-08-16.jpg",
+  "rank": 128,
+  "slug": "janjehli",
+  "place": "Bhulah Valley",
+  "near": false,
+  "date": "2026-08-16",
+  "gps": [
+   31.477235381,
+   77.203166464
+  ],
+  "file": "janjehli-128",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Bus stand/029_Bus stand_2026-07-30.jpg",
+  "rank": 129,
+  "slug": "karsog-town",
+  "place": "Bus stand",
+  "near": false,
+  "date": "2026-07-30",
+  "gps": [
+   31.380382,
+   77.204196
+  ],
+  "file": "karsog-town-129",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Bus stand/030_Bus stand_2026-08-12.jpg",
+  "rank": 130,
+  "slug": "karsog-town",
+  "place": "Bus stand",
+  "near": false,
+  "date": "2026-08-12",
+  "gps": [
+   31.382000623,
+   77.204848484
+  ],
+  "file": "karsog-town-130",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Bus stand/031_Bus stand_2026-08-20.jpg",
+  "rank": 131,
+  "slug": "karsog-town",
+  "place": "Bus stand",
+  "near": false,
+  "date": "2026-08-20",
+  "gps": [
+   31.382173,
+   77.204862
+  ],
+  "file": "karsog-town-131",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Bus stand/032_Bus stand_2026-08-20.jpg",
+  "rank": 132,
+  "slug": "karsog-town",
+  "place": "Bus stand",
+  "near": false,
+  "date": "2026-08-20",
+  "gps": [
+   31.381622934,
+   77.205849508
+  ],
+  "file": "karsog-town-132",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Bus stand/033_Bus stand_2026-08-20.jpg",
+  "rank": 133,
+  "slug": "karsog-town",
+  "place": "Bus stand",
+  "near": false,
+  "date": "2026-08-20",
+  "gps": [
+   31.381622934,
+   77.205849508
+  ],
+  "file": "karsog-town-133",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Bus stand/034_Bus stand_2026-09-02.jpg",
+  "rank": 134,
+  "slug": "karsog-town",
+  "place": "Bus stand",
+  "near": false,
+  "date": "2026-09-02",
+  "gps": [
+   31.382199,
+   77.205072
+  ],
+  "file": "karsog-town-134",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Chhatri, Thunag/035_near Chhatri, Thunag_2026-08-16.jpg",
+  "rank": 135,
+  "slug": "chhatri",
+  "place": "Chhatri, Thunag",
+  "near": true,
+  "date": "2026-08-16",
+  "gps": [
+   31.476391,
+   77.297997
+  ],
+  "file": "chhatri-135",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Chhatri, Thunag/036_Chhatri, Thunag_2026-08-16.jpg",
+  "rank": 136,
+  "slug": "chhatri",
+  "place": "Chhatri, Thunag",
+  "near": false,
+  "date": "2026-08-16",
+  "gps": [
+   31.46533,
+   77.290282
+  ],
+  "file": "chhatri-136",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Damhel Kothi/037_Damhel Kothi_2026-08-02.jpg",
+  "rank": 137,
+  "slug": "beludhar",
+  "place": "Damhel Kothi",
+  "near": false,
+  "date": "2026-08-02",
+  "gps": [
+   31.340946,
+   77.294418
+  ],
+  "file": "beludhar-137",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Damhel Kothi/038_Damhel Kothi_2026-08-02.jpg",
+  "rank": 138,
+  "slug": "beludhar",
+  "place": "Damhel Kothi",
+  "near": false,
+  "date": "2026-08-02",
+  "gps": [
+   31.340971,
+   77.293794
+  ],
+  "file": "beludhar-138",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Damhel Kothi/039_Damhel Kothi_2026-08-02.jpg",
+  "rank": 139,
+  "slug": "beludhar",
+  "place": "Damhel Kothi",
+  "near": false,
+  "date": "2026-08-02",
+  "gps": [
+   31.341499799,
+   77.29543727
+  ],
+  "file": "beludhar-139",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Dateha/040_Dateha_2026-07-26.jpg",
+  "rank": 140,
+  "slug": "kotlu-dateha",
+  "place": "Dateha",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.331402,
+   77.334801
+  ],
+  "file": "kotlu-dateha-140",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Dateha/041_Dateha_2026-07-26.jpg",
+  "rank": 141,
+  "slug": "kotlu-dateha",
+  "place": "Dateha",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.330066,
+   77.336934
+  ],
+  "file": "kotlu-dateha-141",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Dateha/042_Dateha_2026-07-26.jpg",
+  "rank": 142,
+  "slug": "kotlu-dateha",
+  "place": "Dateha",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.330446,
+   77.336434
+  ],
+  "file": "kotlu-dateha-142",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Devidarh, Jiuni Valley, Chachyot/043_Devidarh, Jiuni Valley, Chachyot_2026-09-20.jpg",
+  "rank": 143,
+  "slug": "shikari-devi",
+  "place": "Devidarh, Jiuni Valley, Chachyot",
+  "near": false,
+  "date": "2026-09-20",
+  "gps": [
+   31.475800958,
+   77.122084222
+  ],
+  "file": "shikari-devi-143",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Firnu/044_Firnu_2026-07-26.jpg",
+  "rank": 144,
+  "slug": "luhri-anni",
+  "place": "Firnu",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.359825,
+   77.375661
+  ],
+  "file": "luhri-anni-144",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Firnu/045_Firnu_2026-07-26.jpg",
+  "rank": 145,
+  "slug": "luhri-anni",
+  "place": "Firnu",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.359819,
+   77.377773
+  ],
+  "file": "luhri-anni-145",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Firnu/046_Firnu_2026-07-26.jpg",
+  "rank": 146,
+  "slug": "luhri-anni",
+  "place": "Firnu",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.36047117,
+   77.377549122
+  ],
+  "file": "luhri-anni-146",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Firnu/047_Firnu_2026-07-26.jpg",
+  "rank": 147,
+  "slug": "luhri-anni",
+  "place": "Firnu",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.36047117,
+   77.377549122
+  ],
+  "file": "luhri-anni-147",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Gudah, Thunag/048_Gudah, Thunag_2026-08-16.jpg",
+  "rank": 148,
+  "slug": "janjehli",
+  "place": "Gudah, Thunag",
+  "near": false,
+  "date": "2026-08-16",
+  "gps": [
+   31.439690429,
+   77.195333379
+  ],
+  "file": "janjehli-148",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Gudah, Thunag/049_Gudah, Thunag_2026-08-16.jpg",
+  "rank": 149,
+  "slug": "janjehli",
+  "place": "Gudah, Thunag",
+  "near": false,
+  "date": "2026-08-16",
+  "gps": [
+   31.439693614,
+   77.19533492
+  ],
+  "file": "janjehli-149",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Janjehli/050_Janjehli_2026-08-16.jpg",
+  "rank": 150,
+  "slug": "janjehli",
+  "place": "Janjehli",
+  "near": false,
+  "date": "2026-08-16",
+  "gps": [
+   31.495693201,
+   77.212741373
+  ],
+  "file": "janjehli-150",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Janjehli/051_Janjehli_2026-08-16.jpg",
+  "rank": 151,
+  "slug": "janjehli",
+  "place": "Janjehli",
+  "near": false,
+  "date": "2026-08-16",
+  "gps": [
+   31.495693201,
+   77.212741373
+  ],
+  "file": "janjehli-151",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Janjehli/052_Janjehli_2026-08-16.jpg",
+  "rank": 152,
+  "slug": "janjehli",
+  "place": "Janjehli",
+  "near": false,
+  "date": "2026-08-16",
+  "gps": [
+   31.495693201,
+   77.212741373
+  ],
+  "file": "janjehli-152",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Janjehli/053_Janjehli_2026-08-16.jpg",
+  "rank": 153,
+  "slug": "janjehli",
+  "place": "Janjehli",
+  "near": false,
+  "date": "2026-08-16",
+  "gps": [
+   31.506432462,
+   77.213567597
+  ],
+  "file": "janjehli-153",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Janjehli/054_Janjehli_2026-08-16.jpg",
+  "rank": 154,
+  "slug": "janjehli",
+  "place": "Janjehli",
+  "near": false,
+  "date": "2026-08-16",
+  "gps": [
+   31.517637452,
+   77.220767089
+  ],
+  "file": "janjehli-154",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Janjehli/055_Janjehli_2026-08-16.jpg",
+  "rank": 155,
+  "slug": "janjehli",
+  "place": "Janjehli",
+  "near": false,
+  "date": "2026-08-16",
+  "gps": [
+   31.517637452,
+   77.220767089
+  ],
+  "file": "janjehli-155",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Janjehli/056_Janjehli_2026-08-16.jpg",
+  "rank": 156,
+  "slug": "janjehli",
+  "place": "Janjehli",
+  "near": false,
+  "date": "2026-08-16",
+  "gps": [
+   31.516367,
+   77.221152
+  ],
+  "file": "janjehli-156",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Jua, Seri Bunglow/057_Jua, Seri Bunglow_2026-08-15.jpg",
+  "rank": 157,
+  "slug": "seri-bunglow",
+  "place": "Jua, Seri Bunglow",
+  "near": false,
+  "date": "2026-08-15",
+  "gps": [
+   31.366584,
+   77.284886
+  ],
+  "file": "seri-bunglow-157",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Kainchi Mod/058_Kainchi Mod_2026-07-24.jpg",
+  "rank": 158,
+  "slug": "karsog-town",
+  "place": "Kainchi Mod",
+  "near": false,
+  "date": "2026-07-24",
+  "gps": [
+   31.381950679,
+   77.203120107
+  ],
+  "file": "karsog-town-158",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Kandi/059_Kandi_2026-07-27.jpg",
+  "rank": 159,
+  "slug": "khaneol-shahot",
+  "place": "Kandi",
+  "near": false,
+  "date": "2026-07-27",
+  "gps": [
+   31.345975,
+   77.264576
+  ],
+  "file": "khaneol-shahot-159",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Kandi/060_Kandi_2026-07-27.jpg",
+  "rank": 160,
+  "slug": "khaneol-shahot",
+  "place": "Kandi",
+  "near": false,
+  "date": "2026-07-27",
+  "gps": [
+   31.346112568,
+   77.265144525
+  ],
+  "file": "khaneol-shahot-160",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Karsog Valley/061_Karsog Valley_2026-08-20.jpg",
+  "rank": 161,
+  "slug": "karsog-town",
+  "place": "Karsog Valley",
+  "near": false,
+  "date": "2026-08-20",
+  "gps": [
+   31.383222,
+   77.205096
+  ],
+  "file": "karsog-town-161",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Karsog Valley/062_Karsog Valley_2026-08-20.jpg",
+  "rank": 162,
+  "slug": "karsog-town",
+  "place": "Karsog Valley",
+  "near": false,
+  "date": "2026-08-20",
+  "gps": [
+   31.38229,
+   77.205525
+  ],
+  "file": "karsog-town-162",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Karsog Valley/063_Karsog Valley_2026-08-21.jpg",
+  "rank": 163,
+  "slug": "karsog-town",
+  "place": "Karsog Valley",
+  "near": false,
+  "date": "2026-08-21",
+  "gps": [
+   31.382035,
+   77.205386
+  ],
+  "file": "karsog-town-163",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Karsog Valley/064_Karsog Valley_2026-08-22.jpg",
+  "rank": 164,
+  "slug": "karsog-town",
+  "place": "Karsog Valley",
+  "near": false,
+  "date": "2026-08-22",
+  "gps": [
+   31.382221,
+   77.20521
+  ],
+  "file": "karsog-town-164",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Karsog Valley/065_Karsog Valley_2026-09-18.jpg",
+  "rank": 165,
+  "slug": "karsog-town",
+  "place": "Karsog Valley",
+  "near": false,
+  "date": "2026-09-18",
+  "gps": [
+   31.38184,
+   77.205581
+  ],
+  "file": "karsog-town-165",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Karsog town/066_Karsog town_2026-07-21.jpg",
+  "rank": 166,
+  "slug": "karsog-town",
+  "place": "Karsog town",
+  "near": false,
+  "date": "2026-07-21",
+  "gps": [
+   31.380123,
+   77.209197
+  ],
+  "file": "karsog-town-166",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Karsog town/067_Karsog town_2026-07-21.jpg",
+  "rank": 167,
+  "slug": "karsog-town",
+  "place": "Karsog town",
+  "near": false,
+  "date": "2026-07-21",
+  "gps": [
+   31.390046,
+   77.205525
+  ],
+  "file": "karsog-town-167",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Karsog town/068_Karsog town_2026-07-23.jpg",
+  "rank": 168,
+  "slug": "karsog-town",
+  "place": "Karsog town",
+  "near": false,
+  "date": "2026-07-23",
+  "gps": [
+   31.384403,
+   77.210125
+  ],
+  "file": "karsog-town-168",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Karsog town/069_Karsog town_2026-07-30.jpg",
+  "rank": 169,
+  "slug": "karsog-town",
+  "place": "Karsog town",
+  "near": false,
+  "date": "2026-07-30",
+  "gps": [
+   31.381816,
+   77.207819
+  ],
+  "file": "karsog-town-169",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Karsog town/070_Karsog town_2026-08-08.jpg",
+  "rank": 170,
+  "slug": "karsog-town",
+  "place": "Karsog town",
+  "near": false,
+  "date": "2026-08-08",
+  "gps": [
+   31.383115,
+   77.21141
+  ],
+  "file": "karsog-town-170",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Karsog town/071_Karsog town_2026-08-21.jpg",
+  "rank": 171,
+  "slug": "karsog-town",
+  "place": "Karsog town",
+  "near": false,
+  "date": "2026-08-21",
+  "gps": [
+   31.378921,
+   77.206952
+  ],
+  "file": "karsog-town-171",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Karsog town/072_Karsog town_2026-08-22.jpg",
+  "rank": 172,
+  "slug": "karsog-town",
+  "place": "Karsog town",
+  "near": false,
+  "date": "2026-08-22",
+  "gps": [
+   31.382866657,
+   77.21000976
+  ],
+  "file": "karsog-town-172",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Karsog town/073_Karsog town_2026-09-02.jpg",
+  "rank": 173,
+  "slug": "karsog-town",
+  "place": "Karsog town",
+  "near": false,
+  "date": "2026-09-02",
+  "gps": [
+   31.382357,
+   77.211255
+  ],
+  "file": "karsog-town-173",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Karsog town/074_Karsog town_2026-09-02.jpg",
+  "rank": 174,
+  "slug": "karsog-town",
+  "place": "Karsog town",
+  "near": false,
+  "date": "2026-09-02",
+  "gps": [
+   31.380194,
+   77.208084
+  ],
+  "file": "karsog-town-174",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Karsog town/075_Karsog town_2026-09-12.jpg",
+  "rank": 175,
+  "slug": "karsog-town",
+  "place": "Karsog town",
+  "near": false,
+  "date": "2026-09-12",
+  "gps": [
+   31.390060745,
+   77.206601925
+  ],
+  "file": "karsog-town-175",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Karsog town/076_Karsog town_2026-09-18.jpg",
+  "rank": 176,
+  "slug": "karsog-town",
+  "place": "Karsog town",
+  "near": false,
+  "date": "2026-09-18",
+  "gps": [
+   31.391492,
+   77.205432
+  ],
+  "file": "karsog-town-176",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Karsog town/077_Karsog town_2026-09-18.jpg",
+  "rank": 177,
+  "slug": "karsog-town",
+  "place": "Karsog town",
+  "near": false,
+  "date": "2026-09-18",
+  "gps": [
+   31.39277,
+   77.204759
+  ],
+  "file": "karsog-town-177",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Kashaul/078_near Kashaul_2026-07-21.jpg",
+  "rank": 178,
+  "slug": "beludhar",
+  "place": "Kashaul",
+  "near": true,
+  "date": "2026-07-21",
+  "gps": [
+   31.355036,
+   77.22771
+  ],
+  "file": "beludhar-178",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Kashaul/079_Kashaul_2026-08-02.jpg",
+  "rank": 179,
+  "slug": "beludhar",
+  "place": "Kashaul",
+  "near": false,
+  "date": "2026-08-02",
+  "gps": [
+   31.349029504,
+   77.247277194
+  ],
+  "file": "beludhar-179",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Kelodhar/080_Kelodhar_2026-07-26.jpg",
+  "rank": 180,
+  "slug": "kelodhar",
+  "place": "Kelodhar",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.385564,
+   77.244186
+  ],
+  "file": "kelodhar-180",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Kelodhar/081_Kelodhar_2026-07-26.jpg",
+  "rank": 181,
+  "slug": "kelodhar",
+  "place": "Kelodhar",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.385551593,
+   77.242981498
+  ],
+  "file": "kelodhar-181",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Kelodhar/082_Kelodhar_2026-07-26.jpg",
+  "rank": 182,
+  "slug": "kelodhar",
+  "place": "Kelodhar",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.385551593,
+   77.242981498
+  ],
+  "file": "kelodhar-182",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Khaneol Bagra/083_near Khaneol Bagra_2026-07-26.jpg",
+  "rank": 183,
+  "slug": "khaneol-shahot",
+  "place": "Khaneol Bagra",
+  "near": true,
+  "date": "2026-07-26",
+  "gps": [
+   31.310191,
+   77.305858
+  ],
+  "file": "khaneol-shahot-183",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Khaneol Bagra/084_near Khaneol Bagra_2026-08-02.jpg",
+  "rank": 184,
+  "slug": "khaneol-shahot",
+  "place": "Khaneol Bagra",
+  "near": true,
+  "date": "2026-08-02",
+  "gps": [
+   31.308551315,
+   77.284101792
+  ],
+  "file": "khaneol-shahot-184",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Khaneol Bagra/085_Khaneol Bagra_2026-08-02.jpg",
+  "rank": 185,
+  "slug": "khaneol-shahot",
+  "place": "Khaneol Bagra",
+  "near": false,
+  "date": "2026-08-02",
+  "gps": [
+   31.305674,
+   77.301454
+  ],
+  "file": "khaneol-shahot-185",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Khaneol Bagra/086_Khaneol Bagra_2026-08-02.jpg",
+  "rank": 186,
+  "slug": "khaneol-shahot",
+  "place": "Khaneol Bagra",
+  "near": false,
+  "date": "2026-08-02",
+  "gps": [
+   31.305227,
+   77.30443
+  ],
+  "file": "khaneol-shahot-186",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Kotlu/087_near Kotlu_2026-07-26.jpg",
+  "rank": 187,
+  "slug": "kotlu-dateha",
+  "place": "Kotlu",
+  "near": true,
+  "date": "2026-07-26",
+  "gps": [
+   31.373104,
+   77.320894
+  ],
+  "file": "kotlu-dateha-187",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Kotlu/088_Kotlu_2026-07-26.jpg",
+  "rank": 188,
+  "slug": "kotlu-dateha",
+  "place": "Kotlu",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.366087361,
+   77.332807495
+  ],
+  "file": "kotlu-dateha-188",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Kunhoo Mela/089_Kunhoo Mela_2026-08-08.jpg",
+  "rank": 189,
+  "slug": "kunhoo",
+  "place": "Kunhoo Mela",
+  "near": false,
+  "date": "2026-08-08",
+  "gps": null,
+  "file": "kunhoo-189",
+  "w": 1600,
+  "h": 1200
+ },
+ {
+  "source": "website-picks/Kunhoo Mela/090_Kunhoo Mela_2026-08-08.jpg",
+  "rank": 190,
+  "slug": "kunhoo",
+  "place": "Kunhoo Mela",
+  "near": false,
+  "date": "2026-08-08",
+  "gps": [
+   31.341236,
+   77.213492
+  ],
+  "file": "kunhoo-190",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Kunhoo Mela/091_Kunhoo Mela_2026-08-08.jpg",
+  "rank": 191,
+  "slug": "kunhoo",
+  "place": "Kunhoo Mela",
+  "near": false,
+  "date": "2026-08-08",
+  "gps": [
+   31.340002,
+   77.213851
+  ],
+  "file": "kunhoo-191",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Kuthah, Janjehli/092_Kuthah, Janjehli_2026-08-16.jpg",
+  "rank": 192,
+  "slug": "janjehli",
+  "place": "Kuthah, Janjehli",
+  "near": false,
+  "date": "2026-08-16",
+  "gps": [
+   31.5283985,
+   77.216193354
+  ],
+  "file": "janjehli-192",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Kutti/093_Kutti_2026-08-29.jpg",
+  "rank": 193,
+  "slug": "nyara",
+  "place": "Kutti",
+  "near": false,
+  "date": "2026-08-29",
+  "gps": [
+   31.391341,
+   77.196439
+  ],
+  "file": "nyara-193",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Kutti/094_Kutti_2026-08-29.jpg",
+  "rank": 194,
+  "slug": "nyara",
+  "place": "Kutti",
+  "near": false,
+  "date": "2026-08-29",
+  "gps": [
+   31.394465113,
+   77.201616382
+  ],
+  "file": "nyara-194",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Kutti/095_Kutti_2026-08-29.jpg",
+  "rank": 195,
+  "slug": "nyara",
+  "place": "Kutti",
+  "near": false,
+  "date": "2026-08-29",
+  "gps": [
+   31.399105322,
+   77.204135852
+  ],
+  "file": "nyara-195",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Laxmi Narayan Temple/106_Laxmi Narayan Temple_2026-08-20.jpg",
+  "rank": 206,
+  "slug": "karsog-town",
+  "place": "Laxmi Narayan Temple",
+  "near": false,
+  "date": "2026-08-20",
+  "gps": [
+   31.379558,
+   77.199433
+  ],
+  "file": "karsog-town-206",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Laxmi Narayan Temple/107_Laxmi Narayan Temple_2026-09-04.jpg",
+  "rank": 207,
+  "slug": "karsog-town",
+  "place": "Laxmi Narayan Temple",
+  "near": false,
+  "date": "2026-09-04",
+  "gps": [
+   31.382535599,
+   77.201797841
+  ],
+  "file": "karsog-town-207",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Luhri, Kullu/108_Luhri, Kullu_2026-07-26.jpg",
+  "rank": 208,
+  "slug": "luhri-anni",
+  "place": "Luhri, Kullu",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.340896,
+   77.430681
+  ],
+  "file": "luhri-anni-208",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Luhri, Kullu/109_Luhri, Kullu_2026-07-26.jpg",
+  "rank": 209,
+  "slug": "luhri-anni",
+  "place": "Luhri, Kullu",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.341439,
+   77.427804
+  ],
+  "file": "luhri-anni-209",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Luhri, Kullu/110_Luhri, Kullu_2026-07-26.jpg",
+  "rank": 210,
+  "slug": "luhri-anni",
+  "place": "Luhri, Kullu",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.340991188,
+   77.428621329
+  ],
+  "file": "luhri-anni-210",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Luhri, Kullu/111_Luhri, Kullu_2026-07-26.jpg",
+  "rank": 211,
+  "slug": "luhri-anni",
+  "place": "Luhri, Kullu",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.340991188,
+   77.428621329
+  ],
+  "file": "luhri-anni-211",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Mahog/112_Mahog_2026-08-30.jpg",
+  "rank": 212,
+  "slug": "pokhi-mahog",
+  "place": "Mahog",
+  "near": false,
+  "date": "2026-08-30",
+  "gps": [
+   31.429071,
+   77.334709
+  ],
+  "file": "pokhi-mahog-212",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Mahog/113_Mahog_2026-08-30.jpg",
+  "rank": 213,
+  "slug": "pokhi-mahog",
+  "place": "Mahog",
+  "near": false,
+  "date": "2026-08-30",
+  "gps": [
+   31.428715,
+   77.334464
+  ],
+  "file": "pokhi-mahog-213",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Mahunag/114_Mahunag_2026-09-06.jpg",
+  "rank": 214,
+  "slug": "mahunag",
+  "place": "Mahunag",
+  "near": false,
+  "date": "2026-09-06",
+  "gps": [
+   31.300765,
+   77.21867
+  ],
+  "file": "mahunag-214",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Mahunag/115_Mahunag_2026-09-06.jpg",
+  "rank": 215,
+  "slug": "mahunag",
+  "place": "Mahunag",
+  "near": false,
+  "date": "2026-09-06",
+  "gps": [
+   31.301106,
+   77.219391
+  ],
+  "file": "mahunag-215",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Mahunag/116_Mahunag_2026-09-06.jpg",
+  "rank": 216,
+  "slug": "mahunag",
+  "place": "Mahunag",
+  "near": false,
+  "date": "2026-09-06",
+  "gps": [
+   31.300561,
+   77.218254
+  ],
+  "file": "mahunag-216",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Mahunag/117_Mahunag_2026-09-06.jpg",
+  "rank": 217,
+  "slug": "mahunag",
+  "place": "Mahunag",
+  "near": false,
+  "date": "2026-09-06",
+  "gps": [
+   31.300668814,
+   77.218490671
+  ],
+  "file": "mahunag-217",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Mahunag/118_near Mahunag_2026-09-06.jpg",
+  "rank": 218,
+  "slug": "mahunag",
+  "place": "Mahunag",
+  "near": true,
+  "date": "2026-09-06",
+  "gps": [
+   31.289865,
+   77.234892
+  ],
+  "file": "mahunag-218",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Mahunag/119_near Mahunag_2026-09-06.jpg",
+  "rank": 219,
+  "slug": "mahunag",
+  "place": "Mahunag",
+  "near": true,
+  "date": "2026-09-06",
+  "gps": [
+   31.290877,
+   77.23405
+  ],
+  "file": "mahunag-219",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Mahunag/120_near Mahunag_2026-09-06.jpg",
+  "rank": 220,
+  "slug": "mahunag",
+  "place": "Mahunag",
+  "near": true,
+  "date": "2026-09-06",
+  "gps": [
+   31.291895788,
+   77.232882373
+  ],
+  "file": "mahunag-220",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Mahunag/121_near Mahunag_2026-09-06.jpg",
+  "rank": 221,
+  "slug": "mahunag",
+  "place": "Mahunag",
+  "near": true,
+  "date": "2026-09-06",
+  "gps": [
+   31.289646,
+   77.235112
+  ],
+  "file": "mahunag-221",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Mendi/122_Mendi_2026-08-02.jpg",
+  "rank": 222,
+  "slug": "beludhar",
+  "place": "Mendi",
+  "near": false,
+  "date": "2026-08-02",
+  "gps": [
+   31.323834941,
+   77.261819617
+  ],
+  "file": "beludhar-222",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Mendi/123_Mendi_2026-08-02.jpg",
+  "rank": 223,
+  "slug": "beludhar",
+  "place": "Mendi",
+  "near": false,
+  "date": "2026-08-02",
+  "gps": [
+   31.323975,
+   77.259403
+  ],
+  "file": "beludhar-223",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Mendi/124_Mendi_2026-08-02.jpg",
+  "rank": 224,
+  "slug": "beludhar",
+  "place": "Mendi",
+  "near": false,
+  "date": "2026-08-02",
+  "gps": [
+   31.322479,
+   77.260403
+  ],
+  "file": "beludhar-224",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Nag Dhamuni Ji Temple/125_Nag Dhamuni Ji Temple_2026-09-13.jpg",
+  "rank": 225,
+  "slug": "seri-bunglow",
+  "place": "Nag Dhamuni Ji Temple",
+  "near": false,
+  "date": "2026-09-13",
+  "gps": [
+   31.3309,
+   77.287932
+  ],
+  "file": "seri-bunglow-225",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Nag Dhamuni Ji Temple/126_Nag Dhamuni Ji Temple_2026-09-13.jpg",
+  "rank": 226,
+  "slug": "seri-bunglow",
+  "place": "Nag Dhamuni Ji Temple",
+  "near": false,
+  "date": "2026-09-13",
+  "gps": [
+   31.330935379,
+   77.288001973
+  ],
+  "file": "seri-bunglow-226",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Nag Dhamuni Ji Temple/127_Nag Dhamuni Ji Temple_2026-09-13.jpg",
+  "rank": 227,
+  "slug": "seri-bunglow",
+  "place": "Nag Dhamuni Ji Temple",
+  "near": false,
+  "date": "2026-09-13",
+  "gps": [
+   31.330996,
+   77.288328
+  ],
+  "file": "seri-bunglow-227",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Nanj/128_Nanj_2026-07-26.jpg",
+  "rank": 228,
+  "slug": "nanj",
+  "place": "Nanj",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.343013,
+   77.345484
+  ],
+  "file": "nanj-228",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Nanj/129_Nanj_2026-07-26.jpg",
+  "rank": 229,
+  "slug": "nanj",
+  "place": "Nanj",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.341211951,
+   77.345430443
+  ],
+  "file": "nanj-229",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Nanj/130_Nanj_2026-07-26.jpg",
+  "rank": 230,
+  "slug": "nanj",
+  "place": "Nanj",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.341211951,
+   77.345430443
+  ],
+  "file": "nanj-230",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Nanj/131_near Nanj_2026-07-26.jpg",
+  "rank": 231,
+  "slug": "nanj",
+  "place": "Nanj",
+  "near": true,
+  "date": "2026-07-26",
+  "gps": [
+   31.346936,
+   77.353546
+  ],
+  "file": "nanj-231",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Nanj bridge/132_Nanj bridge_2026-07-26.jpg",
+  "rank": 232,
+  "slug": "nanj",
+  "place": "Nanj bridge",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.336311945,
+   77.344380501
+  ],
+  "file": "nanj-232",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Nanj bridge/133_Nanj bridge_2026-07-26.jpg",
+  "rank": 233,
+  "slug": "nanj",
+  "place": "Nanj bridge",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.336311945,
+   77.344380501
+  ],
+  "file": "nanj-233",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Nanj bridge/134_Nanj bridge_2026-07-26.jpg",
+  "rank": 234,
+  "slug": "nanj",
+  "place": "Nanj bridge",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.336311945,
+   77.344380501
+  ],
+  "file": "nanj-234",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Nanj bridge/135_Nanj bridge_2026-07-26.jpg",
+  "rank": 235,
+  "slug": "nanj",
+  "place": "Nanj bridge",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.336707,
+   77.345408
+  ],
+  "file": "nanj-235",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Near Gada Gushaini, Seraj/136_Near Gada Gushaini, Seraj_2026-08-16.jpg",
+  "rank": 236,
+  "slug": "gada-gushaini",
+  "place": "Near Gada Gushaini, Seraj",
+  "near": false,
+  "date": "2026-08-16",
+  "gps": [
+   31.528498737,
+   77.287983547
+  ],
+  "file": "gada-gushaini-236",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Near Mahavan/137_Near Mahavan_2026-09-13.jpg",
+  "rank": 237,
+  "slug": "seri-bunglow",
+  "place": "Near Mahavan",
+  "near": false,
+  "date": "2026-09-13",
+  "gps": [
+   31.341385557,
+   77.285432276
+  ],
+  "file": "seri-bunglow-237",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Nyara/138_Nyara_2026-07-21.jpg",
+  "rank": 238,
+  "slug": "nyara",
+  "place": "Nyara",
+  "near": false,
+  "date": "2026-07-21",
+  "gps": [
+   31.385616425,
+   77.207177247
+  ],
+  "file": "nyara-238",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Nyara/139_Nyara_2026-07-21.jpg",
+  "rank": 239,
+  "slug": "nyara",
+  "place": "Nyara",
+  "near": false,
+  "date": "2026-07-21",
+  "gps": [
+   31.385616425,
+   77.207177247
+  ],
+  "file": "nyara-239",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Nyara/140_Nyara_2026-07-23.jpg",
+  "rank": 240,
+  "slug": "nyara",
+  "place": "Nyara",
+  "near": false,
+  "date": "2026-07-23",
+  "gps": [
+   31.386597395,
+   77.207800129
+  ],
+  "file": "nyara-240",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Nyara/141_Nyara_2026-07-23.jpg",
+  "rank": 241,
+  "slug": "nyara",
+  "place": "Nyara",
+  "near": false,
+  "date": "2026-07-23",
+  "gps": [
+   31.385054763,
+   77.210077275
+  ],
+  "file": "nyara-241",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Nyara/142_Nyara_2026-08-20.jpg",
+  "rank": 242,
+  "slug": "nyara",
+  "place": "Nyara",
+  "near": false,
+  "date": "2026-08-20",
+  "gps": [
+   31.383313969,
+   77.206747143
+  ],
+  "file": "nyara-242",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Nyara/143_Nyara_2026-09-02.jpg",
+  "rank": 243,
+  "slug": "nyara",
+  "place": "Nyara",
+  "near": false,
+  "date": "2026-09-02",
+  "gps": [
+   31.385351777,
+   77.207868863
+  ],
+  "file": "nyara-243",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Pangna/144_Pangna_2026-07-18.jpg",
+  "rank": 244,
+  "slug": "pangna-fort",
+  "place": "Pangna",
+  "near": false,
+  "date": "2026-07-18",
+  "gps": [
+   31.386015912,
+   77.124148569
+  ],
+  "file": "pangna-fort-244",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Pangna/145_Pangna_2026-07-18.jpg",
+  "rank": 245,
+  "slug": "pangna-fort",
+  "place": "Pangna",
+  "near": false,
+  "date": "2026-07-18",
+  "gps": [
+   31.386015912,
+   77.124148569
+  ],
+  "file": "pangna-fort-245",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Pokhi/146_Pokhi_2026-08-30.jpg",
+  "rank": 246,
+  "slug": "pokhi-mahog",
+  "place": "Pokhi",
+  "near": false,
+  "date": "2026-08-30",
+  "gps": [
+   31.389657,
+   77.322942
+  ],
+  "file": "pokhi-mahog-246",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Purana Bazar/147_Purana Bazar_2026-07-24.jpg",
+  "rank": 247,
+  "slug": "karsog-town",
+  "place": "Purana Bazar",
+  "near": false,
+  "date": "2026-07-24",
+  "gps": [
+   31.382597556,
+   77.20172595
+  ],
+  "file": "karsog-town-247",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Purana Bazar/148_Purana Bazar_2026-07-24.jpg",
+  "rank": 248,
+  "slug": "karsog-town",
+  "place": "Purana Bazar",
+  "near": false,
+  "date": "2026-07-24",
+  "gps": [
+   31.382597556,
+   77.20172595
+  ],
+  "file": "karsog-town-248",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Purana Bazar/149_Purana Bazar_2026-07-24.jpg",
+  "rank": 249,
+  "slug": "karsog-town",
+  "place": "Purana Bazar",
+  "near": false,
+  "date": "2026-07-24",
+  "gps": [
+   31.382293887,
+   77.198961227
+  ],
+  "file": "karsog-town-249",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Purana Bazar/150_Purana Bazar_2026-07-24.jpg",
+  "rank": 250,
+  "slug": "karsog-town",
+  "place": "Purana Bazar",
+  "near": false,
+  "date": "2026-07-24",
+  "gps": [
+   31.382293887,
+   77.198961227
+  ],
+  "file": "karsog-town-250",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Purana Bazar/151_Purana Bazar_2026-09-04.jpg",
+  "rank": 251,
+  "slug": "karsog-town",
+  "place": "Purana Bazar",
+  "near": false,
+  "date": "2026-09-04",
+  "gps": [
+   31.382211,
+   77.199092
+  ],
+  "file": "karsog-town-251",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Raigarh, Thunag/152_Raigarh, Thunag_2026-08-16.jpg",
+  "rank": 252,
+  "slug": "janjehli",
+  "place": "Raigarh, Thunag",
+  "near": false,
+  "date": "2026-08-16",
+  "gps": [
+   31.464053262,
+   77.197741006
+  ],
+  "file": "janjehli-252",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Sanarli/153_Sanarli_2026-07-24.jpg",
+  "rank": 253,
+  "slug": "nyara",
+  "place": "Sanarli",
+  "near": false,
+  "date": "2026-07-24",
+  "gps": [
+   31.405924458,
+   77.205918117
+  ],
+  "file": "nyara-253",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Sanarli/154_Sanarli_2026-07-24.jpg",
+  "rank": 254,
+  "slug": "nyara",
+  "place": "Sanarli",
+  "near": false,
+  "date": "2026-07-24",
+  "gps": [
+   31.405924458,
+   77.205918117
+  ],
+  "file": "nyara-254",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Sanarli/155_near Sanarli_2026-09-20.jpg",
+  "rank": 255,
+  "slug": "nyara",
+  "place": "Sanarli",
+  "near": true,
+  "date": "2026-09-20",
+  "gps": [
+   31.415537,
+   77.206453
+  ],
+  "file": "nyara-255",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Sanarli/156_near Sanarli_2026-09-20.jpg",
+  "rank": 256,
+  "slug": "nyara",
+  "place": "Sanarli",
+  "near": true,
+  "date": "2026-09-20",
+  "gps": [
+   31.416012,
+   77.20733
+  ],
+  "file": "nyara-256",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Sayanj/157_Sayanj_2026-08-02.jpg",
+  "rank": 257,
+  "slug": "beludhar",
+  "place": "Sayanj",
+  "near": false,
+  "date": "2026-08-02",
+  "gps": [
+   31.343056,
+   77.320665
+  ],
+  "file": "beludhar-257",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Sayanj/158_Sayanj_2026-08-02.jpg",
+  "rank": 258,
+  "slug": "beludhar",
+  "place": "Sayanj",
+  "near": false,
+  "date": "2026-08-02",
+  "gps": [
+   31.345287,
+   77.321695
+  ],
+  "file": "beludhar-258",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Sayanj/159_Sayanj_2026-08-02.jpg",
+  "rank": 259,
+  "slug": "beludhar",
+  "place": "Sayanj",
+  "near": false,
+  "date": "2026-08-02",
+  "gps": [
+   31.345913587,
+   77.320580244
+  ],
+  "file": "beludhar-259",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Seri Bhanju Mela, Seri Bunglow/160_Seri Bhanju Mela, Seri Bunglow_2026-08-02.jpg",
+  "rank": 260,
+  "slug": "seri-bunglow",
+  "place": "Seri Bhanju Mela, Seri Bunglow",
+  "near": false,
+  "date": "2026-08-02",
+  "gps": [
+   31.369407,
+   77.270217
+  ],
+  "file": "seri-bunglow-260",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Seri Bhanju Mela, Seri Bunglow/161_Seri Bhanju Mela, Seri Bunglow_2026-09-15.jpg",
+  "rank": 261,
+  "slug": "seri-bunglow",
+  "place": "Seri Bhanju Mela, Seri Bunglow",
+  "near": false,
+  "date": "2026-09-15",
+  "gps": [
+   31.368977,
+   77.268274
+  ],
+  "file": "seri-bunglow-261",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Seri Bhanju Mela, Seri Bunglow/162_Seri Bhanju Mela, Seri Bunglow_2026-09-15.jpg",
+  "rank": 262,
+  "slug": "seri-bunglow",
+  "place": "Seri Bhanju Mela, Seri Bunglow",
+  "near": false,
+  "date": "2026-09-15",
+  "gps": [
+   31.368977586,
+   77.268275937
+  ],
+  "file": "seri-bunglow-262",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Seri Bunglow/163_Seri Bunglow_2026-08-02.jpg",
+  "rank": 263,
+  "slug": "seri-bunglow",
+  "place": "Seri Bunglow",
+  "near": false,
+  "date": "2026-08-02",
+  "gps": [
+   31.370318852,
+   77.272025178
+  ],
+  "file": "seri-bunglow-263",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Seri Bunglow/164_Seri Bunglow_2026-08-02.jpg",
+  "rank": 264,
+  "slug": "seri-bunglow",
+  "place": "Seri Bunglow",
+  "near": false,
+  "date": "2026-08-02",
+  "gps": [
+   31.370131,
+   77.27146
+  ],
+  "file": "seri-bunglow-264",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Shahot/165_near Shahot_2026-07-26.jpg",
+  "rank": 265,
+  "slug": "khaneol-shahot",
+  "place": "Shahot",
+  "near": true,
+  "date": "2026-07-26",
+  "gps": [
+   31.310035,
+   77.306435
+  ],
+  "file": "khaneol-shahot-265",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Shahot/166_Shahot_2026-07-26.jpg",
+  "rank": 266,
+  "slug": "khaneol-shahot",
+  "place": "Shahot",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.308149947,
+   77.314239884
+  ],
+  "file": "khaneol-shahot-266",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Shahot/167_Shahot_2026-07-26.jpg",
+  "rank": 267,
+  "slug": "khaneol-shahot",
+  "place": "Shahot",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.308849,
+   77.314213
+  ],
+  "file": "khaneol-shahot-267",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Shahot/168_Shahot_2026-08-02.jpg",
+  "rank": 268,
+  "slug": "khaneol-shahot",
+  "place": "Shahot",
+  "near": false,
+  "date": "2026-08-02",
+  "gps": [
+   31.306101,
+   77.310525
+  ],
+  "file": "khaneol-shahot-268",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Shikari Devi Parking/169_Shikari Devi Parking_2026-09-20.jpg",
+  "rank": 269,
+  "slug": "shikari-devi",
+  "place": "Shikari Devi Parking",
+  "near": false,
+  "date": "2026-09-20",
+  "gps": [
+   31.473250303,
+   77.165523755
+  ],
+  "file": "shikari-devi-269",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Shikari Devi Parking/170_Shikari Devi Parking_2026-09-20.jpg",
+  "rank": 270,
+  "slug": "shikari-devi",
+  "place": "Shikari Devi Parking",
+  "near": false,
+  "date": "2026-09-20",
+  "gps": [
+   31.473250303,
+   77.165523755
+  ],
+  "file": "shikari-devi-270",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Shikari Devi Temple Top, Janjehli/171_Shikari Devi Temple Top, Janjehli_2026-09-20.jpg",
+  "rank": 271,
+  "slug": "shikari-devi",
+  "place": "Shikari Devi Temple Top, Janjehli",
+  "near": false,
+  "date": "2026-09-20",
+  "gps": [
+   31.47822,
+   77.165712
+  ],
+  "file": "shikari-devi-271",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Shikari Devi Temple Top, Janjehli/172_Shikari Devi Temple Top, Janjehli_2026-09-20.jpg",
+  "rank": 272,
+  "slug": "shikari-devi",
+  "place": "Shikari Devi Temple Top, Janjehli",
+  "near": false,
+  "date": "2026-09-20",
+  "gps": [
+   31.477546,
+   77.166028
+  ],
+  "file": "shikari-devi-272",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Shikari Devi Temple Top, Janjehli/173_Shikari Devi Temple Top, Janjehli_2026-09-20.jpg",
+  "rank": 273,
+  "slug": "shikari-devi",
+  "place": "Shikari Devi Temple Top, Janjehli",
+  "near": false,
+  "date": "2026-09-20",
+  "gps": [
+   31.476533,
+   77.165139
+  ],
+  "file": "shikari-devi-273",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Shikari Devi Temple, Janjehli/174_Shikari Devi Temple, Janjehli_2026-09-20.jpg",
+  "rank": 274,
+  "slug": "shikari-devi",
+  "place": "Shikari Devi Temple, Janjehli",
+  "near": false,
+  "date": "2026-09-20",
+  "gps": [
+   31.478631,
+   77.165254
+  ],
+  "file": "shikari-devi-274",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Shikari Devi Temple, Janjehli/175_Shikari Devi Temple, Janjehli_2026-09-20.jpg",
+  "rank": 275,
+  "slug": "shikari-devi",
+  "place": "Shikari Devi Temple, Janjehli",
+  "near": false,
+  "date": "2026-09-20",
+  "gps": [
+   31.478883,
+   77.164972
+  ],
+  "file": "shikari-devi-275",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Shikari Devi Temple, Janjehli/176_Shikari Devi Temple, Janjehli_2026-09-20.jpg",
+  "rank": 276,
+  "slug": "shikari-devi",
+  "place": "Shikari Devi Temple, Janjehli",
+  "near": false,
+  "date": "2026-09-20",
+  "gps": [
+   31.478427542,
+   77.165670037
+  ],
+  "file": "shikari-devi-276",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Shikari Devi Temple, Janjehli/177_Shikari Devi Temple, Janjehli_2026-09-20.jpg",
+  "rank": 277,
+  "slug": "shikari-devi",
+  "place": "Shikari Devi Temple, Janjehli",
+  "near": false,
+  "date": "2026-09-20",
+  "gps": [
+   31.478427542,
+   77.165670037
+  ],
+  "file": "shikari-devi-277",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Tebban/178_near Tebban_2026-07-26.jpg",
+  "rank": 278,
+  "slug": "tebban",
+  "place": "Tebban",
+  "near": true,
+  "date": "2026-07-26",
+  "gps": [
+   31.354207,
+   77.3608
+  ],
+  "file": "tebban-278",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Tebban/179_Tebban_2026-08-30.jpg",
+  "rank": 279,
+  "slug": "tebban",
+  "place": "Tebban",
+  "near": false,
+  "date": "2026-08-30",
+  "gps": [
+   31.366213,
+   77.354694
+  ],
+  "file": "tebban-279",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Tebban/180_Tebban_2026-08-30.jpg",
+  "rank": 280,
+  "slug": "tebban",
+  "place": "Tebban",
+  "near": false,
+  "date": "2026-08-30",
+  "gps": [
+   31.365475,
+   77.354966
+  ],
+  "file": "tebban-280",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Tebban/181_Tebban_2026-08-30.jpg",
+  "rank": 281,
+  "slug": "tebban",
+  "place": "Tebban",
+  "near": false,
+  "date": "2026-08-30",
+  "gps": [
+   31.366254,
+   77.353879
+  ],
+  "file": "tebban-281",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Tebban/182_Tebban_2026-08-30.jpg",
+  "rank": 282,
+  "slug": "tebban",
+  "place": "Tebban",
+  "near": false,
+  "date": "2026-08-30",
+  "gps": [
+   31.366066677,
+   77.355023002
+  ],
+  "file": "tebban-282",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Tundal/183_Tundal_2026-07-26.jpg",
+  "rank": 283,
+  "slug": "nanj",
+  "place": "Tundal",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.329488,
+   77.340088
+  ],
+  "file": "nanj-283",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Tundal/184_Tundal_2026-07-26.jpg",
+  "rank": 284,
+  "slug": "nanj",
+  "place": "Tundal",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.330585,
+   77.340073
+  ],
+  "file": "nanj-284",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Tundal/185_Tundal_2026-07-26.jpg",
+  "rank": 285,
+  "slug": "nanj",
+  "place": "Tundal",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.330948798,
+   77.341118388
+  ],
+  "file": "nanj-285",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Tundal/186_Tundal_2026-07-26.jpg",
+  "rank": 286,
+  "slug": "nanj",
+  "place": "Tundal",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.330948798,
+   77.341118388
+  ],
+  "file": "nanj-286",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "012_near Latheri-Bhanthal~_2026-07-24.jpg",
+  "rank": 12,
+  "slug": "latheri-bhanthal",
+  "place": "Latheri-Bhanthal",
+  "near": true,
+  "date": "2026-07-24",
+  "gps": [
+   31.408726784,
+   77.224209472
+  ],
+  "file": "latheri-bhanthal-012"
+ },
+ {
+  "source": "014_Latheri-Bhanthal_2026-07-24.jpg",
+  "rank": 14,
+  "slug": "latheri-bhanthal",
+  "place": "Latheri-Bhanthal",
+  "near": false,
+  "date": "2026-07-24",
+  "gps": [
+   31.403268312,
+   77.216100787
+  ],
+  "file": "latheri-bhanthal-014"
+ },
+ {
+  "source": "036_BSNL Telephone Exchange_2026-08-08.jpg",
+  "rank": 36,
+  "slug": "karsog-town",
+  "place": "BSNL Telephone Exchange",
+  "near": false,
+  "date": "2026-08-08",
+  "gps": [
+   31.380901015,
+   77.214860302
+  ],
+  "file": "karsog-town-036"
+ },
+ {
+  "source": "046_near Latheri-Bhanthal~_2026-07-24.jpg",
+  "rank": 46,
+  "slug": "latheri-bhanthal",
+  "place": "Latheri-Bhanthal",
+  "near": true,
+  "date": "2026-07-24",
+  "gps": [
+   31.408724875,
+   77.224209526
+  ],
+  "file": "latheri-bhanthal-046"
+ },
+ {
+  "source": "052_near Latheri-Bhanthal~_2026-07-24.jpg",
+  "rank": 52,
+  "slug": "latheri-bhanthal",
+  "place": "Latheri-Bhanthal",
+  "near": true,
+  "date": "2026-07-24",
+  "gps": [
+   31.40903,
+   77.224764
+  ],
+  "file": "latheri-bhanthal-052"
+ },
+ {
+  "source": "055_near Latheri-Bhanthal~_2026-07-24.jpg",
+  "rank": 55,
+  "slug": "latheri-bhanthal",
+  "place": "Latheri-Bhanthal",
+  "near": true,
+  "date": "2026-07-24",
+  "gps": [
+   31.409308,
+   77.224482
+  ],
+  "file": "latheri-bhanthal-055"
+ },
+ {
+  "source": "099_BSNL Telephone Exchange_2026-08-08.jpg",
+  "rank": 99,
+  "slug": "karsog-town",
+  "place": "BSNL Telephone Exchange",
+  "near": false,
+  "date": "2026-08-08",
+  "gps": [
+   31.377661,
+   77.216885
+  ],
+  "file": "karsog-town-099"
+ },
+ {
+  "source": "website-picks/BSNL Telephone Exchange/014_BSNL Telephone Exchange_2026-07-23.jpg",
+  "rank": 114,
+  "slug": "karsog-town",
+  "place": "BSNL Telephone Exchange",
+  "near": false,
+  "date": "2026-07-23",
+  "gps": [
+   31.38254252,
+   77.212323925
+  ],
+  "file": "karsog-town-114"
+ },
+ {
+  "source": "website-picks/BSNL Telephone Exchange/015_near BSNL Telephone Exchange_2026-08-01.jpg",
+  "rank": 115,
+  "slug": "karsog-town",
+  "place": "BSNL Telephone Exchange",
+  "near": true,
+  "date": "2026-08-01",
+  "gps": [
+   31.364707,
+   77.215605
+  ],
+  "file": "karsog-town-115"
+ },
+ {
+  "source": "website-picks/BSNL Telephone Exchange/016_BSNL Telephone Exchange_2026-08-08.jpg",
+  "rank": 116,
+  "slug": "karsog-town",
+  "place": "BSNL Telephone Exchange",
+  "near": false,
+  "date": "2026-08-08",
+  "gps": [
+   31.377481,
+   77.219752
+  ],
+  "file": "karsog-town-116"
+ },
+ {
+  "source": "website-picks/BSNL Telephone Exchange/017_BSNL Telephone Exchange_2026-08-08.jpg",
+  "rank": 117,
+  "slug": "karsog-town",
+  "place": "BSNL Telephone Exchange",
+  "near": false,
+  "date": "2026-08-08",
+  "gps": [
+   31.380901015,
+   77.214860302
+  ],
+  "file": "karsog-town-117"
+ },
+ {
+  "source": "website-picks/BSNL Telephone Exchange/018_BSNL Telephone Exchange_2026-08-08.jpg",
+  "rank": 118,
+  "slug": "karsog-town",
+  "place": "BSNL Telephone Exchange",
+  "near": false,
+  "date": "2026-08-08",
+  "gps": [
+   31.380901015,
+   77.214860302
+  ],
+  "file": "karsog-town-118"
+ },
+ {
+  "source": "website-picks/BSNL Telephone Exchange/019_near BSNL Telephone Exchange_2026-09-12.jpg",
+  "rank": 119,
+  "slug": "karsog-town",
+  "place": "BSNL Telephone Exchange",
+  "near": true,
+  "date": "2026-09-12",
+  "gps": [
+   31.387375636,
+   77.220000837
+  ],
+  "file": "karsog-town-119"
+ },
+ {
+  "source": "website-picks/Government Degree College Anni (Haripur)/001_Government Degree College Anni (Haripur)_2026-07-26.jpg",
+  "rank": 101,
+  "slug": "luhri-anni",
+  "place": "Government Degree College Anni (Haripur)",
+  "near": false,
+  "date": "2026-07-26",
+  "gps": [
+   31.400133,
+   77.385005
+  ],
+  "file": "luhri-anni-101",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Lashi, Chhatri/096_Lashi, Chhatri_2026-08-16.jpg",
+  "rank": 196,
+  "slug": "chhatri",
+  "place": "Lashi, Chhatri",
+  "near": false,
+  "date": "2026-08-16",
+  "gps": [
+   31.474482966,
+   77.281929891
+  ],
+  "file": "chhatri-196"
+ },
+ {
+  "source": "website-picks/Lashi, Chhatri/097_Lashi, Chhatri_2026-08-16.jpg",
+  "rank": 197,
+  "slug": "chhatri",
+  "place": "Lashi, Chhatri",
+  "near": false,
+  "date": "2026-08-16",
+  "gps": [
+   31.471311,
+   77.283261
+  ],
+  "file": "chhatri-197"
+ },
+ {
+  "source": "website-picks/Latheri-Bhanthal/098_near Latheri-Bhanthal_2026-07-24.jpg",
+  "rank": 198,
+  "slug": "latheri-bhanthal",
+  "place": "Latheri-Bhanthal",
+  "near": true,
+  "date": "2026-07-24",
+  "gps": [
+   31.40841,
+   77.22453
+  ],
+  "file": "latheri-bhanthal-198"
+ },
+ {
+  "source": "website-picks/Latheri-Bhanthal/099_near Latheri-Bhanthal_2026-07-24.jpg",
+  "rank": 199,
+  "slug": "latheri-bhanthal",
+  "place": "Latheri-Bhanthal",
+  "near": true,
+  "date": "2026-07-24",
+  "gps": [
+   31.408988,
+   77.224528
+  ],
+  "file": "latheri-bhanthal-199"
+ },
+ {
+  "source": "website-picks/Latheri-Bhanthal/100_near Latheri-Bhanthal_2026-07-24.jpg",
+  "rank": 200,
+  "slug": "latheri-bhanthal",
+  "place": "Latheri-Bhanthal",
+  "near": true,
+  "date": "2026-07-24",
+  "gps": [
+   31.408726784,
+   77.224209472
+  ],
+  "file": "latheri-bhanthal-200"
+ },
+ {
+  "source": "website-picks/Latheri-Bhanthal/101_near Latheri-Bhanthal_2026-07-24.jpg",
+  "rank": 201,
+  "slug": "latheri-bhanthal",
+  "place": "Latheri-Bhanthal",
+  "near": true,
+  "date": "2026-07-24",
+  "gps": [
+   31.408726784,
+   77.224209472
+  ],
+  "file": "latheri-bhanthal-201"
+ },
+ {
+  "source": "website-picks/Latheri-Bhanthal/102_Latheri-Bhanthal_2026-07-24.jpg",
+  "rank": 202,
+  "slug": "latheri-bhanthal",
+  "place": "Latheri-Bhanthal",
+  "near": false,
+  "date": "2026-07-24",
+  "gps": [
+   31.405948,
+   77.220154
+  ],
+  "file": "latheri-bhanthal-202"
+ },
+ {
+  "source": "website-picks/Latheri-Bhanthal/103_Latheri-Bhanthal_2026-07-24.jpg",
+  "rank": 203,
+  "slug": "latheri-bhanthal",
+  "place": "Latheri-Bhanthal",
+  "near": false,
+  "date": "2026-07-24",
+  "gps": [
+   31.403268312,
+   77.216100787
+  ],
+  "file": "latheri-bhanthal-203"
+ },
+ {
+  "source": "website-picks/Latheri-Bhanthal/104_Latheri-Bhanthal_2026-07-24.jpg",
+  "rank": 204,
+  "slug": "latheri-bhanthal",
+  "place": "Latheri-Bhanthal",
+  "near": false,
+  "date": "2026-07-24",
+  "gps": [
+   31.403268312,
+   77.216100787
+  ],
+  "file": "latheri-bhanthal-204"
+ },
+ {
+  "source": "website-picks/Latheri-Bhanthal/105_Latheri-Bhanthal_2026-07-24.jpg",
+  "rank": 205,
+  "slug": "latheri-bhanthal",
+  "place": "Latheri-Bhanthal",
+  "near": false,
+  "date": "2026-07-24",
+  "gps": [
+   31.403268312,
+   77.216100787
+  ],
+  "file": "latheri-bhanthal-205"
+ },
+ {
+  "source": "website-picks/Mela near Bakhrot/005_Mela near Bakhrot_2026-08-03.jpg",
+  "rank": 105,
+  "slug": "bakhrot",
+  "place": "Mela near Bakhrot",
+  "near": false,
+  "date": "2026-08-03",
+  "gps": [
+   31.385512,
+   77.175014
+  ],
+  "file": "bakhrot-105",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Mini Secretariat, Karsog/187_Mini Secretariat, Karsog_2026-08-26.jpg",
+  "rank": 287,
+  "slug": "karsog-town",
+  "place": "Mini Secretariat, Karsog",
+  "near": false,
+  "date": "2026-08-26",
+  "gps": null,
+  "file": "karsog-town-287",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Near Gada Gushaini, Seraj/003_near Gada Gushaini, Seraj_2026-08-16.jpg",
+  "rank": 103,
+  "slug": "gada-gushaini",
+  "place": "Gada Gushaini, Seraj",
+  "near": true,
+  "date": "2026-08-16",
+  "gps": [
+   31.557188414,
+   77.299956014
+  ],
+  "file": "gada-gushaini-103",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Near Gada Gushaini, Seraj/004_near Gada Gushaini, Seraj_2026-08-16.jpg",
+  "rank": 104,
+  "slug": "gada-gushaini",
+  "place": "Gada Gushaini, Seraj",
+  "near": true,
+  "date": "2026-08-16",
+  "gps": [
+   31.561876,
+   77.300996
+  ],
+  "file": "gada-gushaini-104",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Satluj at Tattapani/002_Satluj at Tattapani_2026-07-19.jpg",
+  "rank": 102,
+  "slug": "tattapani",
+  "place": "Satluj at Tattapani",
+  "near": false,
+  "date": "2026-07-19",
+  "gps": [
+   31.253213,
+   77.075639
+  ],
+  "file": "tattapani-102",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/Someshwar Mahadev Temple, Somakothi/008_Someshwar Mahadev Temple, Somakothi_2026-08-30.jpg",
+  "rank": 108,
+  "slug": "pokhi-mahog",
+  "place": "Someshwar Mahadev Temple, Somakothi",
+  "near": false,
+  "date": "2026-08-30",
+  "gps": [
+   31.40152,
+   77.293873
+  ],
+  "file": "pokhi-mahog-108",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Someshwar Mahadev Temple, Somakothi/009_Someshwar Mahadev Temple, Somakothi_2026-08-30.jpg",
+  "rank": 109,
+  "slug": "pokhi-mahog",
+  "place": "Someshwar Mahadev Temple, Somakothi",
+  "near": false,
+  "date": "2026-08-30",
+  "gps": [
+   31.401154,
+   77.293397
+  ],
+  "file": "pokhi-mahog-109",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Someshwar Mahadev Temple, Somakothi/010_Someshwar Mahadev Temple, Somakothi_2026-08-30.jpg",
+  "rank": 110,
+  "slug": "pokhi-mahog",
+  "place": "Someshwar Mahadev Temple, Somakothi",
+  "near": false,
+  "date": "2026-08-30",
+  "gps": [
+   31.402197,
+   77.293977
+  ],
+  "file": "pokhi-mahog-110",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Bam Sounti Temple, near Sanarli/200_Bam Sounti Temple, near Sanarli_2026-07-12.jpg",
+  "rank": 300,
+  "slug": "nyara",
+  "place": "Bam Sounti Temple, near Sanarli",
+  "near": false,
+  "date": "2026-07-12",
+  "gps": null,
+  "file": "nyara-300",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/Bam Sounti Temple, near Sanarli/201_Bam Sounti Temple, near Sanarli_2026-07-12.jpg",
+  "rank": 301,
+  "slug": "nyara",
+  "place": "Bam Sounti Temple, near Sanarli",
+  "near": false,
+  "date": "2026-07-12",
+  "gps": null,
+  "file": "nyara-301",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/Bam Sounti Temple, near Sanarli/202_Bam Sounti Temple, near Sanarli_2026-07-12.jpg",
+  "rank": 302,
+  "slug": "nyara",
+  "place": "Bam Sounti Temple, near Sanarli",
+  "near": false,
+  "date": "2026-07-12",
+  "gps": null,
+  "file": "nyara-302",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/Bam Sounti Temple, near Sanarli/203_Bam Sounti Temple, near Sanarli_2026-07-12.jpg",
+  "rank": 303,
+  "slug": "nyara",
+  "place": "Bam Sounti Temple, near Sanarli",
+  "near": false,
+  "date": "2026-07-12",
+  "gps": null,
+  "file": "nyara-303",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/Bam Sounti Temple, near Sanarli/204_Bam Sounti Temple, near Sanarli_2026-07-12.jpg",
+  "rank": 304,
+  "slug": "nyara",
+  "place": "Bam Sounti Temple, near Sanarli",
+  "near": false,
+  "date": "2026-07-12",
+  "gps": null,
+  "file": "nyara-304",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/Bam Sounti Temple, near Sanarli/205_Bam Sounti Temple, near Sanarli_2026-07-12.jpg",
+  "rank": 305,
+  "slug": "nyara",
+  "place": "Bam Sounti Temple, near Sanarli",
+  "near": false,
+  "date": "2026-07-12",
+  "gps": null,
+  "file": "nyara-305",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/GMSSS Karsog/214_GMSSS Karsog_2026-07-14.jpg",
+  "rank": 314,
+  "slug": "karsog-town",
+  "place": "GMSSS Karsog",
+  "near": false,
+  "date": "2026-07-14",
+  "gps": null,
+  "file": "karsog-town-314",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/GMSSS Karsog/215_GMSSS Karsog_2026-07-14.jpg",
+  "rank": 315,
+  "slug": "karsog-town",
+  "place": "GMSSS Karsog",
+  "near": false,
+  "date": "2026-07-14",
+  "gps": null,
+  "file": "karsog-town-315",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/GMSSS Karsog/216_GMSSS Karsog_2026-07-14.jpg",
+  "rank": 316,
+  "slug": "karsog-town",
+  "place": "GMSSS Karsog",
+  "near": false,
+  "date": "2026-07-14",
+  "gps": null,
+  "file": "karsog-town-316",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/GMSSS Karsog/217_GMSSS Karsog_2026-07-14.jpg",
+  "rank": 317,
+  "slug": "karsog-town",
+  "place": "GMSSS Karsog",
+  "near": false,
+  "date": "2026-07-14",
+  "gps": null,
+  "file": "karsog-town-317",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/GMSSS Karsog/218_GMSSS Karsog_2026-07-14.jpg",
+  "rank": 318,
+  "slug": "karsog-town",
+  "place": "GMSSS Karsog",
+  "near": false,
+  "date": "2026-07-14",
+  "gps": null,
+  "file": "karsog-town-318",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/Government College Karsog/208_Government College Karsog_2026-07-14.jpg",
+  "rank": 308,
+  "slug": "karsog-town",
+  "place": "Government College Karsog",
+  "near": false,
+  "date": "2026-07-14",
+  "gps": null,
+  "file": "karsog-town-308",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/Government College Karsog/209_Government College Karsog_2026-07-14.jpg",
+  "rank": 309,
+  "slug": "karsog-town",
+  "place": "Government College Karsog",
+  "near": false,
+  "date": "2026-07-14",
+  "gps": null,
+  "file": "karsog-town-309",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/Government College Karsog/210_Government College Karsog_2026-07-14.jpg",
+  "rank": 310,
+  "slug": "karsog-town",
+  "place": "Government College Karsog",
+  "near": false,
+  "date": "2026-07-14",
+  "gps": null,
+  "file": "karsog-town-310",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/Government College Karsog/211_Government College Karsog_2026-07-14.jpg",
+  "rank": 311,
+  "slug": "karsog-town",
+  "place": "Government College Karsog",
+  "near": false,
+  "date": "2026-07-14",
+  "gps": null,
+  "file": "karsog-town-311",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/Government College Karsog/212_Government College Karsog_2026-07-14.jpg",
+  "rank": 312,
+  "slug": "karsog-town",
+  "place": "Government College Karsog",
+  "near": false,
+  "date": "2026-07-14",
+  "gps": null,
+  "file": "karsog-town-312",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/Government College Karsog/213_Government College Karsog_2026-07-14.jpg",
+  "rank": 313,
+  "slug": "karsog-town",
+  "place": "Government College Karsog",
+  "near": false,
+  "date": "2026-07-14",
+  "gps": null,
+  "file": "karsog-town-313",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/Jarli Mata Temple, Karsog/238_Jarli Mata Temple, Karsog_2026-07-15.jpg",
+  "rank": 338,
+  "slug": "jarli-mata",
+  "place": "Jarli Mata Temple, Karsog",
+  "near": false,
+  "date": "2026-07-15",
+  "gps": null,
+  "file": "jarli-mata-338",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/Jarli Mata Temple, Karsog/239_Jarli Mata Temple, Karsog_2026-07-15.jpg",
+  "rank": 339,
+  "slug": "jarli-mata",
+  "place": "Jarli Mata Temple, Karsog",
+  "near": false,
+  "date": "2026-07-15",
+  "gps": null,
+  "file": "jarli-mata-339",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/Jarli Mata Temple, Karsog/240_Jarli Mata Temple, Karsog_2026-07-15.jpg",
+  "rank": 340,
+  "slug": "jarli-mata",
+  "place": "Jarli Mata Temple, Karsog",
+  "near": false,
+  "date": "2026-07-15",
+  "gps": null,
+  "file": "jarli-mata-340",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/Jarli Mata Temple, Karsog/241_Jarli Mata Temple, Karsog_2026-07-15.jpg",
+  "rank": 341,
+  "slug": "jarli-mata",
+  "place": "Jarli Mata Temple, Karsog",
+  "near": false,
+  "date": "2026-07-15",
+  "gps": null,
+  "file": "jarli-mata-341",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/Jarli Mata Temple, Karsog/242_Jarli Mata Temple, Karsog_2026-07-15.jpg",
+  "rank": 342,
+  "slug": "jarli-mata",
+  "place": "Jarli Mata Temple, Karsog",
+  "near": false,
+  "date": "2026-07-15",
+  "gps": null,
+  "file": "jarli-mata-342",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/Jarli Mata Temple, Karsog/243_Jarli Mata Temple, Karsog_2026-07-15.jpg",
+  "rank": 343,
+  "slug": "jarli-mata",
+  "place": "Jarli Mata Temple, Karsog",
+  "near": false,
+  "date": "2026-07-15",
+  "gps": null,
+  "file": "jarli-mata-343",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/Jarli Mata Temple, Karsog/244_Jarli Mata Temple, Karsog_2026-07-15.jpg",
+  "rank": 344,
+  "slug": "jarli-mata",
+  "place": "Jarli Mata Temple, Karsog",
+  "near": false,
+  "date": "2026-07-15",
+  "gps": null,
+  "file": "jarli-mata-344",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/Jarli Mata Temple, Karsog/245_Jarli Mata Temple, Karsog_2026-07-15.jpg",
+  "rank": 345,
+  "slug": "jarli-mata",
+  "place": "Jarli Mata Temple, Karsog",
+  "near": false,
+  "date": "2026-07-15",
+  "gps": null,
+  "file": "jarli-mata-345",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/Kamaksha Mata Temple, Kao/226_Kamaksha Mata Temple, Kao_2026-07-15.jpg",
+  "rank": 326,
+  "slug": "kao",
+  "place": "Kamaksha Mata Temple, Kao",
+  "near": false,
+  "date": "2026-07-15",
+  "gps": null,
+  "file": "kao-326",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/Kamaksha Mata Temple, Kao/227_Kamaksha Mata Temple, Kao_2026-07-15.jpg",
+  "rank": 327,
+  "slug": "kao",
+  "place": "Kamaksha Mata Temple, Kao",
+  "near": false,
+  "date": "2026-07-15",
+  "gps": null,
+  "file": "kao-327",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/Kamaksha Mata Temple, Kao/228_Kamaksha Mata Temple, Kao_2026-07-15.jpg",
+  "rank": 328,
+  "slug": "kao",
+  "place": "Kamaksha Mata Temple, Kao",
+  "near": false,
+  "date": "2026-07-15",
+  "gps": null,
+  "file": "kao-328",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/Kamaksha Mata Temple, Kao/229_Kamaksha Mata Temple, Kao_2026-07-15.jpg",
+  "rank": 329,
+  "slug": "kao",
+  "place": "Kamaksha Mata Temple, Kao",
+  "near": false,
+  "date": "2026-07-15",
+  "gps": null,
+  "file": "kao-329",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/Kamaksha Mata Temple, Kao/230_Kamaksha Mata Temple, Kao_2026-07-15.jpg",
+  "rank": 330,
+  "slug": "kao",
+  "place": "Kamaksha Mata Temple, Kao",
+  "near": false,
+  "date": "2026-07-15",
+  "gps": null,
+  "file": "kao-330",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/Kamaksha Mata Temple, Kao/231_Kamaksha Mata Temple, Kao_2026-07-15.jpg",
+  "rank": 331,
+  "slug": "kao",
+  "place": "Kamaksha Mata Temple, Kao",
+  "near": false,
+  "date": "2026-07-15",
+  "gps": null,
+  "file": "kao-331",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/Kunhoo/206_Kunhoo_2026-07-12.jpg",
+  "rank": 306,
+  "slug": "kunhoo",
+  "place": "Kunhoo",
+  "near": false,
+  "date": "2026-07-12",
+  "gps": null,
+  "file": "kunhoo-306",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Kunhoo/207_Kunhoo_2026-07-12.jpg",
+  "rank": 307,
+  "slug": "kunhoo",
+  "place": "Kunhoo",
+  "near": false,
+  "date": "2026-07-12",
+  "gps": null,
+  "file": "kunhoo-307",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Mamel Ground, Karsog/188_Mamel Ground, Karsog_2026-07-07.jpg",
+  "rank": 288,
+  "slug": "mamleshwar",
+  "place": "Mamel Ground, Karsog",
+  "near": false,
+  "date": "2026-07-07",
+  "gps": null,
+  "file": "mamleshwar-288",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/Mamel Ground, Karsog/189_Mamel Ground, Karsog_2026-07-07.jpg",
+  "rank": 289,
+  "slug": "mamleshwar",
+  "place": "Mamel Ground, Karsog",
+  "near": false,
+  "date": "2026-07-07",
+  "gps": null,
+  "file": "mamleshwar-289",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/Mamel Ground, Karsog/190_Mamel Ground, Karsog_2026-07-07.jpg",
+  "rank": 290,
+  "slug": "mamleshwar",
+  "place": "Mamel Ground, Karsog",
+  "near": false,
+  "date": "2026-07-07",
+  "gps": null,
+  "file": "mamleshwar-290",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/Mamleshwar Mahadev Temple, Mamel/219_Mamleshwar Mahadev Temple, Mamel_2026-07-14.jpg",
+  "rank": 319,
+  "slug": "mamleshwar",
+  "place": "Mamleshwar Mahadev Temple, Mamel",
+  "near": false,
+  "date": "2026-07-14",
+  "gps": null,
+  "file": "mamleshwar-319",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/Mamleshwar Mahadev Temple, Mamel/220_Mamleshwar Mahadev Temple, Mamel_2026-07-14.jpg",
+  "rank": 320,
+  "slug": "mamleshwar",
+  "place": "Mamleshwar Mahadev Temple, Mamel",
+  "near": false,
+  "date": "2026-07-14",
+  "gps": null,
+  "file": "mamleshwar-320",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/Mamleshwar Mahadev Temple, Mamel/221_Mamleshwar Mahadev Temple, Mamel_2026-07-14.jpg",
+  "rank": 321,
+  "slug": "mamleshwar",
+  "place": "Mamleshwar Mahadev Temple, Mamel",
+  "near": false,
+  "date": "2026-07-14",
+  "gps": null,
+  "file": "mamleshwar-321",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/Mamleshwar Mahadev Temple, Mamel/222_Mamleshwar Mahadev Temple, Mamel_2026-07-14.jpg",
+  "rank": 322,
+  "slug": "mamleshwar",
+  "place": "Mamleshwar Mahadev Temple, Mamel",
+  "near": false,
+  "date": "2026-07-14",
+  "gps": null,
+  "file": "mamleshwar-322",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/Mamleshwar Mahadev Temple, Mamel/223_Mamleshwar Mahadev Temple, Mamel_2026-07-14.jpg",
+  "rank": 323,
+  "slug": "mamleshwar",
+  "place": "Mamleshwar Mahadev Temple, Mamel",
+  "near": false,
+  "date": "2026-07-14",
+  "gps": null,
+  "file": "mamleshwar-323",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/Mamleshwar Mahadev Temple, Mamel/224_Mamleshwar Mahadev Temple, Mamel_2026-07-14.jpg",
+  "rank": 324,
+  "slug": "mamleshwar",
+  "place": "Mamleshwar Mahadev Temple, Mamel",
+  "near": false,
+  "date": "2026-07-14",
+  "gps": null,
+  "file": "mamleshwar-324",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/Mamleshwar Mahadev Temple, Mamel/225_Mamleshwar Mahadev Temple, Mamel_2026-07-14.jpg",
+  "rank": 325,
+  "slug": "mamleshwar",
+  "place": "Mamleshwar Mahadev Temple, Mamel",
+  "near": false,
+  "date": "2026-07-14",
+  "gps": null,
+  "file": "mamleshwar-325",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/PWD Rest House, Chindi/195_PWD Rest House, Chindi_2026-07-12.jpg",
+  "rank": 295,
+  "slug": "chindi",
+  "place": "PWD Rest House, Chindi",
+  "near": false,
+  "date": "2026-07-12",
+  "gps": null,
+  "file": "chindi-295",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/PWD Rest House, Chindi/196_PWD Rest House, Chindi_2026-07-12.jpg",
+  "rank": 296,
+  "slug": "chindi",
+  "place": "PWD Rest House, Chindi",
+  "near": false,
+  "date": "2026-07-12",
+  "gps": null,
+  "file": "chindi-296",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/PWD Rest House, Chindi/197_PWD Rest House, Chindi_2026-07-12.jpg",
+  "rank": 297,
+  "slug": "chindi",
+  "place": "PWD Rest House, Chindi",
+  "near": false,
+  "date": "2026-07-12",
+  "gps": null,
+  "file": "chindi-297",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/PWD Rest House, Chindi/198_PWD Rest House, Chindi_2026-07-12.jpg",
+  "rank": 298,
+  "slug": "chindi",
+  "place": "PWD Rest House, Chindi",
+  "near": false,
+  "date": "2026-07-12",
+  "gps": null,
+  "file": "chindi-298",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/PWD Rest House, Chindi/199_PWD Rest House, Chindi_2026-07-12.jpg",
+  "rank": 299,
+  "slug": "chindi",
+  "place": "PWD Rest House, Chindi",
+  "near": false,
+  "date": "2026-07-12",
+  "gps": null,
+  "file": "chindi-299",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/Shiva Temple, Imla Vimla Triveni Sangam/191_Shiva Temple, Imla Vimla Triveni Sangam_2026-07-07.jpg",
+  "rank": 291,
+  "slug": "imla-vimla",
+  "place": "Shiva Temple, Imla Vimla Triveni Sangam",
+  "near": false,
+  "date": "2026-07-07",
+  "gps": null,
+  "file": "imla-vimla-291",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Shiva Temple, Imla Vimla Triveni Sangam/192_Shiva Temple, Imla Vimla Triveni Sangam_2026-07-07.jpg",
+  "rank": 292,
+  "slug": "imla-vimla",
+  "place": "Shiva Temple, Imla Vimla Triveni Sangam",
+  "near": false,
+  "date": "2026-07-07",
+  "gps": null,
+  "file": "imla-vimla-292",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Shiva Temple, Imla Vimla Triveni Sangam/193_Shiva Temple, Imla Vimla Triveni Sangam_2026-07-07.jpg",
+  "rank": 293,
+  "slug": "imla-vimla",
+  "place": "Shiva Temple, Imla Vimla Triveni Sangam",
+  "near": false,
+  "date": "2026-07-07",
+  "gps": null,
+  "file": "imla-vimla-293",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Shiva Temple, Imla Vimla Triveni Sangam/194_Shiva Temple, Imla Vimla Triveni Sangam_2026-07-07.jpg",
+  "rank": 294,
+  "slug": "imla-vimla",
+  "place": "Shiva Temple, Imla Vimla Triveni Sangam",
+  "near": false,
+  "date": "2026-07-07",
+  "gps": null,
+  "file": "imla-vimla-294",
+  "w": 1600,
+  "h": 900
+ },
+ {
+  "source": "website-picks/Shiva Temple, Imla Vimla Triveni Sangam/232_Shiva Temple, Imla Vimla Triveni Sangam_2026-07-15.jpg",
+  "rank": 332,
+  "slug": "imla-vimla",
+  "place": "Shiva Temple, Imla Vimla Triveni Sangam",
+  "near": false,
+  "date": "2026-07-15",
+  "gps": null,
+  "file": "imla-vimla-332",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/Shiva Temple, Imla Vimla Triveni Sangam/233_Shiva Temple, Imla Vimla Triveni Sangam_2026-07-15.jpg",
+  "rank": 333,
+  "slug": "imla-vimla",
+  "place": "Shiva Temple, Imla Vimla Triveni Sangam",
+  "near": false,
+  "date": "2026-07-15",
+  "gps": null,
+  "file": "imla-vimla-333",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/Shiva Temple, Imla Vimla Triveni Sangam/234_Shiva Temple, Imla Vimla Triveni Sangam_2026-07-15.jpg",
+  "rank": 334,
+  "slug": "imla-vimla",
+  "place": "Shiva Temple, Imla Vimla Triveni Sangam",
+  "near": false,
+  "date": "2026-07-15",
+  "gps": null,
+  "file": "imla-vimla-334",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/Shiva Temple, Imla Vimla Triveni Sangam/235_Shiva Temple, Imla Vimla Triveni Sangam_2026-07-15.jpg",
+  "rank": 335,
+  "slug": "imla-vimla",
+  "place": "Shiva Temple, Imla Vimla Triveni Sangam",
+  "near": false,
+  "date": "2026-07-15",
+  "gps": null,
+  "file": "imla-vimla-335",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/Shiva Temple, Imla Vimla Triveni Sangam/236_Shiva Temple, Imla Vimla Triveni Sangam_2026-07-15.jpg",
+  "rank": 336,
+  "slug": "imla-vimla",
+  "place": "Shiva Temple, Imla Vimla Triveni Sangam",
+  "near": false,
+  "date": "2026-07-15",
+  "gps": null,
+  "file": "imla-vimla-336",
+  "w": 900,
+  "h": 1600
+ },
+ {
+  "source": "website-picks/Shiva Temple, Imla Vimla Triveni Sangam/237_Shiva Temple, Imla Vimla Triveni Sangam_2026-07-15.jpg",
+  "rank": 337,
+  "slug": "imla-vimla",
+  "place": "Shiva Temple, Imla Vimla Triveni Sangam",
+  "near": false,
+  "date": "2026-07-15",
+  "gps": null,
+  "file": "imla-vimla-337",
+  "w": 900,
+  "h": 1600
+ }
+]
