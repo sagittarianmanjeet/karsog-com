@@ -1,0 +1,50 @@
+line,sr,departure,route_hindi,route_english,category,unit,note
+Karsog-Churag-Tattapani,1,05:00,करसोग-शिमला वाया बगशाड,Karsog-Shimla via Bagshad,Ordinary,Karsog,
+Karsog-Churag-Tattapani,2,06:00,करसोग-शिमला,Karsog-Shimla,Ordinary,Gramin,
+Karsog-Churag-Tattapani,3,09:00,करसोग-शिमला,Karsog-Shimla,Ordinary,Gramin,
+Karsog-Churag-Tattapani,4,10:00,जंजैहली-करसोग-शिमला वाया बगशाड,Janjehli-Karsog-Shimla via Bagshad,Ordinary,Karsog,
+Karsog-Churag-Tattapani,5,11:00,करसोग-श्री मूल माहूनाग जी,Karsog-Shri Mool Mahunag Ji,Ordinary,Karsog,
+Karsog-Churag-Tattapani,6,12:10,करसोग-हरिद्वार,Karsog-Haridwar,Ordinary,Karsog,time handwritten over original
+Karsog-Churag-Tattapani,7,11:30,करसोग-सलाणा,Karsog-Salana,Ordinary,Karsog,time handwritten over original
+Karsog-Churag-Tattapani,8,12:45,करसोग-शिमला,Karsog-Shimla,Ordinary,Gramin,destination handwritten
+Karsog-Churag-Tattapani,9,14:00,करसोग-शिमला वाया बगशाड,Karsog-Shimla via Bagshad,Ordinary,Karsog,
+Karsog-Churag-Tattapani,10,14:10,मंडी-श्री मूल माहूनाग जी,Mandi-Shri Mool Mahunag Ji,Ordinary,Mandi,
+Karsog-Churag-Tattapani,11,15:15,करसोग-परलोग,Karsog-Parlog,Ordinary,Karsog,
+Karsog-Churag-Tattapani,12,15:30,करसोग-रोड़ीधार,Karsog-Rodidhar,Ordinary,Karsog,
+Karsog-Churag-Tattapani,13,16:40,करसोग-शलानी,Karsog-Shalani,Ordinary,Karsog,
+Karsog-Churag-Tattapani,14,17:00,करसोग-दिल्ली,Karsog-Delhi,Ordinary,Karsog,
+Karsog-Churag-Tattapani,15,18:00,करसोग-सलाणा,Karsog-Salana,Ordinary,Karsog,
+Karsog-Pangna-Mandi,1,04:20,करसोग-(ढका हुआ),Karsog-(covered on board),Ordinary,Karsog,destination covered by paper
+Karsog-Pangna-Mandi,2,05:15,करसोग-गहीधार वाया सोरता,Karsog-Gahidhar via Sorta,Ordinary,Sarkaghat,
+Karsog-Pangna-Mandi,3,09:30,करसोग-मंडी,Karsog-Mandi,Ordinary,Karsog,
+Karsog-Pangna-Mandi,4,10:10,ज़्यूरी-धर्मशाला,Jyuri-Dharamshala,Ordinary,Mandi,
+Karsog-Pangna-Mandi,5,11:10,श्री मूल माहूनाग जी-मंडी वाया सोरता,Shri Mool Mahunag Ji-Mandi via Sorta,Ordinary,Mandi,
+Karsog-Pangna-Mandi,6,12:30,रामपुर-रिवालसर,Rampur-Rewalsar,Ordinary,Rampur,
+Karsog-Pangna-Mandi,7,14:00,रिकॉंगपिओ-मंडी वाया सोरता,Reckong Peo-Mandi via Sorta,Ordinary,Sundernagar,
+Karsog-Pangna-Mandi,8,15:00,करसोग-खनीऊडी,Karsog-Khaniudi,Ordinary,Karsog,
+Karsog-Pangna-Mandi,9,15:45,करसोग-निहरी वाया सोरता,Karsog-Nihri via Sorta,Ordinary,Karsog,
+Karsog-Pangna-Mandi,10,16:00,करसोग-सरचा,Karsog-Sarcha,Ordinary,Karsog,
+Karsog-Pangna-Mandi,11,16:30,करसोग-सरही वाया सोरता,Karsog-Sarhi via Sorta,Ordinary,Karsog,
+Karsog-Pangna-Mandi,12,17:15,करसोग-मंडी,Karsog-Mandi,Ordinary,Karsog,
+Karsog-Pangna-Mandi,13,23:00,(ढका हुआ)...पुर,(partly covered)...pur,Ordinary,Dharampur,route partly covered
+Karsog-Pangna-Mandi,14,23:30,रिकॉंगपिओ-धर्मशाला,Reckong Peo-Dharamshala,Ordinary,Reckong Peo,
+Karsog-Pangna-Mandi,15,01:00,रिकॉंगपिओ-जाहलमा,Reckong Peo-Jahalma,Ordinary,Keylong,
+Karsog-Kelodhar,1,02:00,(ढका हुआ)...ओ,(partly covered)...Peo,Ordinary,Dharampur,route partly covered
+Karsog-Kelodhar,2,04:00,धर्मशाला-रिकॉंगपिओ,Dharamshala-Reckong Peo,Ordinary,Reckong Peo,
+Karsog-Kelodhar,3,06:30,करसोग-रामपुर,Karsog-Rampur,Ordinary,Karsog,
+Karsog-Kelodhar,4,07:00,करसोग-थुनाग,Karsog-Thunag,Ordinary,Karsog,
+Karsog-Kelodhar,5,09:30,करसोग-(ढका हुआ),Karsog-(covered on board),Ordinary,Karsog,destination covered by paper
+Karsog-Kelodhar,6,10:00,मंडी-रिकॉंगपिओ,Mandi-Reckong Peo,Ordinary,Sundernagar,
+Karsog-Kelodhar,7,11:00,करसोग-(ढका हुआ),Karsog-(covered on board),Ordinary,Karsog,destination covered by paper
+Karsog-Kelodhar,8,11:40,करसोग-गाड़ागुशैणी,Karsog-Gadagushaini,Ordinary,Karsog,
+Karsog-Kelodhar,9,12:00,करसोग-सोमाकोठी,Karsog-Somakothi,Ordinary,Karsog,
+Karsog-Kelodhar,10,12:30,रिवालसर-रामपुर,Rewalsar-Rampur,Ordinary,Rampur,
+Karsog-Kelodhar,11,12:45,करसोग-स्यांज,Karsog-Syanj,Ordinary,Karsog,
+Karsog-Kelodhar,12,15:00,करसोग-थर्मी,Karsog-Tharmi,Ordinary,Karsog,
+Karsog-Kelodhar,13,15:30,करसोग-मुंडू,Karsog-Mundu,Ordinary,Karsog,
+Karsog-Kelodhar,14,15:45,करसोग-दटेहा,Karsog-Dateha,Ordinary,Karsog,
+Karsog-Kelodhar,15,16:00,करसोग-श्री देव दवाहड़ जी,Karsog-Shri Dev Dwahad Ji,Ordinary,Karsog,
+Karsog-Kelodhar,16,16:00,करसोग-पोखी,Karsog-Pokhi,Ordinary,Karsog,
+Karsog-Kelodhar,17,16:30,करसोग-स्यांजली,Karsog-Syanjali,Ordinary,Karsog,
+Karsog-Kelodhar,18,17:15,करसोग-महावन,Karsog-Mahavan,Ordinary,Karsog,
+Karsog-Kelodhar,19,21:30,जाहलमा-रिकॉंगपिओ,Jahalma-Reckong Peo,Ordinary,Keylong,
