@@ -98,7 +98,7 @@ def ld(s,title,ps,g):
     return '<script type="application/ld+json">'+json.dumps(d,ensure_ascii=False)+'</script>'
 tpl=open(SITE+'/janjehli/index.html').read()
 head_css=re.search(r'<style>.*?</style>',tpl,re.S)[0]
-nav=re.search(r'<nav class="top">.*?</nav>',tpl,re.S)[0]; foot=re.search(r'<footer>.*</html>',tpl,re.S)[0]
+nav=re.search(r'<nav class="top[^"]*"[^>]*>.*?</nav>',tpl,re.S)[0]; foot=re.search(r'<footer>.*</html>',tpl,re.S)[0]
 fontlinks=re.search(r'<link rel="preconnect" href="https://fonts.googleapis.com" />.*?rel="stylesheet" />',tpl,re.S)[0]
 CENT={}
 TITLES={x[0]:x[1] for x in G}
@@ -197,14 +197,15 @@ home=f'''<!-- photos:start -->
 <style>#photos{{padding:4rem 0 3rem}}.pgrid{{display:grid;gap:.6rem;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));margin-top:2rem}}.pc{{position:relative;display:block;overflow:hidden;background:#1a1a18}}.pc img{{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;display:block;transition:transform .5s}}.pc:hover img{{transform:scale(1.05)}}.pc-t{{position:absolute;left:0;right:0;bottom:0;padding:1rem .9rem .8rem;background:linear-gradient(transparent,#000c);color:#fff;display:flex;flex-direction:column}}.pc-t b{{font-family:'Playfair Display',serif;font-size:1.15rem}}.pc-t i{{font-style:normal;font-size:.72rem;opacity:.85;margin-top:.15rem}}</style>
 <section id="photos"><div class="container"><div class="section-head"><span class="eyebrow">Karsog from above</span><h2>{sum(c[2] for c in cards)} drone photos,<br /><em>{len(cards)} places.</em></h2><p class="lede" style="margin-top:1.25rem">Aerial photos of Karsog's villages, temples, fairs and the Satluj valley, shot by <a href="https://www.youtube.com/@KarsogMiles" target="_blank" rel="noopener">Karsog Miles</a> in 2026. Pick a place to see all its photos.</p></div><div class="pgrid">{ch}</div></div></section>
 <!-- photos:end -->'''
-ip=SITE+'/index.html'; h=open(ip).read()
-h=re.sub(r'<!-- photos:start -->.*?<!-- photos:end -->\n?','',h,flags=re.S)
-h=h.replace('<!-- Marquee -->',home+'\n\n<!-- Marquee -->',1)
-if 'href="#photos"' not in h:
-    h=h.replace('<li><a href="#places" data-hi="स्थल">Places</a></li>','<li><a href="#photos" data-hi="फ़ोटो">Photos</a></li>\n      <li><a href="#places" data-hi="स्थल">Places</a></li>',1)
-    h=h.replace('<a href="#places" data-hi="स्थल">Places</a>\n','<a href="#photos" data-hi="फ़ोटो">Photos</a>\n  <a href="#places" data-hi="स्थल">Places</a>\n',1)
-    h=h.replace('<a href="#places" class="btn btn-gold" data-hi="घाटी देखें →">Explore the Valley →</a>','<a href="#photos" class="btn btn-gold" data-hi="फ़ोटो देखें →">See Karsog from above →</a>',1)
+# photos section lives on /photos/ (the homepage shows a 6-photo teaser); sitenav.py sets the menu
+ip=SITE+'/photos/index.html'; h=open(ip).read()
+h=re.sub(r'<!-- photos:start -->.*?<!-- photos:end -->\n?',lambda m:home+'\n',h,count=1,flags=re.S)
 open(ip,'w').write(h)
+tz=''.join(f'<a class="pc" href="/{s}/"><img src="/photos/{s}/{c["file"]}-800.webp" alt="{esc(cap(c)[1])}" loading="lazy" width="800" height="533"><span class="pc-t"><b>{esc(t)}</b><i>{n} photos</i></span></a>' for s,t,n,c,d in cards[:6])
+hp=SITE+'/index.html'; h=open(hp).read()
+h=re.sub(r'(<!-- photos-teaser:start -->.*?<div class="pgrid">).*?(</div><p style)',lambda m:m.group(1)+tz+m.group(2),h,count=1,flags=re.S)
+h=re.sub(r'<h2>\d+ drone photos,<br /><em>\d+ places\.</em></h2>',f'<h2>{sum(c[2] for c in cards)} drone photos,<br /><em>{len(cards)} places.</em></h2>',h,count=1)
+open(hp,'w').write(h)
 # ---- sitemap
 sm=open(SITE+'/sitemap.xml').read()
 if 'xmlns:image' not in sm: sm=sm.replace('<urlset ','<urlset xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" ',1)
@@ -218,3 +219,8 @@ for s,t,n,c,d in cards:
 sm=sm.replace('</urlset>','<!-- gal -->\n'+ent+'<!-- /gal -->\n</urlset>')
 open(SITE+'/sitemap.xml','w').write(sm)
 print(len(photos),'photos',len(cards),'places')
+
+# shared menu (tabs) on every page
+sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
+import sitenav
+sitenav.run()

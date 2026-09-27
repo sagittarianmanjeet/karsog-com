@@ -363,6 +363,8 @@ footer{background:var(--forest-mid);color:var(--cream)}
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4GZFJ5XQG"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-P4GZFJ5XQG");</script>
+<style id="hero-pad">.hero .inner{padding-left:1.25rem;padding-right:1.25rem}@media(min-width:768px){.hero .inner{padding-left:2rem;padding-right:2rem}}</style>
+<style id="knav">nav.top.knav{position:sticky;top:0;z-index:40;background:rgba(250,248,244,.96);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid #dcd5c8}.knav .kin{display:flex;align-items:center;gap:1rem;padding:.55rem 1.25rem;flex-wrap:nowrap}.knav .kbrand{font-family:"Playfair Display",Georgia,serif;font-size:1.25rem;font-weight:700;color:#1c3a1c;white-space:nowrap;text-decoration:none}.knav .kbrand em{color:#b8832a;margin-left:.25rem}.knav .ktabs{display:flex;gap:.15rem;list-style:none;margin:0 0 0 auto;padding:0;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}.knav .ktabs::-webkit-scrollbar{display:none}.knav .ktabs a{display:block;padding:.5rem .75rem;border-radius:999px;font-size:.74rem;font-weight:500;text-transform:uppercase;letter-spacing:.07em;color:#1a1a18b3;white-space:nowrap;text-decoration:none;transition:background .2s,color .2s}.knav .ktabs a:hover{color:#1c3a1c;background:#efe9dd}.knav .ktabs a[aria-current=page]{background:#1c3a1c;color:#f6f3ee}.knav .klang{flex:none;font-size:.78rem;padding:.35rem .65rem;border:1px solid #dcd5c8;color:#1c3a1c;border-radius:999px;white-space:nowrap;text-decoration:none}.knav .klang:hover{border-color:#1c3a1c}@media(max-width:1000px){.knav .kin{flex-wrap:wrap;gap:.1rem .75rem;padding:.5rem 1.25rem .35rem}.knav .klang{margin-left:auto}.knav .ktabs{order:3;flex-basis:100%;margin:0 -1.25rem;padding:0 1.25rem .15rem;-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);mask-image:linear-gradient(90deg,#000 88%,transparent)}.knav .ktabs a{padding:.45rem .7rem;font-size:.72rem}}</style>
 </head>
 <body>
 <!-- Road status banner -->
@@ -370,26 +372,12 @@ footer{background:var(--forest-mid);color:var(--cream)}
 <!-- Live weather strip (filled by JS, hidden if API unavailable) -->
 <div class="wx" hidden="" id="wx"></div>
 <!-- Nav -->
-<nav class="top">
-<div class="container inner">
-<a class="brand" href="#top">Karsog<em>Valley</em></a>
-<ul class="nav-links">
-<li><a href="#places">स्थल</a></li>
-<li><a href="#videos">वीडियो</a></li>
-<li><a href="#bus">बसें</a></li>
-<li><a href="#taxi">टैक्सी</a></li>
-<li><a href="#plan">यात्रा योजना</a></li>
-<li><a href="#stay">ठहरना व भोजन</a></li>
-<li><a href="#local">स्थानीय जानकारी</a></li>
-<li><a href="/hi/rti/">RTI</a></li>
-<li><a href="#emergency">आपातकाल</a></li>
-</ul>
-<button aria-label="Switch language" class="lang-btn" id="lang-desktop">English</button>
-<a class="nav-cta" href="tel:108">📞 108 एम्बुलेंस</a>
-<button aria-expanded="false" aria-label="Open menu" class="burger" id="burger">
-<span></span><span></span><span></span>
-</button>
-</div>
+<nav class="top knav" aria-label="मुख्य">
+  <div class="container kin">
+    <a href="/hi/" class="kbrand">करसोग<em>घाटी</em></a>
+    <a class="klang" href="/" hreflang="en" lang="en">English</a>
+    <ul class="ktabs"><li><a href="/hi/" aria-current="page">होम</a></li><li><a href="/karsog-bus-stand/">बसें</a></li><li><a href="/places/">स्थल व मंदिर</a></li><li><a href="/photos/">फ़ोटो</a></li><li><a href="/plan/">यात्रा योजना</a></li><li><a href="/mandi-rates/">मंडी भाव</a></li><li><a href="/contacts/">ज़रूरी नंबर</a></li><li><a href="/hi/rti/">RTI</a></li></ul>
+  </div>
 </nav>
 <!-- Mobile menu -->
 <div aria-label="Navigation" aria-modal="true" class="mobile-menu" id="mobile-menu" role="dialog">
@@ -860,16 +848,7 @@ document.getElementById('y').textContent = new Date().getFullYear();
 // Mobile menu
 const burger = document.getElementById('burger');
 const menu = document.getElementById('mobile-menu');
-const closeMenu = document.getElementById('close-menu');
-function toggleMenu(open){
-  menu.classList.toggle('open', open);
-  burger.classList.toggle('open', open);
-  burger.setAttribute('aria-expanded', open);
-  document.body.style.overflow = open ? 'hidden' : '';
-}
-burger.addEventListener('click', () => toggleMenu(!menu.classList.contains('open')));
-closeMenu.addEventListener('click', () => toggleMenu(false));
-menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => toggleMenu(false)));
+function toggleMenu(open){ if (!menu || !burger) return; menu.classList.toggle('open', open); burger.classList.toggle('open', open); burger.setAttribute('aria-expanded', open); document.body.style.overflow = open ? 'hidden' : ''; }
 document.addEventListener('keydown', e => { if (e.key === 'Escape') { toggleMenu(false); closeModal(); }});
 
 // Language toggle (EN ↔ हिंदी)

@@ -5,7 +5,11 @@ Source of [karsog.com](https://karsog.com), a local guide to Karsog Valley, Mand
 ## How it works
 
 - Site files are in `public/`. Every change merged into `main` goes live automatically (Cloudflare Workers Builds, config in `wrangler.jsonc`).
-- `tools/busgen.py` rebuilds the bus stand pages from `data/karsog-bus-stand-board.csv`.
+- The menu (tabs) is the same on every page and lives in one place: `tools/sitenav.py`. To change it, edit `TABS` there and run `python3 tools/sitenav.py`.
+- Tabs: Home · Buses · Places & Temples · Photos · Plan a Trip · Mandi Rates · Useful Numbers · RTI.
+- `tools/busgen.py` rebuilds the bus stand, destination and private bus pages from `data/karsog-bus-stand-board.csv` and `data/karsog-private-buses.csv`.
+- `tools/gallery-build.py` (run on the Mac) rebuilds the drone photo pages, the `/photos/` page and the homepage photo teaser.
+- Both generators finish by running `tools/sitenav.py`.
 
 ## Contributing
 

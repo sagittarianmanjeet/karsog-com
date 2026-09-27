@@ -3,7 +3,8 @@
 Run from repo root:  python3 tools/busgen.py
 Outputs: public/karsog-bus-stand/, public/bus/karsog-to-<dest>/ pages, public/data/buses.json,
 and adds URLs to public/sitemap.xml between <!-- bus --> markers."""
-import csv, json, os, re, html
+import csv, json, os, re, html, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PUB = os.path.join(ROOT, 'public')
 SRC = 'Timetable board at Karsog bus stand (HRTC), photographed 25 Sep 2026'
@@ -62,7 +63,7 @@ def t12(t):
 tpl = open(os.path.join(PUB, 'mandi-to-karsog-bus', 'index.html'), encoding='utf-8').read()
 fonts = re.search(r'<link rel="preconnect" href="https://fonts.googleapis.com" />.*?rel="stylesheet" />', tpl, re.S)[0]
 css = re.search(r'<style>.*?</style>', tpl, re.S)[0]
-nav = re.search(r'<nav class="top">.*?</nav>', tpl, re.S)[0]
+nav = re.search(r'<nav class="top[^"]*"[^>]*>.*?</nav>', tpl, re.S)[0]
 foot = re.search(r'<footer>.*</html>', tpl, re.S)[0]
 EXTRA = ('<style>.bt{width:100%;border-collapse:collapse;font-size:.92rem;margin:1rem 0}'
          '.bt th,.bt td{text-align:left;padding:.55rem .6rem;border-bottom:1px solid var(--border,#dcd5c8);vertical-align:top}'
@@ -182,6 +183,8 @@ body = f'''<section>
 <h2>The timetable board</h2>
 {BOARD}
 <h2>Buses to Karsog</h2>
+<h2>Private buses</h2>
+<p>Private operators (Manohar, VIP Coach, Sheetla, Chetan, Lajhari, Sharma, Radhika and others) are not on the HRTC board. See <a href="/karsog-private-bus/">Karsog private bus timings</a>.</p>
 <p>The board lists departures from Karsog only. For buses coming to Karsog see <a href="/mandi-to-karsog-bus/">Mandi ⇄ Karsog</a> and <a href="/shimla-to-karsog-bus/">Shimla ⇄ Karsog</a>.</p>
 </section>'''
 faq = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
@@ -230,6 +233,79 @@ for s, bs in dests.items():
         body, [('Karsog Valley', '/'), ('Karsog Bus Stand', '/karsog-bus-stand/'), (f'Karsog to {n}', f'/{slug}/')], faq))
     urls.append(f'/{slug}/')
 
+# ---- private buses page (from data/karsog-private-buses.csv, private operators)
+P_CHECKED = '27 Sep 2026'
+prv = list(csv.DictReader(open(os.path.join(ROOT, 'data', 'karsog-private-buses.csv'), encoding='utf-8')))
+# Operators seen on Karsog routes with no reliable timings yet: (operator, route, as_of, source)
+P_ROUTES = [
+    ('Chetan Bus Service', 'Kamaksha – Karsog – Pangna – Jachh – Charkhari', 'Sep 2026', 'https://www.facebook.com/photo/?fbid=122348689436229581'),
+    ('Shiv Shankar Express', 'Karsog – Syanj – Syanjali – Karsog', 'Aug 2026', 'https://www.facebook.com/reel/2080647785879851/'),
+    ('NPT Bus Service', 'Karsog – Chhatri – Ani', 'Sep 2026', 'https://www.facebook.com/photo/?fbid=122184756272616859'),
+    ('Anshika Bus Service', 'Karsog – Shri Mool Mahunag', 'Sep 2026', 'https://www.facebook.com/photo/?fbid=1815075229625233'),
+    ('Hari Om Bus Service', 'Karsog – Shimla ISBT', 'Sep 2026', 'https://www.facebook.com/photo/?fbid=1815075229625233'),
+    ('Radhika Bus Service', 'Somakothi – Karsog – Kelodhar – Syanj Bagra', 'Sep 2026', 'https://www.facebook.com/photo/?fbid=1809882586811164'),
+    ('Radhika Bus Service', 'Ani – Karsog – Mahunag – Bagshad', 'Jan 2026', 'https://www.facebook.com/photo/?fbid=2117835829052163'),
+]
+PCSS = '<style>.op{margin:1.75rem 0 .25rem}.op small{font-weight:400;color:var(--muted,#6a6a5a)}.src{font-size:.8rem}.ms{display:none}@media(max-width:600px){.pv td:nth-child(3),.pv th:nth-child(3){display:none}.ms{display:block}}</style>'
+
+
+def p_time(r):
+    if not r['karsog_time']:
+        return '<small>—</small>'
+    return f'{t12(r["karsog_time"])}<br><small>{"departs" if r["karsog_kind"] == "dep" else "reaches"} Karsog</small>'
+
+
+def p_table(rs):
+    h = ('<table class="bt pv"><thead><tr><th>At Karsog</th><th>Route</th><th>Other stops</th></tr></thead><tbody>')
+    for r in rs:
+        note = f'<br><small>{esc(r["note"])}</small>' if r['note'] else ''
+        ms = f'<small class="ms">{esc(r["stops"])}</small>' if r['stops'] else ''
+        h += (f'<tr><td class="t">{p_time(r)}</td><td>{esc(r["route"])}{note}{ms}</td><td><small>{esc(r["stops"]) or "—"}</small></td></tr>')
+    return h + '</tbody></table>'
+
+
+karsog_rows = [r for r in prv if r['karsog_kind']]
+near_rows = [r for r in prv if not r['karsog_kind']]
+ops = {}
+for r in karsog_rows:
+    ops.setdefault(r['operator'].split(' (')[0], []).append(r)
+for v in ops.values():
+    v.sort(key=lambda r: r['karsog_time'] or '99')
+pdeps = sorted([{'time': r['karsog_time'], 'dest': f'{r["to"]} ({r["operator"].split(" (")[0]})'}
+                for r in karsog_rows if r['karsog_kind'] == 'dep' and r['karsog_time']], key=lambda x: x['time'])
+op_html = ''.join(f'<h3 class="op">{esc(o)} <small>({len(rs)} trip{"s" if len(rs) > 1 else ""})</small></h3>{p_table(rs)}'
+                  for o, rs in sorted(ops.items()))
+routes_html = ''.join(f'<li><b>{esc(o)}</b>: {esc(rt)}</li>'
+                      for o, rt, d, s in P_ROUTES)
+body = f'''{PCSS}<section>
+<div class="nb" id="next">Next private buses from Karsog appear here.</div>
+<script type="application/json" id="bd">{json.dumps(pdeps, ensure_ascii=False)}</script>
+{NEXT_JS.replace("NN", "4").replace("Next from Karsog by the board", "Next private buses from Karsog")}
+<div class="note"><b>Please note:</b> private bus timings can change without notice, so confirm with the conductor or at the bus stand before travelling. We try our best to keep this page updated. Spotted a wrong or changed time? Tell us in the comments below. Times marked “reaches Karsog” are arrivals.</div>
+<h2>Private buses at Karsog, by operator</h2>
+<p>{len(karsog_rows)} trips by {len(ops)} private operators that start, end or stop at Karsog. HRTC buses are on the <a href="/karsog-bus-stand/">Karsog bus stand time table</a>.</p>
+{op_html}
+<h2>More private routes (timings not confirmed)</h2>
+<p>These operators also run on Karsog routes. If you know their timings, tell us in the comments below.</p>
+<ul>{routes_html}</ul>
+<h2>Private buses nearby (Tattapani, Pangna)</h2>
+<p>These don’t enter Karsog town but serve the valley’s edges.</p>
+{p_table(near_rows)}
+</section>'''
+faq = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+    {"@type": "Question", "name": "Which private buses run from Karsog?", "acceptedAnswer": {"@type": "Answer",
+     "text": f"Private operators on Karsog routes include {', '.join(sorted(ops))}. They run to Shimla, Sundernagar, Mandi, Hamirpur, Rampur, Ani and nearby villages. Timings can change, so confirm before travelling."}},
+    {"@type": "Question", "name": "What is the first private bus from Karsog to Shimla?", "acceptedAnswer": {"@type": "Answer",
+     "text": "Manohar Bus Service leaves Karsog for Shimla ISBT at 4:40 AM, with a second bus at 7:30 AM Timings can change, so confirm before travelling."}}]}
+os.makedirs(os.path.join(PUB, 'karsog-private-bus'), exist_ok=True)
+open(os.path.join(PUB, 'karsog-private-bus', 'index.html'), 'w', encoding='utf-8').write(page(
+    'karsog-private-bus', 'Karsog Private Bus Timings — Shimla, Sundernagar, Mandi, Rampur (2026)',
+    f'Private bus timings at Karsog: {len(karsog_rows)} trips by {", ".join(sorted(ops))}, to Shimla, Sundernagar, Mandi, Hamirpur, Rampur and Ani.',
+    'Karsog private bus<br /><em>timings</em>',
+    f'{len(karsog_rows)} private bus trips at Karsog by {len(ops)} operators, with a live next-bus finder.',
+    body, [('Karsog Valley', '/'), ('Karsog Bus Stand', '/karsog-bus-stand/'), ('Private buses', '/karsog-private-bus/')], faq))
+urls.append('/karsog-private-bus/')
+
 os.makedirs(os.path.join(PUB, 'data'), exist_ok=True)
 json.dump({'source': SRC, 'departures': rows}, open(os.path.join(PUB, 'data', 'buses.json'), 'w', encoding='utf-8'),
           ensure_ascii=False, indent=1)
@@ -239,3 +315,7 @@ ent = ''.join(f'  <url><loc>https://karsog.com{u}</loc><lastmod>2026-09-26</last
 sm = sm.replace('</urlset>', '<!-- bus -->\n' + ent + '<!-- /bus -->\n</urlset>')
 open(os.path.join(PUB, 'sitemap.xml'), 'w', encoding='utf-8').write(sm)
 print(len(rows), 'departures;', len(urls), 'pages')
+
+# shared menu (tabs) on every page
+import sitenav
+sitenav.run()
