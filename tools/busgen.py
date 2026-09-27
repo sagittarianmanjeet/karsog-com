@@ -232,7 +232,7 @@ for s, bs in dests.items():
         body, [('Karsog Valley', '/'), ('Karsog Bus Stand', '/karsog-bus-stand/'), (f'Karsog to {n}', f'/{slug}/')], faq))
     urls.append(f'/{slug}/')
 
-# ---- private buses page (from data/karsog-private-buses.csv, collected from public Facebook posts)
+# ---- private buses page (from data/karsog-private-buses.csv, private operators)
 P_CHECKED = '27 Sep 2026'
 prv = list(csv.DictReader(open(os.path.join(ROOT, 'data', 'karsog-private-buses.csv'), encoding='utf-8')))
 # Operators seen on Karsog routes with no reliable timings yet: (operator, route, as_of, source)
@@ -245,7 +245,7 @@ P_ROUTES = [
     ('Radhika Bus Service', 'Somakothi – Karsog – Kelodhar – Syanj Bagra', 'Sep 2026', 'https://www.facebook.com/photo/?fbid=1809882586811164'),
     ('Radhika Bus Service', 'Ani – Karsog – Mahunag – Bagshad', 'Jan 2026', 'https://www.facebook.com/photo/?fbid=2117835829052163'),
 ]
-PCSS = '<style>.op{margin:1.75rem 0 .25rem}.op small{font-weight:400;color:var(--muted,#6a6a5a)}.src{font-size:.8rem}.ms{display:none}@media(max-width:600px){.pv td:last-child,.pv th:last-child{display:table-cell}.pv td:nth-child(3),.pv th:nth-child(3){display:none}.ms{display:block}}</style>'
+PCSS = '<style>.op{margin:1.75rem 0 .25rem}.op small{font-weight:400;color:var(--muted,#6a6a5a)}.src{font-size:.8rem}.ms{display:none}@media(max-width:600px){.pv td:nth-child(3),.pv th:nth-child(3){display:none}.ms{display:block}}</style>'
 
 
 def p_time(r):
@@ -255,12 +255,11 @@ def p_time(r):
 
 
 def p_table(rs):
-    h = ('<table class="bt pv"><thead><tr><th>At Karsog</th><th>Route</th><th>Other stops</th><th>Source</th></tr></thead><tbody>')
+    h = ('<table class="bt pv"><thead><tr><th>At Karsog</th><th>Route</th><th>Other stops</th></tr></thead><tbody>')
     for r in rs:
         note = f'<br><small>{esc(r["note"])}</small>' if r['note'] else ''
         ms = f'<small class="ms">{esc(r["stops"])}</small>' if r['stops'] else ''
-        h += (f'<tr><td class="t">{p_time(r)}</td><td>{esc(r["route"])}{note}{ms}</td><td><small>{esc(r["stops"]) or "—"}</small></td>'
-              f'<td class="src"><a href="{esc(r["source"])}" rel="nofollow noopener" target="_blank">Facebook post</a><br><small>{esc(r["as_of"])}</small></td></tr>')
+        h += (f'<tr><td class="t">{p_time(r)}</td><td>{esc(r["route"])}{note}{ms}</td><td><small>{esc(r["stops"]) or "—"}</small></td></tr>')
     return h + '</tbody></table>'
 
 
@@ -275,18 +274,18 @@ pdeps = sorted([{'time': r['karsog_time'], 'dest': f'{r["to"]} ({r["operator"].s
                 for r in karsog_rows if r['karsog_kind'] == 'dep' and r['karsog_time']], key=lambda x: x['time'])
 op_html = ''.join(f'<h3 class="op">{esc(o)} <small>({len(rs)} trip{"s" if len(rs) > 1 else ""})</small></h3>{p_table(rs)}'
                   for o, rs in sorted(ops.items()))
-routes_html = ''.join(f'<li><b>{esc(o)}</b>: {esc(rt)} <small>(<a href="{esc(s)}" rel="nofollow noopener" target="_blank">Facebook post</a>, {esc(d)})</small></li>'
+routes_html = ''.join(f'<li><b>{esc(o)}</b>: {esc(rt)}</li>'
                       for o, rt, d, s in P_ROUTES)
 body = f'''{PCSS}<section>
 <div class="nb" id="next">Next private buses from Karsog appear here.</div>
 <script type="application/json" id="bd">{json.dumps(pdeps, ensure_ascii=False)}</script>
 {NEXT_JS.replace("NN", "4").replace("Next from Karsog by the board", "Next private buses from Karsog")}
-<div class="note"><b>Source:</b> public Facebook posts by bus operators, bus fan pages and local pages (links in each row), collected {P_CHECKED}. Private operators change times without notice and there is no official timetable, so confirm with the conductor or at the bus stand before travelling. Times marked “reaches Karsog” are arrivals.</div>
+<div class="note"><b>Please note:</b> private bus timings can change without notice, so confirm with the conductor or at the bus stand before travelling. We try our best to keep this page updated. Spotted a wrong or changed time? Tell us in the comments below. Times marked “reaches Karsog” are arrivals.</div>
 <h2>Private buses at Karsog, by operator</h2>
 <p>{len(karsog_rows)} trips by {len(ops)} private operators that start, end or stop at Karsog. HRTC buses are on the <a href="/karsog-bus-stand/">Karsog bus stand time table</a>.</p>
 {op_html}
 <h2>More private routes (timings not confirmed)</h2>
-<p>These operators run on Karsog routes, but we have not found reliable timings yet. If you know them, tell us below.</p>
+<p>These operators also run on Karsog routes. If you know their timings, tell us in the comments below.</p>
 <ul>{routes_html}</ul>
 <h2>Private buses nearby (Tattapani, Pangna)</h2>
 <p>These don’t enter Karsog town but serve the valley’s edges.</p>
@@ -294,15 +293,15 @@ body = f'''{PCSS}<section>
 </section>'''
 faq = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
     {"@type": "Question", "name": "Which private buses run from Karsog?", "acceptedAnswer": {"@type": "Answer",
-     "text": f"Private operators on Karsog routes include {', '.join(sorted(ops))}. They run to Shimla, Sundernagar, Mandi, Hamirpur, Rampur, Ani and nearby villages. Times are from public Facebook posts (collected {P_CHECKED}); confirm before travelling."}},
+     "text": f"Private operators on Karsog routes include {', '.join(sorted(ops))}. They run to Shimla, Sundernagar, Mandi, Hamirpur, Rampur, Ani and nearby villages. Timings can change, so confirm before travelling."}},
     {"@type": "Question", "name": "What is the first private bus from Karsog to Shimla?", "acceptedAnswer": {"@type": "Answer",
-     "text": "Manohar Bus Service leaves Karsog for Shimla ISBT at 4:40 AM, with a second bus at 7:30 AM (per operator posts on Facebook). Confirm before travelling."}}]}
+     "text": "Manohar Bus Service leaves Karsog for Shimla ISBT at 4:40 AM, with a second bus at 7:30 AM Timings can change, so confirm before travelling."}}]}
 os.makedirs(os.path.join(PUB, 'karsog-private-bus'), exist_ok=True)
 open(os.path.join(PUB, 'karsog-private-bus', 'index.html'), 'w', encoding='utf-8').write(page(
     'karsog-private-bus', 'Karsog Private Bus Timings — Shimla, Sundernagar, Mandi, Rampur (2026)',
-    f'Private bus timings at Karsog: {len(karsog_rows)} trips by {", ".join(sorted(ops))}, with links to the source posts ({P_CHECKED}).',
+    f'Private bus timings at Karsog: {len(karsog_rows)} trips by {", ".join(sorted(ops))}, to Shimla, Sundernagar, Mandi, Hamirpur, Rampur and Ani.',
     'Karsog private bus<br /><em>timings</em>',
-    f'{len(karsog_rows)} private bus trips at Karsog by {len(ops)} operators, each with a link to where the timing was posted.',
+    f'{len(karsog_rows)} private bus trips at Karsog by {len(ops)} operators, with a live next-bus finder.',
     body, [('Karsog Valley', '/'), ('Karsog Bus Stand', '/karsog-bus-stand/'), ('Private buses', '/karsog-private-bus/')], faq))
 urls.append('/karsog-private-bus/')
 
