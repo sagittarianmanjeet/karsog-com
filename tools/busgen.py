@@ -194,7 +194,7 @@ faq = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
      "text": f"The HRTC board at Karsog bus stand lists {len(rows)} departures on three lines: Karsog–Churag–Tattapani, Karsog–Pangna–Mandi and Karsog–Kelodhar."}}]}
 os.makedirs(os.path.join(PUB, 'karsog-bus-stand'), exist_ok=True)
 open(os.path.join(PUB, 'karsog-bus-stand', 'index.html'), 'w', encoding='utf-8').write(page(
-    'karsog-bus-stand', 'Karsog Bus Stand Time Table — All HRTC Departures (2026)',
+    'karsog-bus-stand', 'Karsog Bus Timing — Bus Stand Time Table, All HRTC Departures (2026)',
     f'Full HRTC time table of Karsog bus stand: {len(rows)} daily departures to Shimla, Mandi, Rampur, Thunag, Delhi, Haridwar and villages, from the board at the stand ({CHECKED}).',
     'Karsog bus stand<br /><em>time table</em>',
     f'All {len(rows)} HRTC departures listed on the timetable board at Karsog bus stand, with a live "next bus" and a page for every destination.',

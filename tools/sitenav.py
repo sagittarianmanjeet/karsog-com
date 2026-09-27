@@ -13,6 +13,7 @@ PUB = os.path.join(ROOT, 'public')
 # (key, English label, Hindi label, link)
 TABS = [
     ('home', 'Home', 'होम', '/'),
+    ('weather', 'Weather', 'मौसम', '/weather/'),
     ('bus', 'Buses', 'बसें', '/karsog-bus-stand/'),
     ('places', 'Places & Temples', 'स्थल व मंदिर', '/places/'),
     ('photos', 'Photos', 'फ़ोटो', '/photos/'),
@@ -70,6 +71,8 @@ def tab_for(url):
         return 'places'
     if first in ('photos', 'rides'):
         return 'photos'
+    if first in ('distance', 'hotels'):
+        return 'plan'
     for key, _, _, link in TABS:
         if link.strip('/') == first:
             return key
