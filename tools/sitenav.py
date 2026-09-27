@@ -16,6 +16,7 @@ TABS = [
     ('weather', 'Weather', 'मौसम', '/weather/'),
     ('bus', 'Buses', 'बसें', '/karsog-bus-stand/'),
     ('places', 'Places & Temples', 'स्थल व मंदिर', '/places/'),
+    ('melas', 'Melas', 'मेले', '/melas/'),
     ('photos', 'Photos', 'फ़ोटो', '/photos/'),
     ('plan', 'Plan a Trip', 'यात्रा योजना', '/plan/'),
     ('mandi', 'Mandi Rates', 'मंडी भाव', '/mandi-rates/'),
@@ -74,7 +75,7 @@ def tab_for(url):
         first = url.strip('/').split('/')[1] if url.count('/') > 2 else ''
     if first in BUS:
         return 'bus'
-    if first in PLACES or first == 'places':
+    if first in PLACES or first in ('places', 'devtas'):
         return 'places'
     if first in ('photos', 'rides'):
         return 'photos'

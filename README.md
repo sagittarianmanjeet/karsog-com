@@ -10,6 +10,8 @@ Source of [karsog.com](https://karsog.com), a local guide to Karsog Valley, Mand
 - `tools/busgen.py` rebuilds the bus stand, destination and private bus pages from `data/karsog-bus-stand-board.csv` and `data/karsog-private-buses.csv`.
 - `tools/gallery-build.py` (run on the Mac) rebuilds the drone photo pages, the `/photos/` page and the homepage photo teaser.
 - `tools/extras.py` builds `/weather/` (live, updates itself from Open-Meteo), `/distance/`, `/hotels/` and the "Karsog at a glance" block (PIN, IFSC, codes) on `/contacts/`.
+- `tools/devtas.py` builds `/melas/` (fair calendar) and `/devtas/` from `data/devtas.json`, and adds a "Beliefs & fairs" block to each temple guide.
+- `tools/pagekit.py` holds the shared page shell used by extras.py and devtas.py.
 - All generators finish by running `tools/sitenav.py`.
 
 ## Contributing
