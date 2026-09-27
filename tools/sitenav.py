@@ -26,6 +26,9 @@ TABS = [
 PLACES = {'mahunag', 'mamleshwar', 'shikari-devi', 'kamru-nag', 'pangna-fort', 'chindi', 'tattapani', 'kao',
           'janjehli', 'jarli-mata'}
 BUS = {'karsog-bus-stand', 'karsog-private-bus', 'mandi-to-karsog-bus', 'shimla-to-karsog-bus', 'bus'}
+# Second row of buttons shown on every page of a tab: tab key -> [(label, link)]
+SUBTABS = {'bus': [('All buses from Karsog', '/karsog-bus-stand/'), ('Private buses', '/karsog-private-bus/'),
+                   ('Mandi ⇄ Karsog', '/mandi-to-karsog-bus/'), ('Shimla ⇄ Karsog', '/shimla-to-karsog-bus/')]}
 # Pages with a Hindi version: English path -> Hindi path
 HINDI = {'/': '/hi/', '/rti/': '/hi/rti/'}
 
@@ -34,7 +37,7 @@ CSS = ('<style id="knav">'
        'backdrop-filter:blur(10px);border-bottom:1px solid #dcd5c8}'
        '.knav .kin{display:flex;align-items:center;gap:1rem;padding:.55rem 1.25rem;flex-wrap:nowrap}'
        '.knav .kbrand{font-family:"Playfair Display",Georgia,serif;font-size:1.25rem;font-weight:700;color:#1c3a1c;'
-       'white-space:nowrap;text-decoration:none}.knav .kbrand em{color:#b8832a;margin-left:.25rem}'
+       'white-space:nowrap;text-decoration:none}.knav .kbrand em{color:#b8832a;font-style:normal}'
        '.knav .ktabs{display:flex;gap:.15rem;list-style:none;margin:0 0 0 auto;padding:0;overflow-x:auto;'
        'scrollbar-width:none;-webkit-overflow-scrolling:touch}.knav .ktabs::-webkit-scrollbar{display:none}'
        '.knav .ktabs a{display:block;padding:.5rem .75rem;border-radius:999px;font-size:.74rem;font-weight:500;'
@@ -47,6 +50,10 @@ CSS = ('<style id="knav">'
        '.knav .klang{margin-left:auto}.knav .ktabs{order:3;flex-basis:100%;margin:0 -1.25rem;padding:0 1.25rem .15rem;'
        '-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);mask-image:linear-gradient(90deg,#000 88%,transparent)}'
        '.knav .ktabs a{padding:.45rem .7rem;font-size:.72rem}}'
+       '.ksub{background:#efe9dd;border-bottom:1px solid #dcd5c8}.ksub .kin2{display:flex;gap:.4rem;overflow-x:auto;padding:.55rem 1.25rem;scrollbar-width:none}'
+       '.ksub .kin2::-webkit-scrollbar{display:none}.ksub a{flex:none;padding:.45rem .85rem;border:1px solid #cfc6b6;border-radius:999px;background:#fff;'
+       'font-size:.82rem;font-weight:600;color:#1c3a1c;white-space:nowrap;text-decoration:none}.ksub a:hover{border-color:#1c3a1c}'
+       '.ksub a[aria-current=page]{background:#b8832a;border-color:#b8832a;color:#fff}'
        '</style>')
 
 
@@ -96,7 +103,7 @@ def nav_html(url):
     elif url in HINDI:
         lang = f'<a class="klang" href="{HINDI[url]}" hreflang="hi" lang="hi">हिंदी</a>'
     home = '/hi/' if hindi else '/'
-    brand = 'करसोग<em>घाटी</em>' if hindi else 'Karsog<em>Valley</em>'
+    brand = 'karsog<em>.com</em>'
     return (f'<nav class="top knav" aria-label="{"मुख्य" if hindi else "Main"}">\n  <div class="container kin">\n'
             f'    <a href="{home}" class="kbrand">{brand}</a>\n    {lang}\n'
             f'    <ul class="ktabs">{"".join(items)}</ul>\n  </div>\n</nav>')
@@ -112,6 +119,20 @@ NEW_JS = ("const burger = document.getElementById('burger');\nconst menu = docum
           "document.body.style.overflow = open ? 'hidden' : ''; }")
 
 
+def brand(s):
+    """The site's name is karsog.com (the words 'Karsog Valley' stay where they describe the place)."""
+    s = s.replace('Karsog Valley Guide', 'karsog.com')
+    s = s.replace('<h3>Karsog <em>Valley</em></h3>', '<h3>karsog<em>.com</em></h3>')
+    s = re.sub(r'"name": ?"Karsog Valley"(, ?"item": ?"https://karsog\.com/")', r'"name": "karsog.com"\1', s)
+    s = re.sub(r'(<a href="/"[^>]*>)Karsog Valley(</a>\s*›)', r'\1karsog.com\2', s)
+    s = s.replace('<title>Page not found — Karsog Valley', '<title>Page not found — karsog.com')
+    if 'og:site_name' in s:
+        s = re.sub(r'(<meta property="og:site_name" content=")[^"]*', r'\1karsog.com', s)
+    else:
+        s = s.replace('</head>', '<meta property="og:site_name" content="karsog.com" />\n</head>', 1)
+    return s
+
+
 def fix(path):
     s = open(path, encoding='utf-8').read()
     o = s
@@ -122,6 +143,13 @@ def fix(path):
     s = re.sub(r'\n?<!-- Mobile menu -->\n<div class="mobile-menu".*?</div>\n', '\n', s, count=1, flags=re.S)
     s = re.sub(r'<div class="mobile-menu" id="mobile-menu".*?</div>\n', '', s, count=1, flags=re.S)
     s = OLD_JS.sub(lambda m: NEW_JS, s)
+    s = brand(s)
+    s = re.sub(r'\n?<div class="ksub">.*?</div></div>', '', s, flags=re.S)
+    subs = SUBTABS.get(tab_for(url))
+    if subs and not url.startswith('/hi/'):
+        cur_attr = ' aria-current="page"'
+        items = ''.join(f'<a href="{l}"{cur_attr if l == url else ""}>{n}</a>' for n, l in subs)
+        s = s.replace('</nav>', f'</nav>\n<div class="ksub"><div class="container kin2">{items}</div></div>', 1)
     s = re.sub(r'<style id="knav">.*?</style>', lambda m: CSS, s, flags=re.S)
     if 'id="knav"' not in s:
         s = s.replace('</head>', CSS + '\n</head>', 1)

@@ -165,8 +165,14 @@ for b in rows:
     if b['slug']:
         dests.setdefault(b['slug'], []).append(b)
 
+# ---- private departures (for the combined next-bus box and the homepage card)
+PRV = list(csv.DictReader(open(os.path.join(ROOT, 'data', 'karsog-private-buses.csv'), encoding='utf-8')))
+PDEP = sorted([r for r in PRV if r['karsog_kind'] == 'dep' and r['karsog_time']], key=lambda r: r['karsog_time'])
+
 # ---- bus stand page
-bdata = [{'time': b['time'], 'dest': b['dest']} for b in rows]
+bdata = [{'time': b['time'], 'dest': b['dest']} for b in rows] + [
+    {'time': r['karsog_time'], 'dest': f"{r['to']} · private ({r['operator'].split(' (')[0]})"} for r in PDEP]
+bdata.sort(key=lambda x: x['time'])
 dlist = ''.join(
     f'<li><a href="{EXISTING.get(s, f"/bus/karsog-to-{s}/")}">{esc(v[0]["dest"])}</a> '
     f'<small>({len(v)} bus{"es" if len(v) > 1 else ""})</small></li>'
@@ -174,7 +180,7 @@ dlist = ''.join(
 body = f'''<section>
 <div class="nb" id="next">Next buses from Karsog appear here.</div>
 <script type="application/json" id="bd">{json.dumps(bdata, ensure_ascii=False)}</script>
-{NEXT_JS.replace("NN", "5")}
+{NEXT_JS.replace("NN", "5").replace("Next from Karsog by the board", "Next buses from Karsog, HRTC and private")}
 {SOURCE_NOTE}
 <h2>All {len(rows)} departures from Karsog, by time</h2>
 {table(rows)}
@@ -305,6 +311,17 @@ open(os.path.join(PUB, 'karsog-private-bus', 'index.html'), 'w', encoding='utf-8
     f'{len(karsog_rows)} private bus trips at Karsog by {len(ops)} operators, with a live next-bus finder.',
     body, [('Karsog Valley', '/'), ('Karsog Bus Stand', '/karsog-bus-stand/'), ('Private buses', '/karsog-private-bus/')], faq))
 urls.append('/karsog-private-bus/')
+
+# ---- homepage: private bus card inside the bus section
+card = ('<!-- private-card:start -->\n<div class="bus">\n        <div class="bus-h"><h3 data-hi="🚌 करसोग से निजी बसें">🚌 Private buses from Karsog</h3><span class="t">Private</span></div>\n'
+        '        <div class="head-row"><span data-hi="प्रस्थान">Departure</span><span data-hi="कहाँ तक">To</span><span data-hi="बस">Bus</span></div>\n'
+        + ''.join(f'    <div class="row"><span class="time">{t12(r["karsog_time"])}</span><span class="arr">{esc(r["to"])}</span><span class="info">{esc(r["operator"].split(" (")[0])}</span></div>\n' for r in PDEP[:9])
+        + '    <div class="foot"><span data-hi="निजी बसों का समय बदल सकता है — कंडक्टर से पुष्टि करें">Private timings can change — confirm with the conductor</span>'
+          '<a href="/karsog-private-bus/" data-hi="सभी निजी बसें →">All private buses →</a></div>\n      </div>\n<!-- private-card:end -->')
+hp = os.path.join(PUB, 'index.html')
+h = open(hp, encoding='utf-8').read()
+h = re.sub(r'<!-- private-card:start -->.*?<!-- private-card:end -->', lambda m: card, h, count=1, flags=re.S)
+open(hp, 'w', encoding='utf-8').write(h)
 
 os.makedirs(os.path.join(PUB, 'data'), exist_ok=True)
 json.dump({'source': SRC, 'departures': rows}, open(os.path.join(PUB, 'data', 'buses.json'), 'w', encoding='utf-8'),
