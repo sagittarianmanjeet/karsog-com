@@ -56,6 +56,11 @@
   <url><loc>https://karsog.com/plan/</loc><lastmod>2026-09-27</lastmod></url>
   <url><loc>https://karsog.com/contacts/</loc><lastmod>2026-09-27</lastmod></url>
 <!-- /tabs -->
+<!-- extras -->
+  <url><loc>https://karsog.com/weather/</loc><lastmod>2026-09-27</lastmod></url>
+  <url><loc>https://karsog.com/distance/</loc><lastmod>2026-09-27</lastmod></url>
+  <url><loc>https://karsog.com/hotels/</loc><lastmod>2026-09-27</lastmod></url>
+<!-- /extras -->
 <!-- bus -->
   <url><loc>https://karsog.com/karsog-bus-stand/</loc><lastmod>2026-09-26</lastmod></url>
   <url><loc>https://karsog.com/bus/karsog-to-jahalma/</loc><lastmod>2026-09-26</lastmod></url>
@@ -88,9 +93,4 @@
   <url><loc>https://karsog.com/bus/karsog-to-mahavan/</loc><lastmod>2026-09-26</lastmod></url>
   <url><loc>https://karsog.com/karsog-private-bus/</loc><lastmod>2026-09-26</lastmod></url>
 <!-- /bus -->
-<!-- extras -->
-  <url><loc>https://karsog.com/weather/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://karsog.com/distance/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://karsog.com/hotels/</loc><lastmod>2026-09-27</lastmod></url>
-<!-- /extras -->
 </urlset>
