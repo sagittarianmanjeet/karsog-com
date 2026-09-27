@@ -3,7 +3,8 @@
 Run from repo root:  python3 tools/busgen.py
 Outputs: public/karsog-bus-stand/, public/bus/karsog-to-<dest>/ pages, public/data/buses.json,
 and adds URLs to public/sitemap.xml between <!-- bus --> markers."""
-import csv, json, os, re, html
+import csv, json, os, re, html, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PUB = os.path.join(ROOT, 'public')
 SRC = 'Timetable board at Karsog bus stand (HRTC), photographed 25 Sep 2026'
@@ -62,7 +63,7 @@ def t12(t):
 tpl = open(os.path.join(PUB, 'mandi-to-karsog-bus', 'index.html'), encoding='utf-8').read()
 fonts = re.search(r'<link rel="preconnect" href="https://fonts.googleapis.com" />.*?rel="stylesheet" />', tpl, re.S)[0]
 css = re.search(r'<style>.*?</style>', tpl, re.S)[0]
-nav = re.search(r'<nav class="top">.*?</nav>', tpl, re.S)[0]
+nav = re.search(r'<nav class="top[^"]*"[^>]*>.*?</nav>', tpl, re.S)[0]
 foot = re.search(r'<footer>.*</html>', tpl, re.S)[0]
 EXTRA = ('<style>.bt{width:100%;border-collapse:collapse;font-size:.92rem;margin:1rem 0}'
          '.bt th,.bt td{text-align:left;padding:.55rem .6rem;border-bottom:1px solid var(--border,#dcd5c8);vertical-align:top}'
@@ -314,3 +315,7 @@ ent = ''.join(f'  <url><loc>https://karsog.com{u}</loc><lastmod>2026-09-26</last
 sm = sm.replace('</urlset>', '<!-- bus -->\n' + ent + '<!-- /bus -->\n</urlset>')
 open(os.path.join(PUB, 'sitemap.xml'), 'w', encoding='utf-8').write(sm)
 print(len(rows), 'departures;', len(urls), 'pages')
+
+# shared menu (tabs) on every page
+import sitenav
+sitenav.run()

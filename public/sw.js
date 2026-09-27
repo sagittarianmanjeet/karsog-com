@@ -1,6 +1,6 @@
 // Karsog.com service worker — offline bus timings & emergency numbers
-const CACHE = 'karsog-v19';
-const CORE = ['/', '/index.html', '/karsog-valley.jpg', '/manifest.webmanifest', '/icon-192.png', '/icon-512.png'];
+const CACHE = 'karsog-v20';
+const CORE = ['/', '/index.html', '/contacts/', '/karsog-bus-stand/', '/karsog-valley.jpg', '/manifest.webmanifest', '/icon-192.png', '/icon-512.png'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(CORE)).then(() => self.skipWaiting()));
