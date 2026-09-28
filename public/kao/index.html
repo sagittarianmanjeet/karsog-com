@@ -94,7 +94,7 @@ footer a:hover{color:var(--gold-light)}
   <div class="container kin">
     <a href="/" class="kbrand">karsog<em>.com</em></a>
     
-    <ul class="ktabs"><li><a href="/">Home</a></li><li><a href="/weather/">Weather</a></li><li><a href="/karsog-bus-stand/">Buses</a></li><li><a href="/places/" aria-current="page">Places & Temples</a></li><li><a href="/photos/">Photos</a></li><li><a href="/plan/">Plan a Trip</a></li><li><a href="/mandi-rates/">Mandi Rates</a></li><li><a href="/contacts/">Useful Numbers</a></li><li><a href="/rti/">RTI</a></li></ul>
+    <ul class="ktabs"><li><a href="/">Home</a></li><li><a href="/weather/">Weather</a></li><li><a href="/karsog-bus-stand/">Buses</a></li><li><a href="/places/" aria-current="page">Places & Temples</a></li><li><a href="/melas/">Melas</a></li><li><a href="/photos/">Photos</a></li><li><a href="/plan/">Plan a Trip</a></li><li><a href="/mandi-rates/">Mandi Rates</a></li><li><a href="/contacts/">Useful Numbers</a></li><li><a href="/rti/">RTI</a></li></ul>
   </div>
 </nav>
 
@@ -140,6 +140,9 @@ let x0=null;b.addEventListener('touchstart',e=>x0=e.touches[0].clientX,{passive:
 <!-- gallery:end -->
 <section><div class="container"><h2>More places from above</h2><div class="related" id="rel"></div></div></section>
 <script>fetch('/photos/places.json').then(r=>r.json()).then(L=>{document.getElementById('rel').innerHTML=L.filter(p=>p.slug!=='kao').slice(0,6).map(p=>`<a class="rel" href="/${p.slug}/"><h3>${p.title}</h3><p>${p.n} photos · ${p.dist}</p></a>`).join('')})</script>
+<!-- devta:start -->
+<section class="container" id="devta" style="padding:2.5rem 1.25rem;max-width:880px"><h2 style="font-family:'Playfair Display',serif;color:#1c3a1c">Good to know</h2><p style="margin-top:.75rem;line-height:1.7"><i>Locals believe the sage Parashurama installed the goddess here, and that she was once the family goddess of the old Suket kingdom.</i></p><h3 style="margin-top:1.25rem;color:#1c3a1c">When to go</h3><ul style="margin:.5rem 0 0 1.1rem;line-height:1.7"><li>Navratri (March–April and September–October), the busiest and most festive time</li><li>Any clear day for a quieter visit</li></ul><h3 style="margin-top:1.25rem;color:#1c3a1c">Fairs &amp; festivals</h3><ul style="margin:.5rem 0 0 1.1rem;line-height:1.7"><li><b>Navratri celebrations</b>: twice a year, March–April and September–October</li></ul><p style="margin-top:1rem"><a href="/melas/" style="color:#b8832a;font-weight:600">Karsog fair calendar →</a> · <a href="/devtas/#kamaksha" style="color:#b8832a;font-weight:600">All temples of Karsog →</a></p></section>
+<!-- devta:end -->
 <footer>
   <div class="container inner">
     <span>© <span id="y"></span> <a href="/">karsog.com</a></span>

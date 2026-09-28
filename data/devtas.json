@@ -1,0 +1,218 @@
+{
+ "mahunag": {
+  "name_en": "Shri Mool Mahunag Temple",
+  "name_hi": "श्री मूल माहूँनाग मंदिर",
+  "place": "Bakhari Kothi (Mahunag), about 25 km from Karsog",
+  "about": "The best-known temple of the Karsog valley, dedicated to Mahunag, who is worshipped here as Karna, the generous warrior of the Mahabharata. People from all over Mandi district come here to pray, and the temple hosts the valley’s biggest fair every May.",
+  "story": "Locals believe that after the Mahabharata war, Karna’s last rites were performed near Tattapani on the Sutlej, and that the devta later appeared here as Mahunag.",
+  "when": [
+   "Mid-May, during the Mahunag Mela, for the fair, music and crowds",
+   "Any time from spring to autumn for a quieter visit"
+  ],
+  "tips": [
+   "Dress modestly and take off your shoes before entering the temple area",
+   "Combine it with Mamleshwar Mahadev and Kamaksha Devi for a one-day temple circuit"
+  ],
+  "fairs": [
+   [
+    "Shri Mool Mahunag Mela",
+    "mid-May (about 14–19 May), a five-day fair with folk music and dance"
+   ]
+  ]
+ },
+ "mamleshwar": {
+  "name_en": "Mamleshwar Mahadev Temple",
+  "name_hi": "ममलेश्वर महादेव मंदिर",
+  "place": "Mamel village, about 1 km from Karsog bus stand",
+  "about": "An ancient Shiva temple built in the traditional wood-and-stone style, right next to Karsog town. It is known for the unusual old objects kept inside, and it leads Karsog’s main spring fair.",
+  "story": "Tradition says the Pandavas stayed here during their exile. Inside you can see a large drum said to be Bhima’s, a sacred fire that locals say has been burning since that time, and a huge old grain of wheat believed to date from the Pandavas.",
+  "when": [
+   "Mahashivratri (February–March) and Shravan Mondays (July–August) for special worship",
+   "April, when the Nalwar Mela opens with the temple’s procession"
+  ],
+  "tips": [
+   "Easy to walk to from Karsog town",
+   "Photography rules inside the temple can vary; ask before taking pictures"
+  ],
+  "fairs": [
+   [
+    "Nalwar Mela",
+    "5–11 April in most years (not held every year)"
+   ],
+   [
+    "Mahashivratri",
+    "February or March"
+   ],
+   [
+    "Budhi Diwali",
+    "about a month after Diwali"
+   ]
+  ]
+ },
+ "kamaksha": {
+  "name_en": "Kamaksha Devi Temple, Kao",
+  "name_hi": "कामाक्षा देवी मंदिर, काओ",
+  "place": "Kao village, about 7 km from Karsog",
+  "about": "One of the main goddess temples of the valley, dedicated to Durga as Maa Kamaksha. The carved wooden temple in a quiet village setting is a lovely short trip from Karsog town.",
+  "story": "Locals believe the sage Parashurama installed the goddess here, and that she was once the family goddess of the old Suket kingdom.",
+  "when": [
+   "Navratri (March–April and September–October), the busiest and most festive time",
+   "Any clear day for a quieter visit"
+  ],
+  "tips": [
+   "Pair it with Mamleshwar Mahadev and Mahunag for a temple day",
+   "Carry cash for small offerings; there are no ATMs in the village"
+  ],
+  "fairs": [
+   [
+    "Navratri celebrations",
+    "twice a year, March–April and September–October"
+   ]
+  ]
+ },
+ "shikari_devi": {
+  "name_en": "Shikari Devi Temple",
+  "name_hi": "शिकारी देवी मंदिर",
+  "place": "Shikari peak, about 3,359 m, above Janjehli",
+  "about": "A goddess temple on the highest peak of Mandi district, with sweeping Himalayan views and forest all around. It is famous for having no roof.",
+  "story": "Locals believe the Pandavas worshipped the goddess here during their exile, and that every attempt to build a roof over the shrine has failed. Many also say snow never settles on the idol.",
+  "when": [
+   "April to June and September to November",
+   "The road usually closes in winter because of snow"
+  ],
+  "tips": [
+   "It is cold at the top even in summer; carry a warm layer and rain protection",
+   "Check the weather and road before you go"
+  ],
+  "fairs": [
+   [
+    "Navratri gatherings",
+    "March–April and September–October, when the road is open"
+   ]
+  ]
+ },
+ "kamrunag": {
+  "name_en": "Kamru Nag Temple & Lake",
+  "name_hi": "कमरूनाग मंदिर व झील",
+  "place": "High in the forest above Rohanda, about 3,334 m",
+  "about": "A temple beside a small sacred lake deep in deodar forest, reached on foot. Kamru Nag is worshipped across Mandi district as the god of rain.",
+  "story": "Locals identify Kamru Nag with Barbarik, a warrior of the Mahabharata. Devotees offer coins and jewellery into the lake as a sign of faith.",
+  "when": [
+   "Late spring to autumn, when the trail is open",
+   "Mid-June for the big annual fair at the lake"
+  ],
+  "tips": [
+   "Wear good walking shoes; the last part is a forest trek",
+   "Offerings in the lake are sacred; don’t touch or remove anything"
+  ],
+  "fairs": [
+   [
+    "Kamru Nag Mela",
+    "mid-June, at the lake"
+   ]
+  ]
+ },
+ "chindi": {
+  "name_en": "Chindi Mata Temple",
+  "name_hi": "चिंडी माता मंदिर",
+  "place": "Chindi village, about 14 km from Karsog on the Shimla road",
+  "about": "A beautifully carved goddess temple among apple orchards and deodar trees at Chindi, a popular stop on the Karsog–Shimla road with an HPTDC hotel nearby.",
+  "story": "Locals say the goddess showed a priest the plan of the temple through a line of ants, and that the name Chindi comes from “chinti”, the word for ant.",
+  "when": [
+   "2–4 August for the Chindi Mata Mela",
+   "Spring and autumn for orchard views and clear skies"
+  ],
+  "tips": [
+   "Good sunset views nearby",
+   "Easy to combine with a drive to Tattapani or Shimla"
+  ],
+  "fairs": [
+   [
+    "Chindi Mata Mela",
+    "2–4 August every year"
+   ]
+  ]
+ },
+ "pangna": {
+  "name_en": "Mahamaya Temple, Pangna",
+  "name_hi": "महामाया मंदिर, पांगणा",
+  "place": "Pangna, about 27 km from Karsog",
+  "about": "An old goddess temple on the top floor of the historic Pangna Fort tower, still in daily worship. The fort is one of the oldest buildings of the area, built in the traditional Kath-Kuni style of timber and stone that stands up well to earthquakes.",
+  "story": "Pangna was an early seat of the Suket rulers, and the temple and fort tower are among the area’s most important heritage sites.",
+  "when": [
+   "Any time of year; early June for the local Katal Mela"
+  ],
+  "tips": [
+   "See the fort tower and old houses of Pangna village",
+   "Combine with a drive via Churag"
+  ],
+  "fairs": [
+   [
+    "Katal Mela",
+    "early June (about 8–11 June)"
+   ]
+  ]
+ },
+ "chawasi": {
+  "name_en": "Nag Chawasi Siddh Temple, Mahog",
+  "name_hi": "नाग च्वासी सिद्ध मंदिर, महोग",
+  "place": "Mahog, in the Chawasi area of Karsog",
+  "about": "The temple of Nag Chawasi Siddh, the main devta of the Chawasi area, in a village setting in the hills of Karsog.",
+  "story": "Locals believe the old Suket kings honoured the devta with gifts that are still kept at the temple.",
+  "when": [
+   "12–15 May for the Chawasi Utsav at Nahvindhar",
+   "About a month after Diwali for Budhi Diwali at Mahog"
+  ],
+  "tips": [
+   "Ask locally about road conditions before driving up"
+  ],
+  "fairs": [
+   [
+    "Chawasi Utsav (Nahvindhar Thirshu Mela)",
+    "12–15 May"
+   ],
+   [
+    "Budhi Diwali",
+    "about a month after Diwali"
+   ]
+  ]
+ },
+ "dhamuni": {
+  "name_en": "Nag Dhamuni Temple, Seri Bungalow",
+  "name_hi": "नाग धमूनी मंदिर, सेरी बंगला",
+  "place": "Seri Bungalow, near Karsog",
+  "about": "The temple of Nag Dhamuni, one of the most important devtas of the Karsog valley, at Seri Bungalow.",
+  "story": "Locals believe Nag Dhamuni came to the Karsog side from the Kullu hills and made this area his home.",
+  "when": [
+   "The Seri Bhanju Mela in late August or September"
+  ],
+  "tips": [
+   "See the drone photos of Seri Bungalow on this site before you go"
+  ],
+  "fairs": [
+   [
+    "Seri Bhanju Mela",
+    "starts on Rishi Panchami (late August or September), three days"
+   ]
+  ]
+ },
+ "laxmi_narayan": {
+  "name_en": "Laxmi Narayan Temple, Karsog",
+  "name_hi": "लक्ष्मी नारायण मंदिर, करसोग",
+  "place": "Purana Bazaar (old market), Karsog town",
+  "about": "A temple in the heart of Karsog’s old bazaar, with an evening aarti every day. It is easy to visit while walking around town.",
+  "story": "",
+  "when": [
+   "Janmashtami (August–September), when the old bazaar celebrates"
+  ],
+  "tips": [
+   "Visit at aarti time in the evening"
+  ],
+  "fairs": [
+   [
+    "Janmashtami",
+    "August or September"
+   ]
+  ]
+ }
+}
