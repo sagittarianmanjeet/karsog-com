@@ -5,8 +5,8 @@ learn something the next assistant needs. The owner is Manjeet (GitHub: sagittar
 
 ## Rules
 
-1. **Never push, merge or deploy.** Work on a branch and commit locally. Manjeet pushes with GitHub Desktop and merges
-   pull requests himself. Anything merged into `main` goes live on karsog.com within minutes.
+1. **Never push, merge or deploy unless Manjeet asks for it in the chat.** Work on a branch and commit locally; Manjeet
+   pushes with GitHub Desktop and merges himself. Anything merged into `main` goes live on karsog.com within minutes.
 2. **Publish only what can be verified.** Every fact (bus time, distance, phone number, date, height, name) needs a
    source you can point to: an official site, the bus-stand board, Google Maps, the Census, the document itself.
    If you can't verify something, leave it out or ask Manjeet.
@@ -34,7 +34,9 @@ learn something the next assistant needs. The owner is Manjeet (GitHub: sagittar
   them with `?v=<hash>`, so a rebuild after a CSS/JS change is enough to refresh browsers. Bump `CACHE` in
   `public/sw.js` when the page shell changes.
 - The comments box talks to `/api/comments` (Cloudflare Worker + D1, code in `tools/comments-worker.js`, deployed
-  separately). Mandi rates come from `/api/mandi`.
+  separately). Mandi rates come from `/api/mandi`. A page's comment id is its path without the outer slashes
+  (`mahunag`, `bus/karsog-to-thunag`); the Hindi page uses the same id. Never change an id, or that page's
+  comments disappear.
 
 ## Checks before handing over
 
@@ -50,8 +52,10 @@ learn something the next assistant needs. The owner is Manjeet (GitHub: sagittar
 - The repository on the Mac is `~/Desktop/github/karsog-com`. The bridge can't delete files, so run
   `git --no-optional-locks status` (a plain `git status` can leave a stale `.git/index.lock` that the bridge can't remove).
 - Bigger jobs are easier in a cloud copy: bundle the branch on the Mac (`git bundle create`), work and commit in the
-  cloud, then bring the commits back as a bundle and `git fetch` it into the local branch. Don't touch the working tree
-  of the Mac repository while Manjeet has uncommitted changes.
+  cloud, then bring the commits back as a bundle and `git fetch` it into a local branch that is not checked out.
+  Don't touch the working tree of the Mac repository while Manjeet has uncommitted changes.
+- Never run git commands that change the working tree (checkout, merge, pull) through the bridge: it can't delete
+  files. When Manjeet asks for a deploy, use GitHub Desktop (Branch → Merge into Current Branch, then Push origin).
 
 ## Where things stand
 

@@ -1,11 +1,12 @@
 # Redesign + Hindi version — status
 
-Last updated 29 Sep 2026. Work lives on the `redesign` branch. **Not merged**: the live site (`main`) is unchanged until
-Manjeet merges the pull request.
+Last updated 29 Sep 2026.
 
-**State: complete and checked, waiting for Manjeet's review.** Every page is built by the new builder in English and
-Hindi (147 pages), every old address still works (`/devtas/` now redirects to `/temples/`), and the checks in
-`docs/SITE-AUDIT.md` pass.
+**State: live.** The `redesign` branch was merged into `main` (fast-forward to `24d99ab`) and deployed on 29 Sep 2026,
+by Claude from GitHub Desktop at Manjeet's request. Every page is built by the new builder in English and Hindi
+(147 pages), every old address still works (`/devtas/` redirects to `/temples/`), and the checks in
+`docs/SITE-AUDIT.md` pass. After the deploy, all 146 sitemap pages returned 200 on karsog.com with the new design,
+`/devtas/` redirected, the 404 page, service worker `karsog-v21`, RTI PDFs, and the comments and mandi APIs worked.
 
 ## Done
 
@@ -60,13 +61,9 @@ Hindi (147 pages), every old address still works (`/devtas/` now redirects to `/
 
 ## Still to do
 
-1. **Manjeet**: push the `redesign` branch from GitHub Desktop and open a pull request into `main`.
-2. **Manjeet**: review the preview (Cloudflare builds a preview for the pull request if branch previews are on;
-   otherwise screenshots), especially:
-   - the Hindi pages (a few spellings to confirm are listed at the end of `docs/hindi-glossary.md`)
-   - the new design on your own phone
-3. **Manjeet**: merge when happy. After merging, check a few live pages, and that `/devtas/` goes to `/temples/`.
-4. After the merge: submit `https://karsog.com/sitemap.xml` in Google Search Console.
+1. Submit `https://karsog.com/sitemap.xml` in Google Search Console (Manjeet; account action).
+2. The merged `redesign` branch on GitHub can be deleted (or kept; it is fully merged).
+3. The open questions below.
 
 ## Open questions for Manjeet
 
