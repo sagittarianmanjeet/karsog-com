@@ -12,7 +12,8 @@
   ],
   "file": "karsog-town-001",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Laxmi Narayan Temple, Karsog (Janmashtami)"
  },
  {
   "source": "002_Laxmi Narayan Temple (Janmashtami)_2026-09-04.jpg",
@@ -27,7 +28,8 @@
   ],
   "file": "karsog-town-002",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Laxmi Narayan Temple, Karsog (Janmashtami)"
  },
  {
   "source": "003_Kunhoo Mela_2026-08-08.jpg",
@@ -42,7 +44,8 @@
   ],
   "file": "kunhoo-003",
   "w": 1600,
-  "h": 1200
+  "h": 1200,
+  "label": "Kunhoo Mela"
  },
  {
   "source": "004_Sanarli_2026-07-24.jpg",
@@ -57,7 +60,8 @@
   ],
   "file": "nyara-004",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Sanarli"
  },
  {
   "source": "005_Shikari Devi Temple, Janjehli_2026-09-20.jpg",
@@ -72,7 +76,8 @@
   ],
   "file": "shikari-devi-005",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Shikari Devi Temple, Janjehli"
  },
  {
   "source": "006_Damhel Kothi_2026-08-02.jpg",
@@ -87,7 +92,8 @@
   ],
   "file": "beludhar-006",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Temple at Damhel Kothi"
  },
  {
   "source": "007_near Kotlu~_2026-07-26.jpg",
@@ -102,7 +108,8 @@
   ],
   "file": "kotlu-dateha-007",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "Waterfall near Kotlu"
  },
  {
   "source": "008_Devidarh, Jiuni Valley, Chachyot_2026-09-20.jpg",
@@ -117,7 +124,8 @@
   ],
   "file": "shikari-devi-008",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Devidarh, Jiuni Valley, Chachyot"
  },
  {
   "source": "009_near Kotlu~_2026-07-26.jpg",
@@ -132,7 +140,8 @@
   ],
   "file": "kotlu-dateha-009",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Waterfall near Kotlu"
  },
  {
   "source": "010_Kelodhar_2026-07-26.jpg",
@@ -147,7 +156,8 @@
   ],
   "file": "kelodhar-010",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Kelodhar"
  },
  {
   "source": "011_Shikari Devi Parking_2026-09-20.jpg",
@@ -162,7 +172,8 @@
   ],
   "file": "shikari-devi-011",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Shikari Devi Parking"
  },
  {
   "source": "013_Karsog Valley_2026-08-22.jpg",
@@ -177,7 +188,8 @@
   ],
   "file": "karsog-town-013",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Karsog Valley"
  },
  {
   "source": "015_Nyara_2026-08-20.jpg",
@@ -192,7 +204,8 @@
   ],
   "file": "nyara-015",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Nyara"
  },
  {
   "source": "016_Firnu_2026-07-26.jpg",
@@ -207,7 +220,8 @@
   ],
   "file": "luhri-anni-016",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Firnu"
  },
  {
   "source": "017_Khaneol Bagra_2026-07-27.jpg",
@@ -222,7 +236,8 @@
   ],
   "file": "khaneol-shahot-017",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Khaneol Bagra"
  },
  {
   "source": "018_near Anni, Kullu~_2026-07-26.jpg",
@@ -237,7 +252,8 @@
   ],
   "file": "luhri-anni-018",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Near Anni, Kullu"
  },
  {
   "source": "019_Nanj_2026-07-26.jpg",
@@ -252,7 +268,8 @@
   ],
   "file": "nanj-019",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Nanj"
  },
  {
   "source": "020_Kotlu_2026-07-26.jpg",
@@ -267,7 +284,8 @@
   ],
   "file": "kotlu-dateha-020",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Kotlu"
  },
  {
   "source": "021_Nyara_2026-08-13.jpg",
@@ -282,7 +300,8 @@
   ],
   "file": "nyara-021",
   "w": 1600,
-  "h": 1200
+  "h": 1200,
+  "label": "Nyara"
  },
  {
   "source": "023_Kotlu_2026-07-26.jpg",
@@ -297,7 +316,8 @@
   ],
   "file": "kotlu-dateha-023",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Kotlu"
  },
  {
   "source": "024_Purana Bazar_2026-08-22.jpg",
@@ -312,7 +332,8 @@
   ],
   "file": "karsog-town-024",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Purana Bazar"
  },
  {
   "source": "025_Khaneol Bagra_2026-07-27.jpg",
@@ -327,7 +348,8 @@
   ],
   "file": "khaneol-shahot-025",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Khaneol Bagra"
  },
  {
   "source": "026_Nanj_2026-07-26.jpg",
@@ -342,7 +364,8 @@
   ],
   "file": "nanj-026",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Nanj"
  },
  {
   "source": "027_Nanj - Tundal, Satluj~_2026-07-26.jpg",
@@ -357,7 +380,8 @@
   ],
   "file": "nanj-027",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Near Nanj - Tundal, Satluj"
  },
  {
   "source": "028_Kunhoo Mela_2026-08-08.jpg",
@@ -372,7 +396,8 @@
   ],
   "file": "kunhoo-028",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Kunhoo Mela"
  },
  {
   "source": "029_Nanj_2026-07-26.jpg",
@@ -387,7 +412,8 @@
   ],
   "file": "nanj-029",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Nanj"
  },
  {
   "source": "030_Nyara_2026-08-20.jpg",
@@ -402,7 +428,8 @@
   ],
   "file": "nyara-030",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Nyara"
  },
  {
   "source": "031_Raigarh, Janjehli_2026-09-20.jpg",
@@ -417,7 +444,8 @@
   ],
   "file": "janjehli-031",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Raigarh, Janjehli"
  },
  {
   "source": "032_Purana Bazar_2026-07-24.jpg",
@@ -432,7 +460,8 @@
   ],
   "file": "karsog-town-032",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Purana Bazar"
  },
  {
   "source": "033_Kelodhar_2026-07-26.jpg",
@@ -447,7 +476,8 @@
   ],
   "file": "kelodhar-033",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Kelodhar"
  },
  {
   "source": "034_Nag Dhamuni Ji Temple_2026-09-13.jpg",
@@ -462,7 +492,8 @@
   ],
   "file": "seri-bunglow-034",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Nag Dhamuni Ji Temple"
  },
  {
   "source": "035_Laxmi Narayan Temple (Janmashtami)_2026-07-24.jpg",
@@ -477,7 +508,8 @@
   ],
   "file": "karsog-town-035",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Laxmi Narayan Temple, Karsog"
  },
  {
   "source": "037_Shikari Devi Temple Top, Janjehli_2026-09-20.jpg",
@@ -492,7 +524,8 @@
   ],
   "file": "shikari-devi-037",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Shikari Devi Temple Top, Janjehli"
  },
  {
   "source": "038_Mahunag_2026-09-06.jpg",
@@ -507,7 +540,8 @@
   ],
   "file": "mahunag-038",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Mahunag"
  },
  {
   "source": "039_Kainchi Mod_2026-07-24.jpg",
@@ -522,7 +556,8 @@
   ],
   "file": "karsog-town-039",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Kainchi Mod"
  },
  {
   "source": "040_Near Mahavan_2026-09-13.jpg",
@@ -537,7 +572,8 @@
   ],
   "file": "seri-bunglow-040",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Near Mahavan"
  },
  {
   "source": "041_Seri Bhanju Mela, Seri Bunglow_2026-09-15.jpg",
@@ -552,7 +588,8 @@
   ],
   "file": "seri-bunglow-041",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Seri Bhanju Mela, Seri Bunglow"
  },
  {
   "source": "042_Nanj bridge_2026-07-26.jpg",
@@ -567,7 +604,8 @@
   ],
   "file": "nanj-042",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Nanj bridge"
  },
  {
   "source": "043_Nyara_2026-08-28.jpg",
@@ -582,7 +620,8 @@
   ],
   "file": "nyara-043",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "Nyara"
  },
  {
   "source": "044_Kutti_2026-08-29.jpg",
@@ -597,7 +636,8 @@
   ],
   "file": "nyara-044",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Kutti"
  },
  {
   "source": "045_Janjehli 3_2026-08-16.jpg",
@@ -612,7 +652,8 @@
   ],
   "file": "janjehli-045",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Janjehli"
  },
  {
   "source": "047_Karsog town_2026-07-23.jpg",
@@ -627,7 +668,8 @@
   ],
   "file": "karsog-town-047",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Karsog town"
  },
  {
   "source": "048_Bus stand_2026-08-20.jpg",
@@ -642,7 +684,8 @@
   ],
   "file": "karsog-town-048",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Bus stand"
  },
  {
   "source": "049_Janjehli 3_2026-08-16.jpg",
@@ -657,7 +700,8 @@
   ],
   "file": "janjehli-049",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Janjehli"
  },
  {
   "source": "050_Seri Bunglow_2026-08-02.jpg",
@@ -672,7 +716,8 @@
   ],
   "file": "seri-bunglow-050",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Seri Bunglow"
  },
  {
   "source": "051_Tundal_2026-07-26.jpg",
@@ -687,7 +732,8 @@
   ],
   "file": "nanj-051",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Tundal"
  },
  {
   "source": "053_Kotlu_2026-07-26.jpg",
@@ -702,7 +748,8 @@
   ],
   "file": "kotlu-dateha-053",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Kotlu"
  },
  {
   "source": "054_Karsog town_2026-08-22.jpg",
@@ -717,7 +764,8 @@
   ],
   "file": "karsog-town-054",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Karsog town"
  },
  {
   "source": "056_Nyara_2026-08-20.jpg",
@@ -732,7 +780,8 @@
   ],
   "file": "nyara-056",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Nyara"
  },
  {
   "source": "057_near Khaneol Bagra~_2026-08-02.jpg",
@@ -747,7 +796,8 @@
   ],
   "file": "khaneol-shahot-057",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Near Khaneol Bagra"
  },
  {
   "source": "058_Beludhar_2026-08-02.jpg",
@@ -762,7 +812,8 @@
   ],
   "file": "beludhar-058",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Beludhar"
  },
  {
   "source": "059_Firnu_2026-07-26.jpg",
@@ -777,7 +828,8 @@
   ],
   "file": "luhri-anni-059",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Firnu"
  },
  {
   "source": "060_Kashaul_2026-08-02.jpg",
@@ -792,7 +844,8 @@
   ],
   "file": "beludhar-060",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Kashaul"
  },
  {
   "source": "061_near Khaneol Bagra~_2026-07-26.jpg",
@@ -807,7 +860,8 @@
   ],
   "file": "khaneol-shahot-061",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Dev Dwahdi Temple, Khaneol Bagra"
  },
  {
   "source": "062_Luhri, Kullu_2026-07-26.jpg",
@@ -822,7 +876,8 @@
   ],
   "file": "luhri-anni-062",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Luhri, Kullu"
  },
  {
   "source": "063_Kuthah, Janjehli_2026-08-16.jpg",
@@ -837,7 +892,8 @@
   ],
   "file": "janjehli-063",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Kuthah, Janjehli"
  },
  {
   "source": "064_Damhel Kothi_2026-08-02.jpg",
@@ -852,7 +908,8 @@
   ],
   "file": "beludhar-064",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Damhel Kothi"
  },
  {
   "source": "066_Tebban_2026-08-30.jpg",
@@ -867,7 +924,8 @@
   ],
   "file": "tebban-066",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Tebban"
  },
  {
   "source": "067_near Tebban~_2026-07-26.jpg",
@@ -882,7 +940,8 @@
   ],
   "file": "tebban-067",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Near Tebban"
  },
  {
   "source": "068_Janjehli 1_2026-08-16.jpg",
@@ -897,7 +956,8 @@
   ],
   "file": "janjehli-068",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Janjehli"
  },
  {
   "source": "069_Bus stand_2026-09-02.jpg",
@@ -912,7 +972,8 @@
   ],
   "file": "karsog-town-069",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Bus stand"
  },
  {
   "source": "070_Beludhar Top_2026-08-02.jpg",
@@ -927,7 +988,8 @@
   ],
   "file": "beludhar-070",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Temple at Beludhar Top"
  },
  {
   "source": "071_near Mendi~_2026-08-02.jpg",
@@ -942,7 +1004,8 @@
   ],
   "file": "beludhar-071",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Near Mendi"
  },
  {
   "source": "072_Beludhar Top_2026-08-02.jpg",
@@ -957,7 +1020,8 @@
   ],
   "file": "beludhar-072",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Beludhar Top"
  },
  {
   "source": "073_Gada Gushaini, Seraj~_2026-08-16.jpg",
@@ -972,7 +1036,8 @@
   ],
   "file": "gada-gushaini-073",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Near Gada Gushaini, Seraj"
  },
  {
   "source": "074_Anni, Kullu_2026-07-26.jpg",
@@ -987,7 +1052,8 @@
   ],
   "file": "luhri-anni-074",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Anni, Kullu"
  },
  {
   "source": "076_Karsog town_2026-08-08.jpg",
@@ -1002,7 +1068,8 @@
   ],
   "file": "karsog-town-076",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Karsog town"
  },
  {
   "source": "077_Shahot_2026-07-26.jpg",
@@ -1017,7 +1084,8 @@
   ],
   "file": "khaneol-shahot-077",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Shahot"
  },
  {
   "source": "078_Kandi_2026-07-27.jpg",
@@ -1032,7 +1100,8 @@
   ],
   "file": "khaneol-shahot-078",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Shri Nag Kalvi Temple, Kandi"
  },
  {
   "source": "079_Anni, Kullu_2026-07-26.jpg",
@@ -1047,7 +1116,8 @@
   ],
   "file": "luhri-anni-079",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Anni, Kullu"
  },
  {
   "source": "080_Luhri, Kullu_2026-07-26.jpg",
@@ -1062,7 +1132,8 @@
   ],
   "file": "luhri-anni-080",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Luhri, Kullu"
  },
  {
   "source": "081_Karsog town_2026-08-26.jpg",
@@ -1077,7 +1148,8 @@
   ],
   "file": "karsog-town-081",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Mini Secretariat, Karsog"
  },
  {
   "source": "082_Janjehli 1_2026-08-16.jpg",
@@ -1092,7 +1164,8 @@
   ],
   "file": "janjehli-082",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Janjehli"
  },
  {
   "source": "083_near Shahot~_2026-07-26.jpg",
@@ -1107,7 +1180,8 @@
   ],
   "file": "khaneol-shahot-083",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Dev Dwahdi Temple, Khaneol Bagra"
  },
  {
   "source": "084_Karsog~_2026-07-23.jpg",
@@ -1119,7 +1193,8 @@
   "gps": null,
   "file": "karsog-town-084",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Near Karsog"
  },
  {
   "source": "085_Kunhoo Mela_2026-08-08.jpg",
@@ -1134,7 +1209,8 @@
   ],
   "file": "kunhoo-085",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Kunhoo Mela"
  },
  {
   "source": "086_Janjehli 2_2026-08-16.jpg",
@@ -1149,7 +1225,8 @@
   ],
   "file": "janjehli-086",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Janjehli"
  },
  {
   "source": "088_Seri Bhanju Mela, Seri Bunglow_2026-08-02.jpg",
@@ -1164,7 +1241,8 @@
   ],
   "file": "seri-bunglow-088",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Seri Bhanju Mela, Seri Bunglow"
  },
  {
   "source": "089_Gada Gushaini, Seraj~_2026-08-16.jpg",
@@ -1179,7 +1257,8 @@
   ],
   "file": "gada-gushaini-089",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Near Gada Gushaini, Seraj"
  },
  {
   "source": "090_Sayanj_2026-08-02.jpg",
@@ -1194,7 +1273,8 @@
   ],
   "file": "beludhar-090",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Sayanj"
  },
  {
   "source": "091_Dateha_2026-07-26.jpg",
@@ -1209,7 +1289,8 @@
   ],
   "file": "kotlu-dateha-091",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Dateha"
  },
  {
   "source": "092_Purana Bazar_2026-07-24.jpg",
@@ -1224,7 +1305,8 @@
   ],
   "file": "karsog-town-092",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Purana Bazar"
  },
  {
   "source": "093_Gudah, Thunag_2026-08-16.jpg",
@@ -1239,7 +1321,8 @@
   ],
   "file": "janjehli-093",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Gudah, Thunag"
  },
  {
   "source": "094_near Mahunag~_2026-09-06.jpg",
@@ -1254,7 +1337,8 @@
   ],
   "file": "mahunag-094",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Near Mahunag"
  },
  {
   "source": "095_Karsog town (night)_2026-09-02.jpg",
@@ -1269,7 +1353,8 @@
   ],
   "file": "karsog-town-095",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Karsog town"
  },
  {
   "source": "096_Firnu_2026-07-26.jpg",
@@ -1284,7 +1369,8 @@
   ],
   "file": "luhri-anni-096",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Firnu"
  },
  {
   "source": "097_near Kunhoo Mela~_2026-08-01.jpg",
@@ -1299,7 +1385,8 @@
   ],
   "file": "kunhoo-097",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Near Kunhoo Mela"
  },
  {
   "source": "098_near Tebban~_2026-07-26.jpg",
@@ -1314,7 +1401,8 @@
   ],
   "file": "tebban-098",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Near Tebban"
  },
  {
   "source": "100_Karsog~_2026-08-26.jpg",
@@ -1326,7 +1414,8 @@
   "gps": null,
   "file": "karsog-town-100",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Mini Secretariat, Karsog"
  },
  {
   "source": "website-picks/Anni, Kullu/011_near Anni, Kullu_2026-07-26.jpg",
@@ -1341,7 +1430,8 @@
   ],
   "file": "luhri-anni-111",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Near Anni, Kullu"
  },
  {
   "source": "website-picks/Anni, Kullu/012_Anni, Kullu_2026-07-26.jpg",
@@ -1356,7 +1446,8 @@
   ],
   "file": "luhri-anni-112",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Anni, Kullu"
  },
  {
   "source": "website-picks/Anni, Kullu/013_Anni, Kullu_2026-07-26.jpg",
@@ -1371,7 +1462,8 @@
   ],
   "file": "luhri-anni-113",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Anni, Kullu"
  },
  {
   "source": "website-picks/Beludhar/020_Beludhar_2026-08-02.jpg",
@@ -1386,7 +1478,8 @@
   ],
   "file": "beludhar-120",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Beludhar"
  },
  {
   "source": "website-picks/Beludhar/021_Beludhar_2026-08-02.jpg",
@@ -1401,7 +1494,8 @@
   ],
   "file": "beludhar-121",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Beludhar"
  },
  {
   "source": "website-picks/Beludhar/022_Beludhar_2026-08-02.jpg",
@@ -1416,7 +1510,8 @@
   ],
   "file": "beludhar-122",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Beludhar"
  },
  {
   "source": "website-picks/Beludhar Top/023_Beludhar Top_2026-08-02.jpg",
@@ -1431,7 +1526,8 @@
   ],
   "file": "beludhar-123",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Beludhar Top"
  },
  {
   "source": "website-picks/Beludhar Top/024_Beludhar Top_2026-08-02.jpg",
@@ -1446,7 +1542,8 @@
   ],
   "file": "beludhar-124",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Beludhar Top"
  },
  {
   "source": "website-picks/Bhanera/025_Bhanera_2026-07-21.jpg",
@@ -1461,7 +1558,8 @@
   ],
   "file": "bhanera-125",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Bhanera"
  },
  {
   "source": "website-picks/Bhanera/026_Bhanera_2026-07-21.jpg",
@@ -1476,7 +1574,8 @@
   ],
   "file": "bhanera-126",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Bhanera"
  },
  {
   "source": "website-picks/Bhulah Valley/027_Bhulah Valley_2026-08-16.jpg",
@@ -1491,7 +1590,8 @@
   ],
   "file": "janjehli-127",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Bhulah Valley"
  },
  {
   "source": "website-picks/Bhulah Valley/028_Bhulah Valley_2026-08-16.jpg",
@@ -1506,7 +1606,8 @@
   ],
   "file": "janjehli-128",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Bhulah Valley"
  },
  {
   "source": "website-picks/Bus stand/029_Bus stand_2026-07-30.jpg",
@@ -1521,7 +1622,8 @@
   ],
   "file": "karsog-town-129",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Civil Hospital, Karsog"
  },
  {
   "source": "website-picks/Bus stand/030_Bus stand_2026-08-12.jpg",
@@ -1536,7 +1638,8 @@
   ],
   "file": "karsog-town-130",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Bus stand"
  },
  {
   "source": "website-picks/Bus stand/031_Bus stand_2026-08-20.jpg",
@@ -1551,7 +1654,8 @@
   ],
   "file": "karsog-town-131",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Bus stand"
  },
  {
   "source": "website-picks/Bus stand/032_Bus stand_2026-08-20.jpg",
@@ -1566,7 +1670,8 @@
   ],
   "file": "karsog-town-132",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Bus stand"
  },
  {
   "source": "website-picks/Bus stand/033_Bus stand_2026-08-20.jpg",
@@ -1581,7 +1686,8 @@
   ],
   "file": "karsog-town-133",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Bus stand"
  },
  {
   "source": "website-picks/Bus stand/034_Bus stand_2026-09-02.jpg",
@@ -1596,7 +1702,8 @@
   ],
   "file": "karsog-town-134",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Bus stand"
  },
  {
   "source": "website-picks/Chhatri, Thunag/035_near Chhatri, Thunag_2026-08-16.jpg",
@@ -1611,7 +1718,8 @@
   ],
   "file": "chhatri-135",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Near Chhatri, Thunag"
  },
  {
   "source": "website-picks/Chhatri, Thunag/036_Chhatri, Thunag_2026-08-16.jpg",
@@ -1626,7 +1734,8 @@
   ],
   "file": "chhatri-136",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Chhatri, Thunag"
  },
  {
   "source": "website-picks/Damhel Kothi/037_Damhel Kothi_2026-08-02.jpg",
@@ -1641,7 +1750,8 @@
   ],
   "file": "beludhar-137",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Temple at Damhel Kothi"
  },
  {
   "source": "website-picks/Damhel Kothi/038_Damhel Kothi_2026-08-02.jpg",
@@ -1656,7 +1766,8 @@
   ],
   "file": "beludhar-138",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Temple at Damhel Kothi"
  },
  {
   "source": "website-picks/Damhel Kothi/039_Damhel Kothi_2026-08-02.jpg",
@@ -1671,7 +1782,8 @@
   ],
   "file": "beludhar-139",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Damhel Kothi"
  },
  {
   "source": "website-picks/Dateha/040_Dateha_2026-07-26.jpg",
@@ -1686,7 +1798,8 @@
   ],
   "file": "kotlu-dateha-140",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Dateha"
  },
  {
   "source": "website-picks/Dateha/041_Dateha_2026-07-26.jpg",
@@ -1701,7 +1814,8 @@
   ],
   "file": "kotlu-dateha-141",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Dateha"
  },
  {
   "source": "website-picks/Dateha/042_Dateha_2026-07-26.jpg",
@@ -1716,7 +1830,8 @@
   ],
   "file": "kotlu-dateha-142",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Dateha"
  },
  {
   "source": "website-picks/Devidarh, Jiuni Valley, Chachyot/043_Devidarh, Jiuni Valley, Chachyot_2026-09-20.jpg",
@@ -1731,7 +1846,8 @@
   ],
   "file": "shikari-devi-143",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Devidarh, Jiuni Valley, Chachyot"
  },
  {
   "source": "website-picks/Firnu/044_Firnu_2026-07-26.jpg",
@@ -1746,7 +1862,8 @@
   ],
   "file": "luhri-anni-144",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Firnu"
  },
  {
   "source": "website-picks/Firnu/045_Firnu_2026-07-26.jpg",
@@ -1761,7 +1878,8 @@
   ],
   "file": "luhri-anni-145",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Firnu"
  },
  {
   "source": "website-picks/Firnu/046_Firnu_2026-07-26.jpg",
@@ -1776,7 +1894,8 @@
   ],
   "file": "luhri-anni-146",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Firnu"
  },
  {
   "source": "website-picks/Firnu/047_Firnu_2026-07-26.jpg",
@@ -1791,7 +1910,8 @@
   ],
   "file": "luhri-anni-147",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Firnu"
  },
  {
   "source": "website-picks/Gudah, Thunag/048_Gudah, Thunag_2026-08-16.jpg",
@@ -1806,7 +1926,8 @@
   ],
   "file": "janjehli-148",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Gudah, Thunag"
  },
  {
   "source": "website-picks/Gudah, Thunag/049_Gudah, Thunag_2026-08-16.jpg",
@@ -1821,7 +1942,8 @@
   ],
   "file": "janjehli-149",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Gudah, Thunag"
  },
  {
   "source": "website-picks/Janjehli/050_Janjehli_2026-08-16.jpg",
@@ -1836,7 +1958,8 @@
   ],
   "file": "janjehli-150",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Janjehli"
  },
  {
   "source": "website-picks/Janjehli/051_Janjehli_2026-08-16.jpg",
@@ -1851,7 +1974,8 @@
   ],
   "file": "janjehli-151",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Janjehli"
  },
  {
   "source": "website-picks/Janjehli/052_Janjehli_2026-08-16.jpg",
@@ -1866,7 +1990,8 @@
   ],
   "file": "janjehli-152",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Janjehli"
  },
  {
   "source": "website-picks/Janjehli/053_Janjehli_2026-08-16.jpg",
@@ -1881,7 +2006,8 @@
   ],
   "file": "janjehli-153",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Janjehli"
  },
  {
   "source": "website-picks/Janjehli/054_Janjehli_2026-08-16.jpg",
@@ -1896,7 +2022,8 @@
   ],
   "file": "janjehli-154",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Janjehli"
  },
  {
   "source": "website-picks/Janjehli/055_Janjehli_2026-08-16.jpg",
@@ -1911,7 +2038,8 @@
   ],
   "file": "janjehli-155",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Janjehli"
  },
  {
   "source": "website-picks/Janjehli/056_Janjehli_2026-08-16.jpg",
@@ -1926,7 +2054,8 @@
   ],
   "file": "janjehli-156",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Janjehli"
  },
  {
   "source": "website-picks/Jua, Seri Bunglow/057_Jua, Seri Bunglow_2026-08-15.jpg",
@@ -1941,7 +2070,8 @@
   ],
   "file": "seri-bunglow-157",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Jua, Seri Bunglow"
  },
  {
   "source": "website-picks/Kainchi Mod/058_Kainchi Mod_2026-07-24.jpg",
@@ -1956,7 +2086,8 @@
   ],
   "file": "karsog-town-158",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Kainchi Mod"
  },
  {
   "source": "website-picks/Kandi/059_Kandi_2026-07-27.jpg",
@@ -1971,7 +2102,8 @@
   ],
   "file": "khaneol-shahot-159",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Shri Nag Kalvi Temple, Kandi"
  },
  {
   "source": "website-picks/Kandi/060_Kandi_2026-07-27.jpg",
@@ -1986,7 +2118,8 @@
   ],
   "file": "khaneol-shahot-160",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Shri Nag Kalvi Temple, Kandi"
  },
  {
   "source": "website-picks/Karsog Valley/061_Karsog Valley_2026-08-20.jpg",
@@ -2001,7 +2134,8 @@
   ],
   "file": "karsog-town-161",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Karsog Valley"
  },
  {
   "source": "website-picks/Karsog Valley/062_Karsog Valley_2026-08-20.jpg",
@@ -2016,7 +2150,8 @@
   ],
   "file": "karsog-town-162",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Karsog Valley"
  },
  {
   "source": "website-picks/Karsog Valley/063_Karsog Valley_2026-08-21.jpg",
@@ -2031,7 +2166,8 @@
   ],
   "file": "karsog-town-163",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Karsog Valley"
  },
  {
   "source": "website-picks/Karsog Valley/064_Karsog Valley_2026-08-22.jpg",
@@ -2046,7 +2182,8 @@
   ],
   "file": "karsog-town-164",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Karsog Valley"
  },
  {
   "source": "website-picks/Karsog Valley/065_Karsog Valley_2026-09-18.jpg",
@@ -2061,7 +2198,8 @@
   ],
   "file": "karsog-town-165",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Karsog Valley"
  },
  {
   "source": "website-picks/Karsog town/066_Karsog town_2026-07-21.jpg",
@@ -2076,7 +2214,8 @@
   ],
   "file": "karsog-town-166",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Karsog town"
  },
  {
   "source": "website-picks/Karsog town/067_Karsog town_2026-07-21.jpg",
@@ -2091,7 +2230,8 @@
   ],
   "file": "karsog-town-167",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Karsog town"
  },
  {
   "source": "website-picks/Karsog town/068_Karsog town_2026-07-23.jpg",
@@ -2106,7 +2246,8 @@
   ],
   "file": "karsog-town-168",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Mini Secretariat, Karsog"
  },
  {
   "source": "website-picks/Karsog town/069_Karsog town_2026-07-30.jpg",
@@ -2121,7 +2262,8 @@
   ],
   "file": "karsog-town-169",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Karsog town"
  },
  {
   "source": "website-picks/Karsog town/070_Karsog town_2026-08-08.jpg",
@@ -2136,7 +2278,8 @@
   ],
   "file": "karsog-town-170",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Karsog town"
  },
  {
   "source": "website-picks/Karsog town/071_Karsog town_2026-08-21.jpg",
@@ -2151,7 +2294,8 @@
   ],
   "file": "karsog-town-171",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Karsog town"
  },
  {
   "source": "website-picks/Karsog town/072_Karsog town_2026-08-22.jpg",
@@ -2166,7 +2310,8 @@
   ],
   "file": "karsog-town-172",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Karsog town"
  },
  {
   "source": "website-picks/Karsog town/073_Karsog town_2026-09-02.jpg",
@@ -2181,7 +2326,8 @@
   ],
   "file": "karsog-town-173",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Mini Secretariat, Karsog"
  },
  {
   "source": "website-picks/Karsog town/074_Karsog town_2026-09-02.jpg",
@@ -2196,7 +2342,8 @@
   ],
   "file": "karsog-town-174",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Karsog town"
  },
  {
   "source": "website-picks/Karsog town/075_Karsog town_2026-09-12.jpg",
@@ -2211,7 +2358,8 @@
   ],
   "file": "karsog-town-175",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Karsog town"
  },
  {
   "source": "website-picks/Karsog town/076_Karsog town_2026-09-18.jpg",
@@ -2226,7 +2374,8 @@
   ],
   "file": "karsog-town-176",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Aliadi Mahadev Temple, Karsog"
  },
  {
   "source": "website-picks/Karsog town/077_Karsog town_2026-09-18.jpg",
@@ -2241,7 +2390,8 @@
   ],
   "file": "karsog-town-177",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Karsog town"
  },
  {
   "source": "website-picks/Kashaul/078_near Kashaul_2026-07-21.jpg",
@@ -2256,7 +2406,8 @@
   ],
   "file": "beludhar-178",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Near Kashaul"
  },
  {
   "source": "website-picks/Kashaul/079_Kashaul_2026-08-02.jpg",
@@ -2271,7 +2422,8 @@
   ],
   "file": "beludhar-179",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Kashaul"
  },
  {
   "source": "website-picks/Kelodhar/080_Kelodhar_2026-07-26.jpg",
@@ -2286,7 +2438,8 @@
   ],
   "file": "kelodhar-180",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Kelodhar"
  },
  {
   "source": "website-picks/Kelodhar/081_Kelodhar_2026-07-26.jpg",
@@ -2301,7 +2454,8 @@
   ],
   "file": "kelodhar-181",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Kelodhar"
  },
  {
   "source": "website-picks/Kelodhar/082_Kelodhar_2026-07-26.jpg",
@@ -2316,7 +2470,8 @@
   ],
   "file": "kelodhar-182",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Kelodhar"
  },
  {
   "source": "website-picks/Khaneol Bagra/083_near Khaneol Bagra_2026-07-26.jpg",
@@ -2331,7 +2486,8 @@
   ],
   "file": "khaneol-shahot-183",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Dev Dwahdi Temple, Khaneol Bagra"
  },
  {
   "source": "website-picks/Khaneol Bagra/084_near Khaneol Bagra_2026-08-02.jpg",
@@ -2346,7 +2502,8 @@
   ],
   "file": "khaneol-shahot-184",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Near Khaneol Bagra"
  },
  {
   "source": "website-picks/Khaneol Bagra/085_Khaneol Bagra_2026-08-02.jpg",
@@ -2361,7 +2518,8 @@
   ],
   "file": "khaneol-shahot-185",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Khaneol Bagra"
  },
  {
   "source": "website-picks/Khaneol Bagra/086_Khaneol Bagra_2026-08-02.jpg",
@@ -2376,7 +2534,8 @@
   ],
   "file": "khaneol-shahot-186",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Khaneol Bagra"
  },
  {
   "source": "website-picks/Kotlu/087_near Kotlu_2026-07-26.jpg",
@@ -2391,7 +2550,8 @@
   ],
   "file": "kotlu-dateha-187",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Waterfall near Kotlu"
  },
  {
   "source": "website-picks/Kotlu/088_Kotlu_2026-07-26.jpg",
@@ -2406,7 +2566,8 @@
   ],
   "file": "kotlu-dateha-188",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Kotlu"
  },
  {
   "source": "website-picks/Kunhoo Mela/089_Kunhoo Mela_2026-08-08.jpg",
@@ -2418,7 +2579,8 @@
   "gps": null,
   "file": "kunhoo-189",
   "w": 1600,
-  "h": 1200
+  "h": 1200,
+  "label": "Kunhoo Mela"
  },
  {
   "source": "website-picks/Kunhoo Mela/090_Kunhoo Mela_2026-08-08.jpg",
@@ -2433,7 +2595,8 @@
   ],
   "file": "kunhoo-190",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Kunhoo Mela"
  },
  {
   "source": "website-picks/Kunhoo Mela/091_Kunhoo Mela_2026-08-08.jpg",
@@ -2448,7 +2611,8 @@
   ],
   "file": "kunhoo-191",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Kunhoo Mela"
  },
  {
   "source": "website-picks/Kuthah, Janjehli/092_Kuthah, Janjehli_2026-08-16.jpg",
@@ -2463,7 +2627,8 @@
   ],
   "file": "janjehli-192",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Kuthah, Janjehli"
  },
  {
   "source": "website-picks/Kutti/093_Kutti_2026-08-29.jpg",
@@ -2478,7 +2643,8 @@
   ],
   "file": "nyara-193",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Paali Naag Temple, Karsog"
  },
  {
   "source": "website-picks/Kutti/094_Kutti_2026-08-29.jpg",
@@ -2493,7 +2659,8 @@
   ],
   "file": "nyara-194",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Kutti"
  },
  {
   "source": "website-picks/Kutti/095_Kutti_2026-08-29.jpg",
@@ -2508,7 +2675,8 @@
   ],
   "file": "nyara-195",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Kutti"
  },
  {
   "source": "website-picks/Laxmi Narayan Temple/106_Laxmi Narayan Temple_2026-08-20.jpg",
@@ -2523,7 +2691,8 @@
   ],
   "file": "karsog-town-206",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Laxmi Narayan Temple, Karsog"
  },
  {
   "source": "website-picks/Laxmi Narayan Temple/107_Laxmi Narayan Temple_2026-09-04.jpg",
@@ -2538,7 +2707,8 @@
   ],
   "file": "karsog-town-207",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Laxmi Narayan Temple, Karsog (Janmashtami)"
  },
  {
   "source": "website-picks/Luhri, Kullu/108_Luhri, Kullu_2026-07-26.jpg",
@@ -2553,7 +2723,8 @@
   ],
   "file": "luhri-anni-208",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Luhri, Kullu"
  },
  {
   "source": "website-picks/Luhri, Kullu/109_Luhri, Kullu_2026-07-26.jpg",
@@ -2568,7 +2739,8 @@
   ],
   "file": "luhri-anni-209",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Luhri, Kullu"
  },
  {
   "source": "website-picks/Luhri, Kullu/110_Luhri, Kullu_2026-07-26.jpg",
@@ -2583,7 +2755,8 @@
   ],
   "file": "luhri-anni-210",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Luhri, Kullu"
  },
  {
   "source": "website-picks/Luhri, Kullu/111_Luhri, Kullu_2026-07-26.jpg",
@@ -2598,7 +2771,8 @@
   ],
   "file": "luhri-anni-211",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Luhri, Kullu"
  },
  {
   "source": "website-picks/Mahog/112_Mahog_2026-08-30.jpg",
@@ -2613,7 +2787,8 @@
   ],
   "file": "pokhi-mahog-212",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Chawasi Nag Temple, Mahog"
  },
  {
   "source": "website-picks/Mahog/113_Mahog_2026-08-30.jpg",
@@ -2628,7 +2803,8 @@
   ],
   "file": "pokhi-mahog-213",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Chawasi Nag Temple, Mahog"
  },
  {
   "source": "website-picks/Mahunag/114_Mahunag_2026-09-06.jpg",
@@ -2643,7 +2819,8 @@
   ],
   "file": "mahunag-214",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Mahunag"
  },
  {
   "source": "website-picks/Mahunag/115_Mahunag_2026-09-06.jpg",
@@ -2658,7 +2835,8 @@
   ],
   "file": "mahunag-215",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Mahunag"
  },
  {
   "source": "website-picks/Mahunag/116_Mahunag_2026-09-06.jpg",
@@ -2673,7 +2851,8 @@
   ],
   "file": "mahunag-216",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Mahunag"
  },
  {
   "source": "website-picks/Mahunag/117_Mahunag_2026-09-06.jpg",
@@ -2688,7 +2867,8 @@
   ],
   "file": "mahunag-217",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Mahunag"
  },
  {
   "source": "website-picks/Mahunag/118_near Mahunag_2026-09-06.jpg",
@@ -2703,7 +2883,8 @@
   ],
   "file": "mahunag-218",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Near Mahunag"
  },
  {
   "source": "website-picks/Mahunag/119_near Mahunag_2026-09-06.jpg",
@@ -2718,7 +2899,8 @@
   ],
   "file": "mahunag-219",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Near Mahunag"
  },
  {
   "source": "website-picks/Mahunag/120_near Mahunag_2026-09-06.jpg",
@@ -2733,7 +2915,8 @@
   ],
   "file": "mahunag-220",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Near Mahunag"
  },
  {
   "source": "website-picks/Mahunag/121_near Mahunag_2026-09-06.jpg",
@@ -2748,7 +2931,8 @@
   ],
   "file": "mahunag-221",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Near Mahunag"
  },
  {
   "source": "website-picks/Mendi/122_Mendi_2026-08-02.jpg",
@@ -2763,7 +2947,8 @@
   ],
   "file": "beludhar-222",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Mendi"
  },
  {
   "source": "website-picks/Mendi/123_Mendi_2026-08-02.jpg",
@@ -2778,7 +2963,8 @@
   ],
   "file": "beludhar-223",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Mendi"
  },
  {
   "source": "website-picks/Mendi/124_Mendi_2026-08-02.jpg",
@@ -2793,7 +2979,8 @@
   ],
   "file": "beludhar-224",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Mendi"
  },
  {
   "source": "website-picks/Nag Dhamuni Ji Temple/125_Nag Dhamuni Ji Temple_2026-09-13.jpg",
@@ -2808,7 +2995,8 @@
   ],
   "file": "seri-bunglow-225",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Nag Dhamuni Ji Temple"
  },
  {
   "source": "website-picks/Nag Dhamuni Ji Temple/126_Nag Dhamuni Ji Temple_2026-09-13.jpg",
@@ -2823,7 +3011,8 @@
   ],
   "file": "seri-bunglow-226",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Nag Dhamuni Ji Temple"
  },
  {
   "source": "website-picks/Nag Dhamuni Ji Temple/127_Nag Dhamuni Ji Temple_2026-09-13.jpg",
@@ -2838,7 +3027,8 @@
   ],
   "file": "seri-bunglow-227",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Nag Dhamuni Ji Temple"
  },
  {
   "source": "website-picks/Nanj/128_Nanj_2026-07-26.jpg",
@@ -2853,7 +3043,8 @@
   ],
   "file": "nanj-228",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Nanj"
  },
  {
   "source": "website-picks/Nanj/129_Nanj_2026-07-26.jpg",
@@ -2868,7 +3059,8 @@
   ],
   "file": "nanj-229",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Nanj"
  },
  {
   "source": "website-picks/Nanj/130_Nanj_2026-07-26.jpg",
@@ -2883,7 +3075,8 @@
   ],
   "file": "nanj-230",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Nanj"
  },
  {
   "source": "website-picks/Nanj/131_near Nanj_2026-07-26.jpg",
@@ -2898,7 +3091,8 @@
   ],
   "file": "nanj-231",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Near Nanj"
  },
  {
   "source": "website-picks/Nanj bridge/132_Nanj bridge_2026-07-26.jpg",
@@ -2913,7 +3107,8 @@
   ],
   "file": "nanj-232",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Nanj bridge"
  },
  {
   "source": "website-picks/Nanj bridge/133_Nanj bridge_2026-07-26.jpg",
@@ -2928,7 +3123,8 @@
   ],
   "file": "nanj-233",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Nanj bridge"
  },
  {
   "source": "website-picks/Nanj bridge/134_Nanj bridge_2026-07-26.jpg",
@@ -2943,7 +3139,8 @@
   ],
   "file": "nanj-234",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Nanj bridge"
  },
  {
   "source": "website-picks/Nanj bridge/135_Nanj bridge_2026-07-26.jpg",
@@ -2958,7 +3155,8 @@
   ],
   "file": "nanj-235",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Nanj bridge"
  },
  {
   "source": "website-picks/Near Gada Gushaini, Seraj/136_Near Gada Gushaini, Seraj_2026-08-16.jpg",
@@ -2973,7 +3171,8 @@
   ],
   "file": "gada-gushaini-236",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Near Gada Gushaini, Seraj"
  },
  {
   "source": "website-picks/Near Mahavan/137_Near Mahavan_2026-09-13.jpg",
@@ -2988,7 +3187,8 @@
   ],
   "file": "seri-bunglow-237",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Near Mahavan"
  },
  {
   "source": "website-picks/Nyara/138_Nyara_2026-07-21.jpg",
@@ -3003,7 +3203,8 @@
   ],
   "file": "nyara-238",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Nyara"
  },
  {
   "source": "website-picks/Nyara/139_Nyara_2026-07-21.jpg",
@@ -3018,7 +3219,8 @@
   ],
   "file": "nyara-239",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Nyara"
  },
  {
   "source": "website-picks/Nyara/140_Nyara_2026-07-23.jpg",
@@ -3033,7 +3235,8 @@
   ],
   "file": "nyara-240",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Nyara"
  },
  {
   "source": "website-picks/Nyara/141_Nyara_2026-07-23.jpg",
@@ -3048,7 +3251,8 @@
   ],
   "file": "nyara-241",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Nyara"
  },
  {
   "source": "website-picks/Nyara/142_Nyara_2026-08-20.jpg",
@@ -3063,7 +3267,8 @@
   ],
   "file": "nyara-242",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Nyara"
  },
  {
   "source": "website-picks/Nyara/143_Nyara_2026-09-02.jpg",
@@ -3078,7 +3283,8 @@
   ],
   "file": "nyara-243",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Nyara"
  },
  {
   "source": "website-picks/Pangna/144_Pangna_2026-07-18.jpg",
@@ -3093,7 +3299,8 @@
   ],
   "file": "pangna-fort-244",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Pangna"
  },
  {
   "source": "website-picks/Pangna/145_Pangna_2026-07-18.jpg",
@@ -3108,7 +3315,8 @@
   ],
   "file": "pangna-fort-245",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Pangna"
  },
  {
   "source": "website-picks/Pokhi/146_Pokhi_2026-08-30.jpg",
@@ -3123,7 +3331,8 @@
   ],
   "file": "pokhi-mahog-246",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Nag Pokhi Temple, Pokhi"
  },
  {
   "source": "website-picks/Purana Bazar/147_Purana Bazar_2026-07-24.jpg",
@@ -3138,7 +3347,8 @@
   ],
   "file": "karsog-town-247",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Purana Bazar"
  },
  {
   "source": "website-picks/Purana Bazar/148_Purana Bazar_2026-07-24.jpg",
@@ -3153,7 +3363,8 @@
   ],
   "file": "karsog-town-248",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Purana Bazar"
  },
  {
   "source": "website-picks/Purana Bazar/149_Purana Bazar_2026-07-24.jpg",
@@ -3168,7 +3379,8 @@
   ],
   "file": "karsog-town-249",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Purana Bazar"
  },
  {
   "source": "website-picks/Purana Bazar/150_Purana Bazar_2026-07-24.jpg",
@@ -3183,7 +3395,8 @@
   ],
   "file": "karsog-town-250",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Purana Bazar"
  },
  {
   "source": "website-picks/Purana Bazar/151_Purana Bazar_2026-09-04.jpg",
@@ -3198,7 +3411,8 @@
   ],
   "file": "karsog-town-251",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Purana Bazar"
  },
  {
   "source": "website-picks/Raigarh, Thunag/152_Raigarh, Thunag_2026-08-16.jpg",
@@ -3213,7 +3427,8 @@
   ],
   "file": "janjehli-252",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Raigarh, Thunag"
  },
  {
   "source": "website-picks/Sanarli/153_Sanarli_2026-07-24.jpg",
@@ -3228,7 +3443,8 @@
   ],
   "file": "nyara-253",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Sanarli"
  },
  {
   "source": "website-picks/Sanarli/154_Sanarli_2026-07-24.jpg",
@@ -3243,7 +3459,8 @@
   ],
   "file": "nyara-254",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Sanarli"
  },
  {
   "source": "website-picks/Sanarli/155_near Sanarli_2026-09-20.jpg",
@@ -3258,7 +3475,8 @@
   ],
   "file": "nyara-255",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Bam Sounti Temple, near Sanarli"
  },
  {
   "source": "website-picks/Sanarli/156_near Sanarli_2026-09-20.jpg",
@@ -3273,7 +3491,8 @@
   ],
   "file": "nyara-256",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Bam Sounti Temple, near Sanarli"
  },
  {
   "source": "website-picks/Sayanj/157_Sayanj_2026-08-02.jpg",
@@ -3288,7 +3507,8 @@
   ],
   "file": "beludhar-257",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Sayanj"
  },
  {
   "source": "website-picks/Sayanj/158_Sayanj_2026-08-02.jpg",
@@ -3303,7 +3523,8 @@
   ],
   "file": "beludhar-258",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Sayanj"
  },
  {
   "source": "website-picks/Sayanj/159_Sayanj_2026-08-02.jpg",
@@ -3318,7 +3539,8 @@
   ],
   "file": "beludhar-259",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Sayanj"
  },
  {
   "source": "website-picks/Seri Bhanju Mela, Seri Bunglow/160_Seri Bhanju Mela, Seri Bunglow_2026-08-02.jpg",
@@ -3333,7 +3555,8 @@
   ],
   "file": "seri-bunglow-260",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Seri Bhanju Mela, Seri Bunglow"
  },
  {
   "source": "website-picks/Seri Bhanju Mela, Seri Bunglow/161_Seri Bhanju Mela, Seri Bunglow_2026-09-15.jpg",
@@ -3348,7 +3571,8 @@
   ],
   "file": "seri-bunglow-261",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Seri Bhanju Mela, Seri Bunglow"
  },
  {
   "source": "website-picks/Seri Bhanju Mela, Seri Bunglow/162_Seri Bhanju Mela, Seri Bunglow_2026-09-15.jpg",
@@ -3363,7 +3587,8 @@
   ],
   "file": "seri-bunglow-262",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Seri Bhanju Mela, Seri Bunglow"
  },
  {
   "source": "website-picks/Seri Bunglow/163_Seri Bunglow_2026-08-02.jpg",
@@ -3378,7 +3603,8 @@
   ],
   "file": "seri-bunglow-263",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Seri Bunglow"
  },
  {
   "source": "website-picks/Seri Bunglow/164_Seri Bunglow_2026-08-02.jpg",
@@ -3393,7 +3619,8 @@
   ],
   "file": "seri-bunglow-264",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Seri Bunglow"
  },
  {
   "source": "website-picks/Shahot/165_near Shahot_2026-07-26.jpg",
@@ -3408,7 +3635,8 @@
   ],
   "file": "khaneol-shahot-265",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Dev Dwahdi Temple, Khaneol Bagra"
  },
  {
   "source": "website-picks/Shahot/166_Shahot_2026-07-26.jpg",
@@ -3423,7 +3651,8 @@
   ],
   "file": "khaneol-shahot-266",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Shahot"
  },
  {
   "source": "website-picks/Shahot/167_Shahot_2026-07-26.jpg",
@@ -3438,7 +3667,8 @@
   ],
   "file": "khaneol-shahot-267",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Shahot"
  },
  {
   "source": "website-picks/Shahot/168_Shahot_2026-08-02.jpg",
@@ -3453,7 +3683,8 @@
   ],
   "file": "khaneol-shahot-268",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Shahot"
  },
  {
   "source": "website-picks/Shikari Devi Parking/169_Shikari Devi Parking_2026-09-20.jpg",
@@ -3468,7 +3699,8 @@
   ],
   "file": "shikari-devi-269",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Shikari Devi Parking"
  },
  {
   "source": "website-picks/Shikari Devi Parking/170_Shikari Devi Parking_2026-09-20.jpg",
@@ -3483,7 +3715,8 @@
   ],
   "file": "shikari-devi-270",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Shikari Devi Parking"
  },
  {
   "source": "website-picks/Shikari Devi Temple Top, Janjehli/171_Shikari Devi Temple Top, Janjehli_2026-09-20.jpg",
@@ -3498,7 +3731,8 @@
   ],
   "file": "shikari-devi-271",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Shikari Devi Temple Top, Janjehli"
  },
  {
   "source": "website-picks/Shikari Devi Temple Top, Janjehli/172_Shikari Devi Temple Top, Janjehli_2026-09-20.jpg",
@@ -3513,7 +3747,8 @@
   ],
   "file": "shikari-devi-272",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Shikari Devi Temple Top, Janjehli"
  },
  {
   "source": "website-picks/Shikari Devi Temple Top, Janjehli/173_Shikari Devi Temple Top, Janjehli_2026-09-20.jpg",
@@ -3528,7 +3763,8 @@
   ],
   "file": "shikari-devi-273",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Shikari Devi Temple Top, Janjehli"
  },
  {
   "source": "website-picks/Shikari Devi Temple, Janjehli/174_Shikari Devi Temple, Janjehli_2026-09-20.jpg",
@@ -3543,7 +3779,8 @@
   ],
   "file": "shikari-devi-274",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Shikari Devi Temple, Janjehli"
  },
  {
   "source": "website-picks/Shikari Devi Temple, Janjehli/175_Shikari Devi Temple, Janjehli_2026-09-20.jpg",
@@ -3558,7 +3795,8 @@
   ],
   "file": "shikari-devi-275",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Shikari Devi Temple, Janjehli"
  },
  {
   "source": "website-picks/Shikari Devi Temple, Janjehli/176_Shikari Devi Temple, Janjehli_2026-09-20.jpg",
@@ -3573,7 +3811,8 @@
   ],
   "file": "shikari-devi-276",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Shikari Devi Temple, Janjehli"
  },
  {
   "source": "website-picks/Shikari Devi Temple, Janjehli/177_Shikari Devi Temple, Janjehli_2026-09-20.jpg",
@@ -3588,7 +3827,8 @@
   ],
   "file": "shikari-devi-277",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Shikari Devi Temple, Janjehli"
  },
  {
   "source": "website-picks/Tebban/178_near Tebban_2026-07-26.jpg",
@@ -3603,7 +3843,8 @@
   ],
   "file": "tebban-278",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Near Tebban"
  },
  {
   "source": "website-picks/Tebban/179_Tebban_2026-08-30.jpg",
@@ -3618,7 +3859,8 @@
   ],
   "file": "tebban-279",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Tebani Mahadev Temple, Tebban"
  },
  {
   "source": "website-picks/Tebban/180_Tebban_2026-08-30.jpg",
@@ -3633,7 +3875,8 @@
   ],
   "file": "tebban-280",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Tebban"
  },
  {
   "source": "website-picks/Tebban/181_Tebban_2026-08-30.jpg",
@@ -3648,7 +3891,8 @@
   ],
   "file": "tebban-281",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Tebban"
  },
  {
   "source": "website-picks/Tebban/182_Tebban_2026-08-30.jpg",
@@ -3663,7 +3907,8 @@
   ],
   "file": "tebban-282",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Tebban"
  },
  {
   "source": "website-picks/Tundal/183_Tundal_2026-07-26.jpg",
@@ -3678,7 +3923,8 @@
   ],
   "file": "nanj-283",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Tundal"
  },
  {
   "source": "website-picks/Tundal/184_Tundal_2026-07-26.jpg",
@@ -3693,7 +3939,8 @@
   ],
   "file": "nanj-284",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Tundal"
  },
  {
   "source": "website-picks/Tundal/185_Tundal_2026-07-26.jpg",
@@ -3708,7 +3955,8 @@
   ],
   "file": "nanj-285",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Tundal"
  },
  {
   "source": "website-picks/Tundal/186_Tundal_2026-07-26.jpg",
@@ -3723,7 +3971,8 @@
   ],
   "file": "nanj-286",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Tundal"
  },
  {
   "source": "012_near Latheri-Bhanthal~_2026-07-24.jpg",
@@ -3736,7 +3985,8 @@
    31.408726784,
    77.224209472
   ],
-  "file": "latheri-bhanthal-012"
+  "file": "latheri-bhanthal-012",
+  "label": "Near Latheri-Bhanthal"
  },
  {
   "source": "014_Latheri-Bhanthal_2026-07-24.jpg",
@@ -3749,7 +3999,8 @@
    31.403268312,
    77.216100787
   ],
-  "file": "latheri-bhanthal-014"
+  "file": "latheri-bhanthal-014",
+  "label": "Latheri-Bhanthal"
  },
  {
   "source": "036_BSNL Telephone Exchange_2026-08-08.jpg",
@@ -3762,7 +4013,8 @@
    31.380901015,
    77.214860302
   ],
-  "file": "karsog-town-036"
+  "file": "karsog-town-036",
+  "label": "BSNL Telephone Exchange"
  },
  {
   "source": "046_near Latheri-Bhanthal~_2026-07-24.jpg",
@@ -3775,7 +4027,8 @@
    31.408724875,
    77.224209526
   ],
-  "file": "latheri-bhanthal-046"
+  "file": "latheri-bhanthal-046",
+  "label": "Near Latheri-Bhanthal"
  },
  {
   "source": "052_near Latheri-Bhanthal~_2026-07-24.jpg",
@@ -3788,7 +4041,8 @@
    31.40903,
    77.224764
   ],
-  "file": "latheri-bhanthal-052"
+  "file": "latheri-bhanthal-052",
+  "label": "Near Latheri-Bhanthal"
  },
  {
   "source": "055_near Latheri-Bhanthal~_2026-07-24.jpg",
@@ -3801,7 +4055,8 @@
    31.409308,
    77.224482
   ],
-  "file": "latheri-bhanthal-055"
+  "file": "latheri-bhanthal-055",
+  "label": "Near Latheri-Bhanthal"
  },
  {
   "source": "099_BSNL Telephone Exchange_2026-08-08.jpg",
@@ -3814,7 +4069,8 @@
    31.377661,
    77.216885
   ],
-  "file": "karsog-town-099"
+  "file": "karsog-town-099",
+  "label": "BSNL Telephone Exchange"
  },
  {
   "source": "website-picks/BSNL Telephone Exchange/014_BSNL Telephone Exchange_2026-07-23.jpg",
@@ -3827,7 +4083,8 @@
    31.38254252,
    77.212323925
   ],
-  "file": "karsog-town-114"
+  "file": "karsog-town-114",
+  "label": "BSNL Telephone Exchange"
  },
  {
   "source": "website-picks/BSNL Telephone Exchange/015_near BSNL Telephone Exchange_2026-08-01.jpg",
@@ -3840,7 +4097,8 @@
    31.364707,
    77.215605
   ],
-  "file": "karsog-town-115"
+  "file": "karsog-town-115",
+  "label": "Near BSNL Telephone Exchange"
  },
  {
   "source": "website-picks/BSNL Telephone Exchange/016_BSNL Telephone Exchange_2026-08-08.jpg",
@@ -3853,7 +4111,8 @@
    31.377481,
    77.219752
   ],
-  "file": "karsog-town-116"
+  "file": "karsog-town-116",
+  "label": "BSNL Telephone Exchange"
  },
  {
   "source": "website-picks/BSNL Telephone Exchange/017_BSNL Telephone Exchange_2026-08-08.jpg",
@@ -3866,7 +4125,8 @@
    31.380901015,
    77.214860302
   ],
-  "file": "karsog-town-117"
+  "file": "karsog-town-117",
+  "label": "BSNL Telephone Exchange"
  },
  {
   "source": "website-picks/BSNL Telephone Exchange/018_BSNL Telephone Exchange_2026-08-08.jpg",
@@ -3879,7 +4139,8 @@
    31.380901015,
    77.214860302
   ],
-  "file": "karsog-town-118"
+  "file": "karsog-town-118",
+  "label": "BSNL Telephone Exchange"
  },
  {
   "source": "website-picks/BSNL Telephone Exchange/019_near BSNL Telephone Exchange_2026-09-12.jpg",
@@ -3892,7 +4153,8 @@
    31.387375636,
    77.220000837
   ],
-  "file": "karsog-town-119"
+  "file": "karsog-town-119",
+  "label": "Near BSNL Telephone Exchange"
  },
  {
   "source": "website-picks/Government Degree College Anni (Haripur)/001_Government Degree College Anni (Haripur)_2026-07-26.jpg",
@@ -3907,7 +4169,8 @@
   ],
   "file": "luhri-anni-101",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Government Degree College Anni (Haripur)"
  },
  {
   "source": "website-picks/Lashi, Chhatri/096_Lashi, Chhatri_2026-08-16.jpg",
@@ -3920,7 +4183,8 @@
    31.474482966,
    77.281929891
   ],
-  "file": "chhatri-196"
+  "file": "chhatri-196",
+  "label": "Lashi, Chhatri"
  },
  {
   "source": "website-picks/Lashi, Chhatri/097_Lashi, Chhatri_2026-08-16.jpg",
@@ -3933,7 +4197,8 @@
    31.471311,
    77.283261
   ],
-  "file": "chhatri-197"
+  "file": "chhatri-197",
+  "label": "Lashi, Chhatri"
  },
  {
   "source": "website-picks/Latheri-Bhanthal/098_near Latheri-Bhanthal_2026-07-24.jpg",
@@ -3946,7 +4211,8 @@
    31.40841,
    77.22453
   ],
-  "file": "latheri-bhanthal-198"
+  "file": "latheri-bhanthal-198",
+  "label": "Near Latheri-Bhanthal"
  },
  {
   "source": "website-picks/Latheri-Bhanthal/099_near Latheri-Bhanthal_2026-07-24.jpg",
@@ -3959,7 +4225,8 @@
    31.408988,
    77.224528
   ],
-  "file": "latheri-bhanthal-199"
+  "file": "latheri-bhanthal-199",
+  "label": "Near Latheri-Bhanthal"
  },
  {
   "source": "website-picks/Latheri-Bhanthal/100_near Latheri-Bhanthal_2026-07-24.jpg",
@@ -3972,7 +4239,8 @@
    31.408726784,
    77.224209472
   ],
-  "file": "latheri-bhanthal-200"
+  "file": "latheri-bhanthal-200",
+  "label": "Near Latheri-Bhanthal"
  },
  {
   "source": "website-picks/Latheri-Bhanthal/101_near Latheri-Bhanthal_2026-07-24.jpg",
@@ -3985,7 +4253,8 @@
    31.408726784,
    77.224209472
   ],
-  "file": "latheri-bhanthal-201"
+  "file": "latheri-bhanthal-201",
+  "label": "Near Latheri-Bhanthal"
  },
  {
   "source": "website-picks/Latheri-Bhanthal/102_Latheri-Bhanthal_2026-07-24.jpg",
@@ -3998,7 +4267,8 @@
    31.405948,
    77.220154
   ],
-  "file": "latheri-bhanthal-202"
+  "file": "latheri-bhanthal-202",
+  "label": "Latheri-Bhanthal"
  },
  {
   "source": "website-picks/Latheri-Bhanthal/103_Latheri-Bhanthal_2026-07-24.jpg",
@@ -4011,7 +4281,8 @@
    31.403268312,
    77.216100787
   ],
-  "file": "latheri-bhanthal-203"
+  "file": "latheri-bhanthal-203",
+  "label": "Latheri-Bhanthal"
  },
  {
   "source": "website-picks/Latheri-Bhanthal/104_Latheri-Bhanthal_2026-07-24.jpg",
@@ -4024,7 +4295,8 @@
    31.403268312,
    77.216100787
   ],
-  "file": "latheri-bhanthal-204"
+  "file": "latheri-bhanthal-204",
+  "label": "Latheri-Bhanthal"
  },
  {
   "source": "website-picks/Latheri-Bhanthal/105_Latheri-Bhanthal_2026-07-24.jpg",
@@ -4037,7 +4309,8 @@
    31.403268312,
    77.216100787
   ],
-  "file": "latheri-bhanthal-205"
+  "file": "latheri-bhanthal-205",
+  "label": "Latheri-Bhanthal"
  },
  {
   "source": "website-picks/Mela near Bakhrot/005_Mela near Bakhrot_2026-08-03.jpg",
@@ -4052,7 +4325,8 @@
   ],
   "file": "bakhrot-105",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Mela near Bakhrot"
  },
  {
   "source": "website-picks/Mini Secretariat, Karsog/187_Mini Secretariat, Karsog_2026-08-26.jpg",
@@ -4064,7 +4338,8 @@
   "gps": null,
   "file": "karsog-town-287",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Mini Secretariat, Karsog"
  },
  {
   "source": "website-picks/Near Gada Gushaini, Seraj/003_near Gada Gushaini, Seraj_2026-08-16.jpg",
@@ -4079,7 +4354,8 @@
   ],
   "file": "gada-gushaini-103",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Near Gada Gushaini, Seraj"
  },
  {
   "source": "website-picks/Near Gada Gushaini, Seraj/004_near Gada Gushaini, Seraj_2026-08-16.jpg",
@@ -4094,7 +4370,8 @@
   ],
   "file": "gada-gushaini-104",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Near Gada Gushaini, Seraj"
  },
  {
   "source": "website-picks/Satluj at Tattapani/002_Satluj at Tattapani_2026-07-19.jpg",
@@ -4109,7 +4386,8 @@
   ],
   "file": "tattapani-102",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "Satluj at Tattapani"
  },
  {
   "source": "website-picks/Someshwar Mahadev Temple, Somakothi/008_Someshwar Mahadev Temple, Somakothi_2026-08-30.jpg",
@@ -4124,7 +4402,8 @@
   ],
   "file": "pokhi-mahog-108",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Someshwar Mahadev Temple, Somakothi"
  },
  {
   "source": "website-picks/Someshwar Mahadev Temple, Somakothi/009_Someshwar Mahadev Temple, Somakothi_2026-08-30.jpg",
@@ -4139,7 +4418,8 @@
   ],
   "file": "pokhi-mahog-109",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Someshwar Mahadev Temple, Somakothi"
  },
  {
   "source": "website-picks/Someshwar Mahadev Temple, Somakothi/010_Someshwar Mahadev Temple, Somakothi_2026-08-30.jpg",
@@ -4154,7 +4434,8 @@
   ],
   "file": "pokhi-mahog-110",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Someshwar Mahadev Temple, Somakothi"
  },
  {
   "source": "website-picks/Bam Sounti Temple, near Sanarli/200_Bam Sounti Temple, near Sanarli_2026-07-12.jpg",
@@ -4166,7 +4447,8 @@
   "gps": null,
   "file": "nyara-300",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "Bam Sounti Temple, near Sanarli"
  },
  {
   "source": "website-picks/Bam Sounti Temple, near Sanarli/201_Bam Sounti Temple, near Sanarli_2026-07-12.jpg",
@@ -4178,7 +4460,8 @@
   "gps": null,
   "file": "nyara-301",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "Bam Sounti Temple, near Sanarli"
  },
  {
   "source": "website-picks/Bam Sounti Temple, near Sanarli/202_Bam Sounti Temple, near Sanarli_2026-07-12.jpg",
@@ -4190,7 +4473,8 @@
   "gps": null,
   "file": "nyara-302",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "Bam Sounti Temple, near Sanarli"
  },
  {
   "source": "website-picks/Bam Sounti Temple, near Sanarli/203_Bam Sounti Temple, near Sanarli_2026-07-12.jpg",
@@ -4202,7 +4486,8 @@
   "gps": null,
   "file": "nyara-303",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "Bam Sounti Temple, near Sanarli"
  },
  {
   "source": "website-picks/Bam Sounti Temple, near Sanarli/204_Bam Sounti Temple, near Sanarli_2026-07-12.jpg",
@@ -4214,7 +4499,8 @@
   "gps": null,
   "file": "nyara-304",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "Bam Sounti Temple, near Sanarli"
  },
  {
   "source": "website-picks/Bam Sounti Temple, near Sanarli/205_Bam Sounti Temple, near Sanarli_2026-07-12.jpg",
@@ -4226,7 +4512,8 @@
   "gps": null,
   "file": "nyara-305",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "Bam Sounti Temple, near Sanarli"
  },
  {
   "source": "website-picks/GMSSS Karsog/214_GMSSS Karsog_2026-07-14.jpg",
@@ -4238,7 +4525,8 @@
   "gps": null,
   "file": "karsog-town-314",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "GMSSS Karsog"
  },
  {
   "source": "website-picks/GMSSS Karsog/215_GMSSS Karsog_2026-07-14.jpg",
@@ -4250,7 +4538,8 @@
   "gps": null,
   "file": "karsog-town-315",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "GMSSS Karsog"
  },
  {
   "source": "website-picks/GMSSS Karsog/216_GMSSS Karsog_2026-07-14.jpg",
@@ -4262,7 +4551,8 @@
   "gps": null,
   "file": "karsog-town-316",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "GMSSS Karsog"
  },
  {
   "source": "website-picks/GMSSS Karsog/217_GMSSS Karsog_2026-07-14.jpg",
@@ -4274,7 +4564,8 @@
   "gps": null,
   "file": "karsog-town-317",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "GMSSS Karsog"
  },
  {
   "source": "website-picks/GMSSS Karsog/218_GMSSS Karsog_2026-07-14.jpg",
@@ -4286,7 +4577,8 @@
   "gps": null,
   "file": "karsog-town-318",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "GMSSS Karsog"
  },
  {
   "source": "website-picks/Government College Karsog/208_Government College Karsog_2026-07-14.jpg",
@@ -4298,7 +4590,8 @@
   "gps": null,
   "file": "karsog-town-308",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "Government College Karsog"
  },
  {
   "source": "website-picks/Government College Karsog/209_Government College Karsog_2026-07-14.jpg",
@@ -4310,7 +4603,8 @@
   "gps": null,
   "file": "karsog-town-309",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "Government College Karsog"
  },
  {
   "source": "website-picks/Government College Karsog/210_Government College Karsog_2026-07-14.jpg",
@@ -4322,7 +4616,8 @@
   "gps": null,
   "file": "karsog-town-310",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "Government College Karsog"
  },
  {
   "source": "website-picks/Government College Karsog/211_Government College Karsog_2026-07-14.jpg",
@@ -4334,7 +4629,8 @@
   "gps": null,
   "file": "karsog-town-311",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "Government College Karsog"
  },
  {
   "source": "website-picks/Government College Karsog/212_Government College Karsog_2026-07-14.jpg",
@@ -4346,7 +4642,8 @@
   "gps": null,
   "file": "karsog-town-312",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "Government College Karsog"
  },
  {
   "source": "website-picks/Government College Karsog/213_Government College Karsog_2026-07-14.jpg",
@@ -4358,7 +4655,8 @@
   "gps": null,
   "file": "karsog-town-313",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "Government College Karsog"
  },
  {
   "source": "website-picks/Jarli Mata Temple, Karsog/238_Jarli Mata Temple, Karsog_2026-07-15.jpg",
@@ -4370,7 +4668,8 @@
   "gps": null,
   "file": "jarli-mata-338",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "Jarli Mata Temple, Karsog"
  },
  {
   "source": "website-picks/Jarli Mata Temple, Karsog/239_Jarli Mata Temple, Karsog_2026-07-15.jpg",
@@ -4382,7 +4681,8 @@
   "gps": null,
   "file": "jarli-mata-339",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "Jarli Mata Temple, Karsog"
  },
  {
   "source": "website-picks/Jarli Mata Temple, Karsog/240_Jarli Mata Temple, Karsog_2026-07-15.jpg",
@@ -4394,7 +4694,8 @@
   "gps": null,
   "file": "jarli-mata-340",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "Jarli Mata Temple, Karsog"
  },
  {
   "source": "website-picks/Jarli Mata Temple, Karsog/241_Jarli Mata Temple, Karsog_2026-07-15.jpg",
@@ -4406,7 +4707,8 @@
   "gps": null,
   "file": "jarli-mata-341",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "Jarli Mata Temple, Karsog"
  },
  {
   "source": "website-picks/Jarli Mata Temple, Karsog/242_Jarli Mata Temple, Karsog_2026-07-15.jpg",
@@ -4418,7 +4720,8 @@
   "gps": null,
   "file": "jarli-mata-342",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "Jarli Mata Temple, Karsog"
  },
  {
   "source": "website-picks/Jarli Mata Temple, Karsog/243_Jarli Mata Temple, Karsog_2026-07-15.jpg",
@@ -4430,7 +4733,8 @@
   "gps": null,
   "file": "jarli-mata-343",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "Jarli Mata Temple, Karsog"
  },
  {
   "source": "website-picks/Jarli Mata Temple, Karsog/244_Jarli Mata Temple, Karsog_2026-07-15.jpg",
@@ -4442,7 +4746,8 @@
   "gps": null,
   "file": "jarli-mata-344",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "Jarli Mata Temple, Karsog"
  },
  {
   "source": "website-picks/Jarli Mata Temple, Karsog/245_Jarli Mata Temple, Karsog_2026-07-15.jpg",
@@ -4454,7 +4759,8 @@
   "gps": null,
   "file": "jarli-mata-345",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "Jarli Mata Temple, Karsog"
  },
  {
   "source": "website-picks/Kamaksha Mata Temple, Kao/226_Kamaksha Mata Temple, Kao_2026-07-15.jpg",
@@ -4466,7 +4772,8 @@
   "gps": null,
   "file": "kao-326",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "Kamaksha Mata Temple, Kao"
  },
  {
   "source": "website-picks/Kamaksha Mata Temple, Kao/227_Kamaksha Mata Temple, Kao_2026-07-15.jpg",
@@ -4478,7 +4785,8 @@
   "gps": null,
   "file": "kao-327",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "Kamaksha Mata Temple, Kao"
  },
  {
   "source": "website-picks/Kamaksha Mata Temple, Kao/228_Kamaksha Mata Temple, Kao_2026-07-15.jpg",
@@ -4490,7 +4798,8 @@
   "gps": null,
   "file": "kao-328",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "Kamaksha Mata Temple, Kao"
  },
  {
   "source": "website-picks/Kamaksha Mata Temple, Kao/229_Kamaksha Mata Temple, Kao_2026-07-15.jpg",
@@ -4502,7 +4811,8 @@
   "gps": null,
   "file": "kao-329",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "Kamaksha Mata Temple, Kao"
  },
  {
   "source": "website-picks/Kamaksha Mata Temple, Kao/230_Kamaksha Mata Temple, Kao_2026-07-15.jpg",
@@ -4514,7 +4824,8 @@
   "gps": null,
   "file": "kao-330",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "Kamaksha Mata Temple, Kao"
  },
  {
   "source": "website-picks/Kamaksha Mata Temple, Kao/231_Kamaksha Mata Temple, Kao_2026-07-15.jpg",
@@ -4526,7 +4837,8 @@
   "gps": null,
   "file": "kao-331",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "Kamaksha Mata Temple, Kao"
  },
  {
   "source": "website-picks/Kunhoo/206_Kunhoo_2026-07-12.jpg",
@@ -4538,7 +4850,8 @@
   "gps": null,
   "file": "kunhoo-306",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Kunhoo"
  },
  {
   "source": "website-picks/Kunhoo/207_Kunhoo_2026-07-12.jpg",
@@ -4550,7 +4863,8 @@
   "gps": null,
   "file": "kunhoo-307",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Kunhoo"
  },
  {
   "source": "website-picks/Mamel Ground, Karsog/188_Mamel Ground, Karsog_2026-07-07.jpg",
@@ -4562,7 +4876,8 @@
   "gps": null,
   "file": "mamleshwar-288",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "Mamel Ground, Karsog"
  },
  {
   "source": "website-picks/Mamel Ground, Karsog/189_Mamel Ground, Karsog_2026-07-07.jpg",
@@ -4574,7 +4889,8 @@
   "gps": null,
   "file": "mamleshwar-289",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "Mamel Ground, Karsog"
  },
  {
   "source": "website-picks/Mamel Ground, Karsog/190_Mamel Ground, Karsog_2026-07-07.jpg",
@@ -4586,7 +4902,8 @@
   "gps": null,
   "file": "mamleshwar-290",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "Mamel Ground, Karsog"
  },
  {
   "source": "website-picks/Mamleshwar Mahadev Temple, Mamel/219_Mamleshwar Mahadev Temple, Mamel_2026-07-14.jpg",
@@ -4598,7 +4915,8 @@
   "gps": null,
   "file": "mamleshwar-319",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "Mamleshwar Mahadev Temple, Mamel"
  },
  {
   "source": "website-picks/Mamleshwar Mahadev Temple, Mamel/220_Mamleshwar Mahadev Temple, Mamel_2026-07-14.jpg",
@@ -4610,7 +4928,8 @@
   "gps": null,
   "file": "mamleshwar-320",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "Mamleshwar Mahadev Temple, Mamel"
  },
  {
   "source": "website-picks/Mamleshwar Mahadev Temple, Mamel/221_Mamleshwar Mahadev Temple, Mamel_2026-07-14.jpg",
@@ -4622,7 +4941,8 @@
   "gps": null,
   "file": "mamleshwar-321",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "Mamleshwar Mahadev Temple, Mamel"
  },
  {
   "source": "website-picks/Mamleshwar Mahadev Temple, Mamel/222_Mamleshwar Mahadev Temple, Mamel_2026-07-14.jpg",
@@ -4634,7 +4954,8 @@
   "gps": null,
   "file": "mamleshwar-322",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "Mamleshwar Mahadev Temple, Mamel"
  },
  {
   "source": "website-picks/Mamleshwar Mahadev Temple, Mamel/223_Mamleshwar Mahadev Temple, Mamel_2026-07-14.jpg",
@@ -4646,7 +4967,8 @@
   "gps": null,
   "file": "mamleshwar-323",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "Mamleshwar Mahadev Temple, Mamel"
  },
  {
   "source": "website-picks/Mamleshwar Mahadev Temple, Mamel/224_Mamleshwar Mahadev Temple, Mamel_2026-07-14.jpg",
@@ -4658,7 +4980,8 @@
   "gps": null,
   "file": "mamleshwar-324",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "Mamleshwar Mahadev Temple, Mamel"
  },
  {
   "source": "website-picks/Mamleshwar Mahadev Temple, Mamel/225_Mamleshwar Mahadev Temple, Mamel_2026-07-14.jpg",
@@ -4670,7 +4993,8 @@
   "gps": null,
   "file": "mamleshwar-325",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "Mamleshwar Mahadev Temple, Mamel"
  },
  {
   "source": "website-picks/PWD Rest House, Chindi/195_PWD Rest House, Chindi_2026-07-12.jpg",
@@ -4682,7 +5006,8 @@
   "gps": null,
   "file": "chindi-295",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "PWD Rest House, Chindi"
  },
  {
   "source": "website-picks/PWD Rest House, Chindi/196_PWD Rest House, Chindi_2026-07-12.jpg",
@@ -4694,7 +5019,8 @@
   "gps": null,
   "file": "chindi-296",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "PWD Rest House, Chindi"
  },
  {
   "source": "website-picks/PWD Rest House, Chindi/197_PWD Rest House, Chindi_2026-07-12.jpg",
@@ -4706,7 +5032,8 @@
   "gps": null,
   "file": "chindi-297",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "PWD Rest House, Chindi"
  },
  {
   "source": "website-picks/PWD Rest House, Chindi/198_PWD Rest House, Chindi_2026-07-12.jpg",
@@ -4718,7 +5045,8 @@
   "gps": null,
   "file": "chindi-298",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "PWD Rest House, Chindi"
  },
  {
   "source": "website-picks/PWD Rest House, Chindi/199_PWD Rest House, Chindi_2026-07-12.jpg",
@@ -4730,7 +5058,8 @@
   "gps": null,
   "file": "chindi-299",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "PWD Rest House, Chindi"
  },
  {
   "source": "website-picks/Shiva Temple, Imla Vimla Triveni Sangam/191_Shiva Temple, Imla Vimla Triveni Sangam_2026-07-07.jpg",
@@ -4742,7 +5071,8 @@
   "gps": null,
   "file": "imla-vimla-291",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Shiva Temple, Imla Vimla Triveni Sangam"
  },
  {
   "source": "website-picks/Shiva Temple, Imla Vimla Triveni Sangam/192_Shiva Temple, Imla Vimla Triveni Sangam_2026-07-07.jpg",
@@ -4754,7 +5084,8 @@
   "gps": null,
   "file": "imla-vimla-292",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Shiva Temple, Imla Vimla Triveni Sangam"
  },
  {
   "source": "website-picks/Shiva Temple, Imla Vimla Triveni Sangam/193_Shiva Temple, Imla Vimla Triveni Sangam_2026-07-07.jpg",
@@ -4766,7 +5097,8 @@
   "gps": null,
   "file": "imla-vimla-293",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Shiva Temple, Imla Vimla Triveni Sangam"
  },
  {
   "source": "website-picks/Shiva Temple, Imla Vimla Triveni Sangam/194_Shiva Temple, Imla Vimla Triveni Sangam_2026-07-07.jpg",
@@ -4778,7 +5110,8 @@
   "gps": null,
   "file": "imla-vimla-294",
   "w": 1600,
-  "h": 900
+  "h": 900,
+  "label": "Shiva Temple, Imla Vimla Triveni Sangam"
  },
  {
   "source": "website-picks/Shiva Temple, Imla Vimla Triveni Sangam/232_Shiva Temple, Imla Vimla Triveni Sangam_2026-07-15.jpg",
@@ -4790,7 +5123,8 @@
   "gps": null,
   "file": "imla-vimla-332",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "Shiva Temple, Imla Vimla Triveni Sangam"
  },
  {
   "source": "website-picks/Shiva Temple, Imla Vimla Triveni Sangam/233_Shiva Temple, Imla Vimla Triveni Sangam_2026-07-15.jpg",
@@ -4802,7 +5136,8 @@
   "gps": null,
   "file": "imla-vimla-333",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "Shiva Temple, Imla Vimla Triveni Sangam"
  },
  {
   "source": "website-picks/Shiva Temple, Imla Vimla Triveni Sangam/234_Shiva Temple, Imla Vimla Triveni Sangam_2026-07-15.jpg",
@@ -4814,7 +5149,8 @@
   "gps": null,
   "file": "imla-vimla-334",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "Shiva Temple, Imla Vimla Triveni Sangam"
  },
  {
   "source": "website-picks/Shiva Temple, Imla Vimla Triveni Sangam/235_Shiva Temple, Imla Vimla Triveni Sangam_2026-07-15.jpg",
@@ -4826,7 +5162,8 @@
   "gps": null,
   "file": "imla-vimla-335",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "Shiva Temple, Imla Vimla Triveni Sangam"
  },
  {
   "source": "website-picks/Shiva Temple, Imla Vimla Triveni Sangam/236_Shiva Temple, Imla Vimla Triveni Sangam_2026-07-15.jpg",
@@ -4838,7 +5175,8 @@
   "gps": null,
   "file": "imla-vimla-336",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "Shiva Temple, Imla Vimla Triveni Sangam"
  },
  {
   "source": "website-picks/Shiva Temple, Imla Vimla Triveni Sangam/237_Shiva Temple, Imla Vimla Triveni Sangam_2026-07-15.jpg",
@@ -4850,6 +5188,7 @@
   "gps": null,
   "file": "imla-vimla-337",
   "w": 900,
-  "h": 1600
+  "h": 1600,
+  "label": "Shiva Temple, Imla Vimla Triveni Sangam"
  }
 ]

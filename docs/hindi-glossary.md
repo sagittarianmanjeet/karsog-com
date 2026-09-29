@@ -95,3 +95,59 @@ Spellings follow the ones people in Karsog use most in local posts and news (cou
 | drone photos | ड्रोन फ़ोटो |
 | Karsog Miles (channel name) | Karsog Miles (unchanged) |
 | Pandavas, Bhima, Karna, Barbarik, Parashurama | पांडव, भीम, कर्ण, बर्बरीक, परशुराम |
+
+## Spellings still to confirm
+
+These Hindi spellings are used on the drone-photo pages (`data/photo-places.json`, `data/photo-labels-hi.json`) and in the
+ride-video titles (`data/videos.json`). They were written from the English names; no local source for them was found yet
+(29 September 2026). Please check them with people from each place, fix the data files if needed, rebuild, and then move
+the confirmed ones up into the tables above.
+
+| English | Hindi used now | Note |
+|---|---|---|
+| Aliadi (Mahadev temple) | अलियाड़ी | |
+| Bakhrot | बखरोट | |
+| Bam Sounti (temple) | बम सौंटी | |
+| Beludhar | बेलूधार | |
+| Bhanera | भनेरा | |
+| Bhanthal | भंथल | |
+| Bhulah (valley) | भुलाह | |
+| Charog (Seri Charog) | चरोग | video title |
+| Dachhen | दछैन | video title |
+| Damhel Kothi | दमहेल कोठी | |
+| Dateha | दटेहा | |
+| Devidarh | देवीदड़ | |
+| Dwahdi (Dev Dwahdi temple) | दवाहड़ी | |
+| Firnu | फिरनू | |
+| Gada Gushaini | गाड़ागुशैणी | |
+| Gudah | गुडाह | |
+| Jarli (Mata temple) | जरली | |
+| Jiuni (valley) | ज्यूणी | |
+| Jua | जुआ | |
+| Kalvi (Shri Nag Kalvi temple) | कलवी | |
+| Kandi | कांडी | |
+| Kashaul | कशौल | |
+| Khaneol Bagra / Khanyol | खनेओल बगड़ा / खन्योल | photos say Khaneol, a video title says Khanyol; probably the same village, so one Hindi spelling should be used for both |
+| Kotlu | कोटलू | |
+| Kunhoo | कुन्हू | |
+| Kuthah | कुथाह | |
+| Kutti | कुट्टी | |
+| Lalag | लालग | video title |
+| Lashi | लाशी | |
+| Latheri | लठेरी | |
+| Luhri | लुहरी | SJVN may write लूहरी for its Luhri project; check |
+| Mahavan | महावन | |
+| Mendi | मेंडी | |
+| Mumail | ममेल | video titles; taken to be Mamel (ममेल), where Mamleshwar Mahadev is. Confirm |
+| Nanj | नांज | |
+| Nyara | न्यारा | |
+| Paali Naag (temple) | पाली नाग | |
+| Pokhi | पोखी | |
+| Raigarh | रायगढ़ | |
+| Sanarli | सनारली | |
+| Sayanj | स्यांज | |
+| Shahot | शाहोट | |
+| Somakothi | सोमाकोठी | |
+| Tebban | तेब्बन | |
+| Tebani (Mahadev temple) | तेबनी | |
+| Tundal | टुंडल | |
