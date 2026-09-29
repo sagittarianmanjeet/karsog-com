@@ -1,27 +1,50 @@
-# Redesign + Hindi version — status and how to resume
+# Redesign + Hindi version — status
 
-Last updated 28 Sep 2026. Work lives on the `redesign` branch. **Not merged**: the live site (main) is unchanged.
-Some pages on this branch are in the new design and some are still old, so don't merge until everything below is done.
+Last updated 29 Sep 2026. Work lives on the `redesign` branch. **Not merged**: the live site (`main`) is unchanged until
+Manjeet merges the pull request.
+
+**State: complete and checked, waiting for Manjeet's review.** Every page is built by the new builder in English and
+Hindi (147 pages), every old address still works (`/devtas/` now redirects to `/temples/`), and the checks in
+`docs/SITE-AUDIT.md` pass.
 
 ## Done
 
-- **Design system**: `public/assets/site.css`, `site.js`, `icons.svg` (Lucide), self-hosted fonts in `assets/fonts/`, `weather.js`, `mandi.js`.
-- **One builder for the whole site**: `python3 tools/build.py [home bus guides tools]`
-  - `tools/layout.py` page shell (head, SEO, hreflang, header, phone bottom bar, menu sheet, footer, WhatsApp update form)
-  - `tools/ui.py` menus and interface text (English + Hindi), `tools/data.py` buses, fairs, photos, distances, guide list
-  - `p_home.py`, `p_bus.py`, `p_guide.py`, `p_tools.py` build the pages
-- **Rebuilt in English and Hindi**: home, bus stand, private buses, Mandi ⇄ Karsog, Shimla ⇄ Karsog, 28 bus destination pages, weather, distance, hotels, mandi rates.
-- **Guides rewritten (English only so far)** in `content/en/`: mahunag, mamleshwar, kao, shikari-devi, kamru-nag, tattapani, pangna-fort, chindi, janjehli.
-- **Hindi glossary**: `docs/hindi-glossary.md` (local spellings counted from local posts).
-- Preview screenshots of home, Hindi home, Mahunag guide sent to Manjeet on 28 Sep for approval.
+- **Design system**: `public/assets/site.css`, `site.js`, `icons.svg` (Lucide), self-hosted fonts in `assets/fonts/`,
+  `weather.js`, `mandi.js`, and `rti.css` / `rti.js` for the RTI page.
+- **One builder for the whole site**: `python3 tools/build.py` (see the README for what comes from where).
+  The old generators (`busgen.py`, `extras.py`, `devtas.py`, `sitenav.py`, `pagekit.py`, `restructure.py`, `k2x.py`)
+  are removed.
+- **Pages, in English and Hindi**:
+  - home; bus stand, private buses, Mandi ⇄ Karsog, Shimla ⇄ Karsog and 28 bus destination pages
+  - weather, distances, hotels, mandi rates
+  - 9 guides: Mahunag, Mamleshwar, Kao, Shikari Devi, Kamru Nag, Tattapani, Pangna, Chindi, Janjehli
+  - `/melas/` (fair calendar with "this month"), `/temples/` (new, replaces `/devtas/`)
+  - `/places/`, `/plan/`, `/contacts/`
+  - `/photos/`, 19 drone-photo place pages, `/rides/` (30 ride videos)
+  - `/rti/`
+  - `404.html` (English with a Hindi line)
+- **Hindi data**: `data/devtas-hi.json`, a Hindi title for every video in `data/videos.json`, Hindi names for the photo
+  places (`data/photo-places.json`) and captions (`data/photo-labels-hi.json`).
+- **Photo captions**: every drone photo has a caption (`label` in `public/photos/photos.json`), taken from the old pages.
+  Alt text says only what the caption says, plus "Karsog" for places within 8 km of town and "near Karsog" for the rest
+  (Anni and Luhri, for example, are in Kullu district).
+- **Site plumbing**: `sitemap.xml` with hreflang (146 addresses), share images in `public/og/` (1200×630), `favicon.ico`,
+  `apple-touch-icon.png`, `assets/logo.svg`, `public/_redirects`, service-worker cache `karsog-v21`, Hindi labels in the
+  comments box, manifest colours matching the new design.
+- **`tools/gallery-build.py`** now only makes the web versions of new photos, updates `photos.json` / `places.json`, and
+  runs `build.py`.
+- **Docs**: README, `AGENTS.md` (notes for AI assistants), `docs/SITE-AUDIT.md`, the glossary's list of spellings to confirm.
 
 ## Facts checked and corrected
 
-- **Distances** now come from Google Maps (fastest route from Karsog bus stand, 28 Sep 2026), in `tools/data.py` → `DIST`.
+- **Distances** come from Google Maps (fastest route from Karsog bus stand, 28 Sep 2026), in `tools/data.py` → `DIST`.
   The old OpenStreetMap figures were wrong because OSM is missing roads:
-  - Shikari Devi was 103 km and is really 22 km, by the Shikari Temple road, which closes in winter.
+  - Shikari Devi was 103 km and is really 22 km, by the Shikari Devi road, which closes in winter.
   - Janjehli was 88 km and is really 27 km by the same road, or 84 km via Chhatri.
-  - Other routes: Shimla 94 km, Mandi 99, Sundernagar 80, Rampur 75, Tattapani 46, Pangna 19, Mahunag 26, Chindi 7 (15 by the main road), Kao 7, Mamleshwar 2.3, Rohanda 52, Churag 13, Chhatri 48, Nerchowk 86, Solan 133, Bhuntar 150, Kullu 163, Manali 199, Chandigarh 217, Delhi 434.
+  - Other routes: Shimla 94 km, Mandi 99, Sundernagar 80, Rampur 75, Tattapani 46, Pangna 19, Mahunag 26, Chindi 7
+    (15 by the main road), Kao 7, Mamleshwar 2.3, Rohanda 52, Churag 13, Chhatri 48, Nerchowk 86, Solan 133,
+    Bhuntar 150, Kullu 163, Manali 199, Chandigarh 217, Delhi 434.
+  - `data/devtas.json` now uses the same figures (it still had old ones for Mahunag, Mamleshwar, Chindi and Pangna).
 - Mandi district site (hpmandi.nic.in):
   - Shikari Devi is at 3,359 m, 18 km from Janjehli by a jeepable road and 21 km from Karsog.
   - Kamru Nag is a 6 km trek from Rohanda (3–4 hours). Rohanda is 35 km from Sundernagar and 47 km from Mandi.
@@ -31,70 +54,43 @@ Some pages on this branch are in the new design and some are still old, so don't
   - The Kamru Nag page said Rohanda was 30–35 km from Karsog. It is 52 km.
   - The Janjehli page said 40 km. The Chindi page said 15 km.
   - The "rhinoceros hide" and "6-foot" claims for Bhima's drum are removed.
+  - The Chindi Mata card on `/temples/` no longer shows a photo: the only Chindi drone photos show the PWD rest house.
+  - Fair dates are labelled "Dates by year" (the old "Past dates" label also covered dates still to come).
 - The board CSV's `note` column (covered / handwritten) is no longer shown to travellers.
 
-## Still to do (in this order)
+## Still to do
 
-1. **Hindi guides**: write `content/hi/<name>.html` for the 9 guides.
-   - Keep the same header keys (see the docstring in `p_guide.py`) and follow the glossary.
-   - Change internal links to `/hi/…`.
-2. **Hindi data**:
-   - `data/devtas-hi.json`, the Hindi of `data/devtas.json`, for the temples page.
-   - A `"hi"` title for every video in `data/videos.json`.
-3. **Port the remaining pages** to the new builder, in both languages:
-   - Pages to port:
-     - `/melas/`
-     - `/devtas/` → `/temples/`, adding `public/_redirects` with `/devtas/ /temples/ 301`
-     - `/places/`, `/plan/`
-     - `/contacts/`, including the "Karsog at a glance" block from `extras.py`
-     - `/photos/` hub
-     - the 19 drone place pages, built from `public/photos/photos.json` and `places.json`
-     - `/rides/` (video order: newest first, as on the old page)
-     - `/rti/` and `/hi/rti/`
-     - `404.html`
-   - Get the old page text with `python3 tools/dev/h2t.py <outdir> public/<page>/index.html`.
-   - `gallery-build.py` (runs on the Mac) should then only update the photos and `photos.json`, and call `build.py`.
-4. **Site plumbing**:
-   - `build.py` writes `sitemap.xml` with hreflang, plus the new manifest and icons (`favicon.ico`, `apple-touch-icon.png`, `/assets/logo.svg`).
-   - Share images `/og/*.jpg` (1200×630, from the hero photos). Pages already link to these, but they don't exist yet.
-   - Bump the `sw.js` cache.
-   - `comments.js`: add Hindi labels using `data-lang`. Pages already pass it.
-5. **Remove the old generators** once everything is ported: `busgen.py`, `extras.py`, `devtas.py`, `sitenav.py`, `pagekit.py`, `restructure.py`.
-6. **Checks**:
-   - link check, Lighthouse, and English/Hindi screenshots on phone and desktop
-   - write `docs/SITE-AUDIT.md`
-   - open pull request(s) for Manjeet to merge from the GitHub app
-
-## Audit of the old site (details in docs/audit/pages-before.json)
-
-- Lighthouse (mobile): performance 95–99, SEO 100, accessibility 92–96.
-- Problems (all solved by the new builder for the pages already ported):
-  - Accessibility: low-contrast gold text, links shown only by colour, and a lightbox image with empty alt on every drone page.
-  - Speed: images not sized, and Google Fonts blocking the page from showing.
-  - Linking: 28 thin bus pages that only the bus stand page linked to.
-  - Hindi: the old `/hi/` page was out of date and mixed कारसोग with करसोग.
-  - Metadata: no structured data on mandi rates, and many titles and descriptions too long.
-  - Guide pages had their sections in a confusing order.
-  - Duplicate image-gallery structured data, up to 17 copies on /mahunag/, /janjehli/ and /shikari-devi/, because gallery-build.py appended a new copy each run.
-  - Facts disagreed between pages: distances, the Mahunag Mela date and "7th century".
+1. **Manjeet**: push the `redesign` branch from GitHub Desktop and open a pull request into `main`.
+2. **Manjeet**: review the preview (Cloudflare builds a preview for the pull request if branch previews are on;
+   otherwise screenshots), especially:
+   - the Hindi pages (a few spellings to confirm are listed at the end of `docs/hindi-glossary.md`)
+   - the new design on your own phone
+3. **Manjeet**: merge when happy. After merging, check a few live pages, and that `/devtas/` goes to `/temples/`.
+4. After the merge: submit `https://karsog.com/sitemap.xml` in Google Search Console.
 
 ## Open questions for Manjeet
 
 - Is the new design approved? (Screenshots sent on 28 Sep.)
-- Hemant's access: option 1 (collaborator with main protected) or option 2 (a GitHub organization with the Triage role)?
+- 23 page titles changed with the redesign (listed in `docs/SITE-AUDIT.md`). With no Search Console data we can't see
+  which pages already earn clicks. Keep the new titles, or put the old ones back on pages you know people find?
+- Hemant's access: option 1 (collaborator with `main` protected) or option 2 (a GitHub organization with the Triage role)?
 - Should the site have a news section?
-- Should we set up Search Console?
+- Search Console: the site already has a Google verification file (`public/google0f68a3e8b74ac0f2.html`), so a
+  Search Console property for karsog.com may exist. Can you check? Its click data would also answer the titles question.
 - Please verify:
   - HRTC Mandi bus stand 01905-222415
   - Shimla ISBT 0177-2658788
-  - the hotel names
-- Mandi → Karsog buses at 6:00, 8:30, 12:00 and 15:00 are shown as "reported locally" (they come from the old site). Keep them or drop them?
+  - Karsog Control Room +91 93172-07043 and the other numbers on `/contacts/`
+  - the hotel names on `/hotels/` and `/plan/`
+- Mandi → Karsog buses at 6:00, 8:30, 12:00 and 15:00 are shown as "reported locally" (they come from the old site).
+  Keep them or drop them?
 - Set up a yearly December reminder to update the mela dates?
+- The Hindi village spellings at the end of `docs/hindi-glossary.md`: can someone local check them?
 
 ## How to resume
 
 - Code: `git clone` sagittarianmanjeet/karsog-com, then `git checkout redesign`.
-- Preview: `cd public && python3 -m http.server 8766`.
+- Build: `python3 tools/build.py`. Preview: `cd public && python3 -m http.server 8766`.
 - Screenshots: `node tools/dev/shot.js <outdir> / /hi/ /mahunag/`
   - needs Playwright, using `/opt/pw-browsers/chromium`
   - mocks the weather and mandi APIs with `tools/dev/mock.json`
