@@ -22,6 +22,7 @@ Model keys (only path, lang, title, desc, h1 and body are required):
   data      {id: object} JSON embedded for site.js (next bus, weather ...)
   alt       False when the page has no copy in the other language
   noindex   True for pages Google should not list (404)
+  scripts, styles   extra /assets/ files for this page only (e.g. the RTI page's rti.js and rti.css)
 """
 import hashlib, html, json, os, re
 from ui import NAV, MORE, BOTTOM, SUBNAV, t, label, section_of, lpath
@@ -141,19 +142,20 @@ def comments(page_id, lang, title=None, text=None, placeholder=None):
              'टिप्पणियाँ सबको दिखती हैं। आधार, पैन, फ़ोन नंबर या कोई निजी जानकारी न लिखें।')
     return section(f'<div class="head"><h2>{title}</h2><p class="lede">{text} <small>{warn}</small></p></div>'
                    f'<div id="kc" data-page="{page_id}" data-sitekey="{TURNSTILE}" data-lang="{lang}" '
-                   f'data-placeholder="{esc(ph)}"></div><script src="/comments.js?v=3" defer></script>',
+                   f'data-placeholder="{esc(ph)}"></div><script src="/comments.js?v=4" defer></script>',
                    'sec-tight', 'comments', 'wrap wrap-n')
 
 
-def gallery(photos, lang, caption=None):
-    """Masonry of drone photos that open full size in a lightbox. photos: dicts from photos.json."""
+def gallery(photos, lang, caption=None, alt=None):
+    """Masonry of drone photos that open full size in a lightbox. photos: dicts from photos.json.
+    caption(p) and alt(p) give the text under / for each photo (default: the photo's place name)."""
     out = []
     for p in photos:
         base = f'/photos/{p["slug"]}/{p["file"]}'
         cap = caption(p) if caption else p['place']
         w, h = (p.get('w') or 1600) // 2, (p.get('h') or 900) // 2
         out.append(f'<a href="{base}-1600.webp" data-cap="{esc(cap)}">'
-                   f'{img(base, cap, "(max-width:560px) 50vw, (max-width:980px) 33vw, 380px", w, h)}<span>{esc(cap)}</span></a>')
+                   f'{img(base, alt(p) if alt else cap, "(max-width:560px) 50vw, (max-width:980px) 33vw, 380px", w, h)}<span>{esc(cap)}</span></a>')
     return f'<div class="gallery">{"".join(out)}</div>'
 
 
@@ -178,7 +180,7 @@ def ld_breadcrumb(crumbs, lang):
 
 # ---------------------------------------------------------------- page parts
 FONT_PRELOAD = {
-    'en': ['dm-sans-latin-wght-normal', 'playfair-display-latin-wght-normal'],
+    'en': ['dm-sans-latin-wght-normal', 'playfair-display-latin-wght-normal', 'playfair-display-latin-wght-italic'],   # italic: every h1 has an <em>
     'hi': ['dm-sans-latin-wght-normal', 'tiro-devanagari-hindi-devanagari-400-normal'],
 }
 
@@ -223,6 +225,8 @@ def _head(m):
         b = img_['src']
         h.append(f'<link rel="preload" as="image" href="{b}-1600.webp" imagesrcset="{srcset(b)}" imagesizes="100vw" fetchpriority="high">')
     h.append(f'<link rel="stylesheet" href="/assets/site.css?v={V}">')
+    for x in m.get('styles', []):
+        h.append(f'<link rel="stylesheet" href="{x}?v={V}">')
     h.append('<script>document.documentElement.classList.add("js")</script>')
     lds = [ld_breadcrumb(m.get('crumbs', []), lang)] if path != '/' else []
     lds += m.get('ld', [])

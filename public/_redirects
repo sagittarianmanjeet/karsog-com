@@ -1,0 +1,3 @@
+# Old addresses -> new ones (Cloudflare reads this file; one rule per line: from to status)
+/devtas/ /temples/ 301
+/devtas /temples/ 301

@@ -2,7 +2,7 @@
 
 The bus timetables come from data/*.csv; fairs are in MELAS below; photos in public/photos/photos.json.
 Hindi spellings follow the ones people in Karsog use most (see docs/hindi-glossary.md)."""
-import csv, json, os, re
+import csv, json, math, os, re
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PUB = os.path.join(ROOT, 'public')
@@ -218,6 +218,68 @@ PLACES = json.load(open(os.path.join(PUB, 'photos', 'places.json'), encoding='ut
 BY_SLUG = {}
 for _p in PHOTOS:
     BY_SLUG.setdefault(_p['slug'], []).append(_p)
+
+
+TOWN = (31.3825, 77.2045)     # Karsog town centre, for "how far from town" (straight line, as the drone flew)
+
+
+def km(a, b):
+    """Straight-line distance in km between two (lat, lon) points (good enough at this size)."""
+    return math.hypot((a[0] - b[0]) * 111.2, (a[1] - b[1]) * 95)
+
+
+def centre(slug):
+    """Middle of the GPS points of a place's photos, or None when its photos have no GPS."""
+    g = [p['gps'] for p in BY_SLUG.get(slug, []) if p.get('gps')]
+    return (sum(x[0] for x in g) / len(g), sum(x[1] for x in g) / len(g)) if g else None
+
+
+def in_karsog(slug):
+    """True when a photo place is within 8 km of Karsog town. Farther places (Janjehli, Anni, Luhri...) are
+    described as 'near Karsog', because some are in other tehsils or districts."""
+    c = centre(slug)
+    return c is not None and km(c, TOWN) < 8
+
+
+PHOTO_PLACES = {k: v for k, v in json.load(open(os.path.join(ROOT, 'data', 'photo-places.json'), encoding='utf-8')).items()
+                if not k.startswith('_')}
+LABEL_HI = {k: v for k, v in json.load(open(os.path.join(ROOT, 'data', 'photo-labels-hi.json'), encoding='utf-8')).items()
+            if not k.startswith('_')}
+MISSING_HI = set()   # captions with no Hindi yet (build.py reports them)
+
+
+def place_title(slug, lang='en'):
+    """Name of a drone-photo place ('Nanj & Tundal' / 'नांज और टुंडल')."""
+    p = PHOTO_PLACES.get(slug) or {}
+    t = p.get('title') or next((x['title'] for x in PLACES if x['slug'] == slug), slug)
+    return p.get('title_hi', t) if lang == 'hi' else t
+
+
+def label_hi(label):
+    if label in LABEL_HI:
+        return LABEL_HI[label]
+    if label.startswith('Near ') and label[5:] in LABEL_HI:
+        return LABEL_HI[label[5:]] + ' के पास'
+    MISSING_HI.add(label)
+    return label
+
+
+def photo_label(p, lang='en'):
+    """Caption of a drone photo, e.g. 'Nanj bridge' / 'नांज पुल'."""
+    lab = p.get('label') or (('Near ' if p.get('near') else '') + p['place'])
+    return lab if lang == 'en' else label_hi(lab)
+
+
+def photo_alt(p, lang='en'):
+    """'Aerial view of Nanj bridge, near Karsog, Himachal Pradesh' — only what the caption says, plus where."""
+    lab = photo_label(p, 'en')
+    home = in_karsog(p['slug'])
+    if lang == 'en':
+        near = lab.startswith('Near ')
+        x = lab[5:] if near else lab
+        return f"Aerial view of {'the area near ' if near else ''}{x}{'' if 'Karsog' in x else (', Karsog' if home else ', near Karsog')}, Himachal Pradesh"
+    h = label_hi(lab)
+    return f"{h}{'' if 'करसोग' in h else (', करसोग' if home else ', करसोग के पास')}, हिमाचल प्रदेश, आसमान से"
 
 
 def photo(file):

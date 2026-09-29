@@ -1,6 +1,6 @@
 """Home page (/ and /hi/)."""
 from layout import L, icon, img, section, shead, faq_block, faq_ld, pcard, esc
-from data import HRTC, P_DEP, MELAS, MON_EN, MON_HI, next_bus_json, melas_json, pbase, PHOTOS, PLACES
+from data import HRTC, P_DEP, MELAS, MON_EN, MON_HI, next_bus_json, melas_json, pbase, PHOTOS, PLACES, place_title
 
 TILES = [
     ('/karsog-bus-stand/', 'bus', 'Buses', 'बसें', 'Every departure from Karsog, HRTC and private', 'करसोग से हर बस, एचआरटीसी और प्राइवेट'),
@@ -165,7 +165,7 @@ def model(lang):
     ms = ''
     for f in MOSAIC:
         p = next(x for x in PHOTOS if x['file'] == f)
-        title = next((x['title'] for x in PLACES if x['slug'] == p['slug']), p['place'])
+        title = place_title(p['slug'], lang)
         ms += (f'<a href="{hl("/" + p["slug"] + "/")}">{img(pbase(f), L(lang, f"{title}, Karsog, from the air", f"{title}, करसोग, ऊपर से"), "(max-width:900px) 50vw, 25vw")}'
                f'<span>{esc(title)}</span></a>')
     s_air = section(shead(L(lang, 'From the air', 'आसमान से'),

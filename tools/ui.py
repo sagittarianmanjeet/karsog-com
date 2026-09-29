@@ -97,6 +97,8 @@ def section_of(path):
     seg = p.strip('/').split('/')[0] if p.strip('/') else ''
     if seg == '':
         return 'home'
+    if seg.endswith('.html'):
+        return ''            # 404.html: no menu section
     if seg in SECTION:
         return SECTION[seg]
     for k, *_rest in NAV + MORE:

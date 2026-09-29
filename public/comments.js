@@ -1,13 +1,16 @@
 /* Comments widget for karsog.com and toolninja.in — talks to /api/comments (Cloudflare Worker + D1).
-   <div id="kc" data-page="…" data-sitekey="…" [data-placeholder="…"] [data-style="1"]></div>
+   <div id="kc" data-page="…" data-sitekey="…" [data-placeholder="…"] [data-style="1"] [data-lang="hi"]></div>
+   data-lang="hi" shows the form and messages in Hindi (karsog.com /hi/ pages).
    Clean comments go live at once; ones with numbers, links or emails wait for the owner. */
 (function () {
   var el = document.getElementById('kc');
   if (!el) return;
   var page = el.getAttribute('data-page');
   var sitekey = el.getAttribute('data-sitekey');
-  var ph = el.getAttribute('data-placeholder') || 'Your comment, question or correction.';
+  var ph = el.getAttribute('data-placeholder') || (el.getAttribute('data-lang') === 'hi' ? 'आपकी टिप्पणी, सवाल या सुधार।' : 'Your comment, question or correction.');
   var wid = null, tsLoaded = false;
+  var HI = el.getAttribute('data-lang') === 'hi';
+  var T = function (en, hi) { return HI ? hi : en; };
 
   if (el.getAttribute('data-style') === '1' && !document.getElementById('kc-css')) {
     var st = document.createElement('style'); st.id = 'kc-css';
@@ -26,10 +29,10 @@
   el.innerHTML =
     '<div class="kc-list" aria-live="polite"></div>' +
     '<form class="kc-form" novalidate>' +
-    '<label>Your name<input name="name" maxlength="60" autocomplete="name" required></label>' +
-    '<label>Comment<textarea name="body" maxlength="2000" rows="4" required></textarea></label>' +
+    '<label>' + T('Your name', 'आपका नाम') + '<input name="name" maxlength="60" autocomplete="name" required></label>' +
+    '<label>' + T('Comment', 'टिप्पणी') + '<textarea name="body" maxlength="2000" rows="4" required></textarea></label>' +
     '<div class="kc-ts"></div>' +
-    '<button type="submit">Post comment</button>' +
+    '<button type="submit">' + T('Post comment', 'टिप्पणी भेजें') + '</button>' +
     '<p class="kc-msg" role="status"></p>' +
     '</form>';
 
@@ -38,7 +41,7 @@
   form.elements['body'].placeholder = ph;
 
   function fmt(t) {
-    try { return new Date(t).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' }); }
+    try { return new Date(t).toLocaleDateString(HI ? 'hi-IN' : 'en-IN', { day: 'numeric', month: 'short', year: 'numeric' }); }
     catch (e) { return ''; }
   }
   function add(c) {
@@ -73,22 +76,22 @@
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     var name = form.elements['name'].value.trim(), body = form.elements['body'].value.trim();
-    if (!name || body.length < 2) { msg.textContent = 'Please enter your name and a comment.'; return; }
+    if (!name || body.length < 2) { msg.textContent = T('Please enter your name and a comment.', 'कृपया अपना नाम और टिप्पणी लिखें।'); return; }
     var token = wid !== null && window.turnstile ? window.turnstile.getResponse(wid) : '';
-    if (!token) { msg.textContent = 'Please wait a moment for the security check, then try again.'; loadTs(); return; }
-    btn.disabled = true; msg.textContent = 'Posting…';
+    if (!token) { msg.textContent = T('Please wait a moment for the security check, then try again.', 'सुरक्षा जाँच के लिए थोड़ा रुकें, फिर दोबारा कोशिश करें।'); loadTs(); return; }
+    btn.disabled = true; msg.textContent = T('Posting…', 'भेजी जा रही है…');
     fetch('/api/comments', {
       method: 'POST', headers: { 'content-type': 'application/json' },
       body: JSON.stringify({ page: page, name: name, body: body, token: token })
     })
       .then(function (r) { return r.json().then(function (d) { return { ok: r.ok, d: d }; }); })
       .then(function (x) {
-        if (!x.ok) { msg.textContent = x.d.error || 'Something went wrong. Please try again.'; return; }
+        if (!x.ok) { msg.textContent = x.d.error || T('Something went wrong. Please try again.', 'कुछ गड़बड़ हो गई। कृपया दोबारा कोशिश करें।'); return; }
         form.reset();
-        if (x.d.held) msg.textContent = 'Thank you! Your comment has a number, link or email in it, so it will appear after a quick check.';
-        else { if (x.d.comment) add(x.d.comment); msg.textContent = 'Thank you! Your comment is live.'; }
+        if (x.d.held) msg.textContent = T('Thank you! Your comment has a number, link or email in it, so it will appear after a quick check.', 'धन्यवाद! आपकी टिप्पणी में कोई नंबर, लिंक या ईमेल है, इसलिए यह एक छोटी जाँच के बाद दिखेगी।');
+        else { if (x.d.comment) add(x.d.comment); msg.textContent = T('Thank you! Your comment is live.', 'धन्यवाद! आपकी टिप्पणी दिख रही है।'); }
       })
-      .catch(function () { msg.textContent = 'Could not post. Please check your connection and try again.'; })
+      .catch(function () { msg.textContent = T('Could not post. Please check your connection and try again.', 'टिप्पणी नहीं भेजी जा सकी। अपना इंटरनेट देखें और दोबारा कोशिश करें।'); })
       .then(function () { btn.disabled = false; try { window.turnstile.reset(wid); } catch (e) {} });
   });
 })();

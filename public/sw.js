@@ -1,5 +1,5 @@
 // Karsog.com service worker — offline bus timings & emergency numbers
-const CACHE = 'karsog-v20';
+const CACHE = 'karsog-v21';
 const CORE = ['/', '/index.html', '/contacts/', '/karsog-bus-stand/', '/karsog-valley.jpg', '/manifest.webmanifest', '/icon-192.png', '/icon-512.png'];
 
 self.addEventListener('install', e => {

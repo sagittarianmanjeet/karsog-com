@@ -18,7 +18,7 @@ FAQ: write <faq><q>Question</q><a>Answer</a> ...</faq> anywhere in the text; it 
 import json, os, re
 from urllib.parse import quote_plus
 from layout import L, icon, img, section, shead, faq_block, faq_ld, comments, gallery, pcard, esc, href, ROOT
-from data import BY_SLUG, PHOTOS, GUIDES, pbase
+from data import BY_SLUG, PHOTOS, GUIDES, pbase, photo_label, photo_alt
 
 CONTENT = os.path.join(ROOT, 'content')
 VIDEOS = json.load(open(os.path.join(ROOT, 'data', 'videos.json'), encoding='utf-8'))
@@ -39,7 +39,9 @@ def read(lang, name):
 def split_faq(body):
     faq = []
     for block in re.findall(r'<faq>(.*?)</faq>', body, re.S):
-        faq += [(re.sub(r'\s+', ' ', q).strip(), a.strip()) for q, a in re.findall(r'<q>(.*?)</q>\s*<a>(.*?)</a>', block, re.S)]
+        # an answer runs to the </a> just before the next <q> (or the end), so it can hold links of its own
+        faq += [(re.sub(r'\s+', ' ', q).strip(), a.strip())
+                for q, a in re.findall(r'<q>(.*?)</q>\s*<a>(.*?)</a>\s*(?=<q>|$)', block.strip(), re.S)]
     return re.sub(r'<faq>.*?</faq>', '', body, flags=re.S), faq
 
 
@@ -95,7 +97,7 @@ def model(name, lang):
         ph = BY_SLUG[g]
         extra += section(shead(L(lang, 'From the air', 'आसमान से'), L(lang, f'{len(ph)} drone <em>photos</em>', f'{len(ph)} ड्रोन <em>फ़ोटो</em>'),
                                L(lang, 'Tap a photo to see it full size.', 'फ़ोटो को बड़ा देखने के लिए छुएँ।'))
-                         + gallery(ph, lang), 'sec-alt', 'photos')
+                         + gallery(ph, lang, lambda p: photo_label(p, lang), lambda p: photo_alt(p, lang)), 'sec-alt', 'photos')
     if meta.get('videos'):
         extra += section(shead(L(lang, 'Watch the road', 'रास्ता देखें'), L(lang, 'Ride <em>videos</em>', 'राइड <em>वीडियो</em>'),
                                L(lang, 'Filmed on the way by Karsog Miles. They open on YouTube.', 'Karsog Miles के रास्ते के वीडियो। ये यूट्यूब पर खुलते हैं।'),

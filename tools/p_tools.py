@@ -15,7 +15,7 @@ def weather(lang):
     hl = lambda p: href(p, lang)
     load = L(lang, 'Loading…', 'लोड हो रहा है…')
     top = section(
-        '<div class="split"><div>'
+        f'<h2 class="vh">{L(lang, "Karsog weather now", "करसोग का मौसम अभी")}</h2><div class="split"><div>'
         f'<div class="wx-card" id="wx-now" aria-live="polite"><p class="wx-load">{L(lang, "Loading live weather…", "लाइव मौसम लोड हो रहा है…")}</p></div></div>'
         f'<div class="stack"><div class="note" id="wx-alert"><p>{L(lang, "Checking today’s rain and snow…", "आज की बारिश और बर्फ़ देखी जा रही है…")}</p></div>'
         f'<div class="card"><h3>{L(lang, "Air quality", "हवा की गुणवत्ता")}</h3><div id="wx-aqi"><p>{load}</p></div></div></div></div>'

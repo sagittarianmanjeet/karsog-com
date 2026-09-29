@@ -1,6 +1,7 @@
 """Bus pages: Karsog bus stand timetable, one page per destination, private buses."""
 from layout import L, icon, section, shead, faq_block, faq_ld, comments, note, esc, href
-from data import (HRTC, PRIVATE, P_DEP, LINE, CHECKED, CHECKED_HI, P_CHECKED, P_CHECKED_HI, clock, bus_url, next_bus_json, PLACE_HI)
+from data import (HRTC, PRIVATE, P_DEP, LINE, CHECKED, CHECKED_HI, P_CHECKED, P_CHECKED_HI, clock, bus_url, next_bus_json, PLACE_HI,
+                  MISSING_HI)
 
 BOARD = '/photos/bus-stand/karsog-bus-stand-board-2026'
 GROUPS = [(0, 7, 'Night & early morning · before 7 AM', 'रात और तड़के · सुबह 7 बजे से पहले'),
@@ -53,7 +54,7 @@ def private_table(rows, lang):
 def nextbus(lang, src='j-bd', n=6, title=None, foot=None):
     title = title or L(lang, 'Next buses from Karsog', 'करसोग से अगली बसें')
     foot = foot or L(lang, 'By the time in India right now · confirm at the stand', 'भारत के अभी के समय के हिसाब से · बस अड्डे पर पुष्टि कर लें')
-    return (f'<div class="nextbus" data-src="{src}" data-n="{n}"><div class="h"><span class="pulse"></span>{title}<span class="when"></span></div>'
+    return (f'<div class="nextbus" data-src="{src}" data-n="{n}"><h2 class="h"><span class="pulse"></span>{title}<span class="when"></span></h2>'
             f'<ol><li><span class="tm">—</span><span class="to">{L(lang, "Loading…", "लोड हो रहा है…")}</span></li></ol><p class="f">{foot}</p></div>')
 
 
@@ -250,6 +251,29 @@ def p_route(r, lang):
     return esc(r['route'] if lang == 'en' else hi_places(r['route']))
 
 
+# Hindi for the notes in data/karsog-private-buses.csv (a new note with no Hindi here shows in English and is reported)
+PRIVATE_NOTE_HI = {
+    'Two Manohar buses run on this route': 'इस रूट पर मनोहर की दो बसें चलती हैं',
+    'Arrival time from a separate Aug 2026 post': 'पहुँचने का समय अगस्त 2026 की एक अलग पोस्ट से',
+    'Bus still carries the old Blue Line name': 'बस पर अब भी पुराना ब्लू लाइन नाम लिखा है',
+    'Arrival is approximate': 'पहुँचने का समय अनुमानित है',
+    'Runs via Bithri from 7 Sep 2025': '7 सितंबर 2025 से बिठरी होकर चलती है',
+    'Service started 11 Dec 2025': 'यह सेवा 11 दिसंबर 2025 को शुरू हुई',
+    'One commenter disputed these times': 'एक टिप्पणी में इन समयों पर सवाल उठाया गया है',
+    'Runs via Pangna and Churag; does not enter Karsog town': 'पांगणा और चुराग होकर चलती है; करसोग शहर के अंदर नहीं आती',
+    'Runs via Churag and Pangna; does not enter Karsog town': 'चुराग और पांगणा होकर चलती है; करसोग शहर के अंदर नहीं आती',
+}
+
+
+def private_note(r, lang):
+    n = r.get('note', '')
+    if not n or lang == 'en':
+        return n
+    if n not in PRIVATE_NOTE_HI:
+        MISSING_HI.add(n)
+    return PRIVATE_NOTE_HI.get(n, n)
+
+
 def op_table(rows, lang):
     th = f'<th>{L(lang, "At Karsog", "करसोग में")}</th><th>{L(lang, "Route", "रूट")}</th><th class="hide-s">{L(lang, "Other stops", "दूसरे स्टॉप")}</th>'
     body = ''
@@ -257,7 +281,7 @@ def op_table(rows, lang):
         kind = L(lang, 'departs', 'चलती है') if r['karsog_kind'] == 'dep' else L(lang, 'reaches Karsog', 'करसोग पहुँचती है')
         t = f'{clock(r["karsog_time"], lang)}<small>{kind}</small>' if r['karsog_time'] else '—'
         stops = r['stops'] if lang == 'en' else hi_places(r['stops'])
-        note_ = r['note'] if lang == 'en' else ''
+        note_ = private_note(r, lang)
         body += (f'<tr><td class="t">{t}</td><td>{p_route(r, lang)}' + (f'<small>{esc(note_)}</small>' if note_ else '') +
                  (f'<small class="show-s">{esc(stops)}</small>' if stops else '') +
                  f'</td><td class="hide-s"><small>{esc(stops) or "—"}</small></td></tr>')
