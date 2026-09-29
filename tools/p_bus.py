@@ -221,7 +221,7 @@ def dest_pages(lang):
         if dist:
             fq.append((L(lang, f'How far is {n} from Karsog?', f'करसोग से {hi} कितनी दूर है?'),
                        L(lang, f'About {dist[2]:g} km by road, around {dist[3]} by car.', f'सड़क से लगभग {dist[2]:g} किमी, गाड़ी से लगभग {dist[4]}।')))
-        body = top + tbl + more + comments('bus-karsog-to-' + s, lang, L(lang, 'Is this timing still right?', 'क्या यह समय अब भी सही है?'),
+        body = top + tbl + more + comments('bus/karsog-to-' + s, lang, L(lang, 'Is this timing still right?', 'क्या यह समय अब भी सही है?'),
                                            L(lang, 'Seen this bus change time or stop running? Tell other travellers here.',
                                              'यह बस समय बदल गई या बंद हो गई? यहाँ दूसरे यात्रियों को बताइए।')) + faq_block(fq, lang)
         out.append(dict(
