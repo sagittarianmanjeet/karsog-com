@@ -21,7 +21,7 @@
 | Links | 0 broken internal links or images on 148 files |
 | Build | reproducible: a fresh build matched what is live |
 | Weather, next bus, comments | working (one comment so far, approved) |
-| Google | karsog.com did not show up in a web search even for "karsog.com bus timing": the site is barely indexed. The sitemap has still not been submitted in Search Console |
+| Google | Search Console (6 Oct): sitemap submitted 26 Sep and read 2 Oct (146 pages found), but only 2 pages indexed; the rest "Discovered – currently not indexed". 165 web clicks in the last 3 months. Indexing requested on 6 Oct for /, /karsog-bus-stand/, /shikari-devi/, /places/, /kamru-nag/, /mahunag/, /tattapani/ |
 | Fairs | Sharadiya Navratri had no dates although it falls this month. Added 2024: 3–11 Oct, 2025: 22 Sep–1 Oct, 2026: 11–19 Oct (Dussehra 20 Oct 2026) |
 | Bus board | 5 HRTC departures have no known destination (covered or handwritten on the board): 02:00, 04:20, 09:30, 11:00, 23:00. The next-bus boards said "see board"; now "ask at the stand" / "बस अड्डे पर पूछें". The board needs a fresh look |
 | Long titles/descriptions | as listed under Known limits below, plus `/contacts/`, `/places/`, `/weather/` descriptions just over 165 characters |
