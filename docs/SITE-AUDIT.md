@@ -1,3 +1,32 @@
+# karsog.com — audit of the live site, 6 Oct 2026
+
+## Mandi rates stopped updating on 25 Sep 2026
+
+- The Worker `karsog-mandi` ran on schedule (12:00, 15:00, 18:00 IST) but every run since 26 Sep failed:
+  data.gov.in answered HTTP 520/502/503/504/524, and from 30 Sep only 521. Only 25 Sep is stored (526 price lines).
+- The same API answers normally from an Indian connection (checked from Manjeet's computer on 6 Oct), and a US server
+  could not connect at all. So data.gov.in is refusing traffic from outside India; Cloudflare runs cron jobs anywhere.
+- Fix (`tools/mandi-worker.js`): the scheduled run now calls the Worker's own fetch handler through a `SELF` service
+  binding, and the Worker gets the placement hint `aws:ap-south-1` (Mumbai), so the request leaves from India.
+  Needs the dashboard steps listed at the top of that file. After deploying, `/api/mandi/status` shows each run's colo
+  in brackets (`[BOM]` = Mumbai).
+- The page said "Mandi rates today" with 11-day-old prices and no warning. It now shows a notice whenever the newest
+  report is more than two days old (English and Hindi). Agmarknet's "Sirmore" is shown as Sirmaur.
+
+## Other findings
+
+| Check | Result |
+|---|---|
+| Live pages | all 146 sitemap addresses return 200; `/devtas/` redirects; robots.txt and sitemap fine; no `noindex` except 404 |
+| Links | 0 broken internal links or images on 148 files |
+| Build | reproducible: a fresh build matched what is live |
+| Weather, next bus, comments | working (one comment so far, approved) |
+| Google | karsog.com did not show up in a web search even for "karsog.com bus timing": the site is barely indexed. The sitemap has still not been submitted in Search Console |
+| Fairs | Sharadiya Navratri had no dates although it falls this month. Added 2024: 3–11 Oct, 2025: 22 Sep–1 Oct, 2026: 11–19 Oct (Dussehra 20 Oct 2026) |
+| Bus board | 5 HRTC departures have no known destination (covered or handwritten on the board): 02:00, 04:20, 09:30, 11:00, 23:00. The next-bus boards said "see board"; now "ask at the stand" / "बस अड्डे पर पूछें". The board needs a fresh look |
+| Long titles/descriptions | as listed under Known limits below, plus `/contacts/`, `/places/`, `/weather/` descriptions just over 165 characters |
+| Old branches | `add-private-bus-timings`, `buses-brand`, `melas-devtas`, `site-tabs`, `redesign` are all superseded by `main` and can be deleted |
+
 # karsog.com — site audit of the redesign
 
 Checked on 29 Sep 2026, on the `redesign` branch as handed over for review (147 pages: 73 in English, 73 in Hindi, and

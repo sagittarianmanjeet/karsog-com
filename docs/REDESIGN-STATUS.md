@@ -61,6 +61,7 @@ by Claude from GitHub Desktop at Manjeet's request. Every page is built by the n
 
 ## Still to do
 
+0. Deploy the mandi Worker fix (`tools/mandi-worker.js`, steps at the top of the file). See `docs/SITE-AUDIT.md`, 6 Oct 2026.
 1. Submit `https://karsog.com/sitemap.xml` in Google Search Console (Manjeet; account action).
 2. The merged `redesign` branch on GitHub can be deleted (or kept; it is fully merged).
 3. The open questions below.

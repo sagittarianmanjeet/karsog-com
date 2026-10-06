@@ -20,6 +20,8 @@
   function fmtDate(d) { if (!d) return '—'; var p = d.split('-'); return (+p[2]) + ' ' + MON[+p[1] - 1]; }
   function ageDays(d) { return Math.round((Date.parse(today) - Date.parse(d)) / 864e5); }
   function cleanMarket(m) { var t = /^(PMY|SMY|TSMY)\s+/i.exec(m); return { name: t ? m.slice(t[0].length) : m, yard: t ? t[1].toUpperCase() : '' }; }
+  var DIST_NAME = { 'Sirmore': 'Sirmaur' };
+  function dn(d) { return DIST_NAME[d] || d; }
   function distRank(d) { var i = DIST_ORDER.indexOf(d); return i < 0 ? 99 : i; }
 
   function load() {
@@ -28,7 +30,13 @@
       data = (j.rows || []).map(function (r) { var o = {}; c.forEach(function (k, i) { o[k] = r[i]; }); return o; });
       if (!data.length) { $('mr-list').innerHTML = ''; $('mr-err').textContent = L('Prices will appear here after the first daily update.', 'पहले दैनिक अपडेट के बाद यहाँ भाव दिखेंगे।'); $('mr-err').hidden = false; return; }
       var dates = data.map(function (r) { return r.d; }).sort();
-      $('mr-date').textContent = fmtDate(dates[dates.length - 1]);
+      var newest = dates[dates.length - 1];
+      $('mr-date').textContent = fmtDate(newest);
+      if (ageDays(newest) > 2) {
+        $('mr-stale').textContent = L('These are the latest prices we have, reported on ' + fmtDate(newest) + '. No newer reports have reached us from the official data service since then. This page updates by itself as soon as they do, so check the date on each market before you rely on a price.',
+          'ये हमारे पास मौजूद सबसे ताज़ा भाव हैं, जो ' + fmtDate(newest) + ' को आए थे। उसके बाद सरकारी डेटा सेवा से नई रिपोर्ट नहीं आई है। रिपोर्ट आते ही यह पेज अपने आप अपडेट हो जाएगा, इसलिए किसी भाव पर भरोसा करने से पहले हर मंडी की तारीख़ देख लें।');
+        $('mr-stale').hidden = false;
+      }
       $('mr-mkts').textContent = new Set(data.map(function (r) { return r.market; })).size;
       $('mr-items').textContent = data.length;
       if (j.built) $('mr-built').textContent = L('Last updated ', 'आख़िरी अपडेट ') + new Date(j.built).toLocaleString(HI ? 'hi-IN' : 'en-IN', { dateStyle: 'medium', timeStyle: 'short' }) + '.';
@@ -52,7 +60,7 @@
 
   function districts() {
     var ds = Array.from(new Set(data.map(function (r) { return r.district; }))).sort(function (a, b) { return distRank(a) - distRank(b) || a.localeCompare(b); });
-    ds.forEach(function (d) { var o = el('option', null, d); o.value = d; $('mr-dist').appendChild(o); });
+    ds.forEach(function (d) { var o = el('option', null, dn(d)); o.value = d; $('mr-dist').appendChild(o); });
   }
 
   function render() {
@@ -76,7 +84,7 @@
       var last = items.map(function (r) { return r.d; }).sort().pop(), cm = cleanMarket(m);
       var card = el('section', 'mkt'), h = el('div', 'mkt-h'), left = el('div');
       left.appendChild(el('h3', null, cm.name));
-      left.appendChild(el('div', 'sub', items[0].district + L(' district', ' ज़िला') + (cm.yard ? ' · ' + cm.yard : '')));
+      left.appendChild(el('div', 'sub', dn(items[0].district) + L(' district', ' ज़िला') + (cm.yard ? ' · ' + cm.yard : '')));
       var age = ageDays(last);
       var tag = el('span', 'mtag' + (age > 2 ? ' old' : ''), age <= 0 ? L('Today', 'आज') : age === 1 ? L('Yesterday', 'कल') : fmtDate(last));
       h.appendChild(left); h.appendChild(tag); card.appendChild(h);

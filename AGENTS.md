@@ -34,7 +34,8 @@ learn something the next assistant needs. The owner is Manjeet (GitHub: sagittar
   them with `?v=<hash>`, so a rebuild after a CSS/JS change is enough to refresh browsers. Bump `CACHE` in
   `public/sw.js` when the page shell changes.
 - The comments box talks to `/api/comments` (Cloudflare Worker + D1, code in `tools/comments-worker.js`, deployed
-  separately). Mandi rates come from `/api/mandi`. A page's comment id is its path without the outer slashes
+  separately). Mandi rates come from `/api/mandi` (Worker `karsog-mandi`, code in `tools/mandi-worker.js`, also deployed
+  separately from the dashboard; data.gov.in refuses connections from outside India, so the Worker runs from Mumbai). A page's comment id is its path without the outer slashes
   (`mahunag`, `bus/karsog-to-thunag`); the Hindi page uses the same id. Never change an id, or that page's
   comments disappear.
 
