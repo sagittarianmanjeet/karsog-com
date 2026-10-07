@@ -61,7 +61,7 @@ by Claude from GitHub Desktop at Manjeet's request. Every page is built by the n
 
 ## Still to do
 
-0. Deploy the mandi Worker fix (`tools/mandi-worker.js`, steps at the top of the file). See `docs/SITE-AUDIT.md`, 6 Oct 2026.
+0. Mandi Worker fix: the `SELF` service binding and the Mumbai placement (aws:ap-south-1) were set on 7 Oct 2026. Still to do: paste `tools/mandi-worker.js` into Cloudflare → karsog-mandi → Edit code and Deploy (no ADMIN_KEY needed). See `docs/SITE-AUDIT.md`.
 1. ~~Submit the sitemap~~ (done 26 Sep). Request indexing for more key pages in Search Console, about 10 a day.
 2. The merged `redesign` branch on GitHub can be deleted (or kept; it is fully merged).
 3. The open questions below.
