@@ -7,7 +7,7 @@
 //   D1 binding       DB            → database "karsog-mandi"
 //   Service binding  SELF          → this same Worker, "karsog-mandi"
 //   Secret           DATA_GOV_KEY  → your data.gov.in API key
-//   Secret           ADMIN_KEY     → any long password you choose (manual refresh; also guards the internal run)
+//   Secret           ADMIN_KEY     → optional; any long password, only for a manual refresh via /api/mandi/run
 //   Variable         STATES        → optional, default "Himachal Pradesh" (comma-separated list)
 //   Email binding    ALERT         → send_email to sagittarian.manjeet@gmail.com
 //   Placement        Region: aws:ap-south-1 (Mumbai)
@@ -19,12 +19,15 @@
 // Indian connection). Cron runs execute wherever Cloudflare chooses and placement does not apply to
 // them, so the scheduled handler calls this Worker's own fetch handler through the SELF binding;
 // fetch handlers do follow the placement, so the data.gov.in request leaves from Mumbai.
+// The internal run is reachable only through SELF: public requests arrive with karsog.com or a
+// workers.dev hostname, never the made-up host INTERNAL_HOST.
 
 import { EmailMessage } from 'cloudflare:email';
 
 const RESOURCE = 'https://api.data.gov.in/resource/9ef84268-d588-465a-a308-a864a43d0070';
 const KEEP_DAYS_LATEST = 10;   // a market's last report older than this is dropped from "latest"
 const HISTORY_DAYS = 90;
+const INTERNAL_HOST = 'karsog-mandi.internal';
 
 const J = (o, s = 200, cache = 'no-store') => new Response(JSON.stringify(o), {
   status: s,
@@ -110,11 +113,9 @@ async function run(env, where = '') {
 
 // Run the fetch from the Worker's placed location (Mumbai) when the SELF binding exists.
 async function runPlaced(env) {
-  if (!env.SELF || !env.ADMIN_KEY) return run(env, ' (unplaced: SELF binding or ADMIN_KEY missing)');
+  if (!env.SELF) return run(env, ' (unplaced: SELF binding missing)');
   try {
-    const r = await env.SELF.fetch('https://karsog-mandi.internal/internal/run', {
-      method: 'POST', headers: { 'x-run-key': env.ADMIN_KEY }
-    });
+    const r = await env.SELF.fetch(`https://${INTERNAL_HOST}/internal/run`, { method: 'POST' });
     return await r.json();
   } catch (e) {
     await log(env, 0, 0, ('SELF call failed: ' + String(e && e.message || e)).slice(0, 300));
@@ -179,9 +180,8 @@ export default {
     const u = new URL(req.url);
     const path = u.pathname.replace(/\/+$/, '');
 
-    // Internal: the scheduled handler's run, reached only through the SELF binding (and the key).
-    if (path === '/internal/run' && req.method === 'POST') {
-      if (!env.ADMIN_KEY || !same(req.headers.get('x-run-key'), env.ADMIN_KEY)) return J({ error: 'Not found.' }, 404);
+    // Internal: the scheduled handler's run, reached only through the SELF binding.
+    if (u.hostname === INTERNAL_HOST && path === '/internal/run' && req.method === 'POST') {
       const colo = (req.cf && req.cf.colo) ? ` [${req.cf.colo}]` : '';
       return J(await run(env, colo));
     }
