@@ -11,7 +11,7 @@
 //   Variable         STATES        → optional, default "Himachal Pradesh" (comma-separated list)
 //   Email binding    ALERT         → send_email to sagittarian.manjeet@gmail.com
 //   Placement        Region: aws:ap-south-1 (Mumbai)
-//   Route            karsog.com/api/mandi*
+//   Route            karsog.com/api/mandi*   (includes /api/mandi/ingest, used by the PC script)
 //   Cron             30 6,9,12 * * *   (12:00, 15:00, 18:00 IST)
 //
 // Why SELF and the Mumbai placement: since 26 Sep 2026 data.gov.in refuses connections from outside
@@ -19,12 +19,24 @@
 // Indian connection). Cron runs execute wherever Cloudflare chooses and placement does not apply to
 // them, so the scheduled handler calls this Worker's own fetch handler through the SELF binding;
 // fetch handlers do follow the placement, so the data.gov.in request leaves from Mumbai.
+//
+// 8 Oct 2026: the Mumbai placement did NOT help, and a test from GitHub Actions (US) was refused too:
+// data.gov.in refuses connections from data-centre/foreign networks. Prices now come from Manjeet's Ubuntu PC
+// (tools/pc-mandi/), which fetches them ~10 min after it is switched on and POSTs them to /api/mandi/ingest.
+// The Worker's own scheduled pull is kept: it costs nothing and resumes by itself if NIC lifts the block.
 // The internal run is reachable only through SELF: public requests arrive with karsog.com or a
 // workers.dev hostname, never the made-up host INTERNAL_HOST.
 
 import { EmailMessage } from 'cloudflare:email';
 
-const RESOURCE = 'https://api.data.gov.in/resource/9ef84268-d588-465a-a308-a864a43d0070';
+// Same dataset, two addresses. Since 26 Sep 2026 api.data.gov.in refuses connections from everywhere (tested
+// 8 Oct from a home connection in Himachal too). www.data.gov.in/backend/dataapi serves the same JSON and works from
+// India, but its Akamai front returns "Access Denied" to US servers. Tried in this order.
+const RESOURCES = [
+  'https://www.data.gov.in/backend/dataapi/v1/resource/9ef84268-d588-465a-a308-a864a43d0070',
+  'https://api.data.gov.in/resource/9ef84268-d588-465a-a308-a864a43d0070'
+];
+const UA = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0 Safari/537.36 (karsog.com mandi rates; +https://karsog.com/mandi-rates/)';
 const KEEP_DAYS_LATEST = 10;   // a market's last report older than this is dropped from "latest"
 const HISTORY_DAYS = 90;
 const INTERNAL_HOST = 'karsog-mandi.internal';
@@ -54,18 +66,18 @@ function daysAgo(n) {
 const num = v => { const n = Math.round(Number(v)); return Number.isFinite(n) && n > 0 ? n : null; };
 const txt = v => String(v ?? '').trim().slice(0, 80);
 
-async function pullState(env, state) {
+async function pullState(env, state, base) {
   const out = [];
   let offset = 0, total = Infinity;
   for (let page = 0; page < 40 && offset < total; page++) {
-    const u = new URL(RESOURCE);
+    const u = new URL(base);
     u.searchParams.set('api-key', env.DATA_GOV_KEY);
     u.searchParams.set('format', 'json');
     u.searchParams.set('limit', '1000');
     u.searchParams.set('offset', String(offset));
     u.searchParams.set('filters[state.keyword]', state);
-    const r = await fetch(u, { headers: { accept: 'application/json' } });
-    if (!r.ok) throw new Error(`data.gov.in HTTP ${r.status} for ${state}`);
+    const r = await fetch(u, { headers: { accept: 'application/json', 'user-agent': UA, referer: 'https://www.data.gov.in/' } });
+    if (!r.ok) throw new Error(`${new URL(base).hostname} HTTP ${r.status} for ${state}`);
     const j = await r.json();
     if (j.status && j.status !== 'ok') throw new Error(`data.gov.in: ${String(j.message || j.status).slice(0, 120)}`);
     const recs = Array.isArray(j.records) ? j.records : [];
@@ -82,33 +94,44 @@ async function run(env, where = '') {
   try {
     if (!env.DATA_GOV_KEY) throw new Error('DATA_GOV_KEY secret is not set');
     const states = String(env.STATES || 'Himachal Pradesh').split(',').map(s => s.trim()).filter(Boolean);
-    const rows = [];
-    for (const st of states) rows.push(...await pullState(env, st));
-
-    const stmt = env.DB.prepare(
-      `INSERT INTO prices (d, state, district, market, commodity, variety, grade, min_p, max_p, modal_p, fetched)
-       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-       ON CONFLICT (d, market, commodity, variety, grade) DO UPDATE SET
-         min_p = excluded.min_p, max_p = excluded.max_p, modal_p = excluded.modal_p,
-         district = excluded.district, state = excluded.state, fetched = excluded.fetched`
-    );
-    const batch = [];
-    for (const r of rows) {
-      const d = isoDate(r.arrival_date);
-      const modal = num(r.modal_price);
-      if (!d || !modal || !r.market || !r.commodity) continue;
-      batch.push(stmt.bind(d, txt(r.state), txt(r.district), txt(r.market), txt(r.commodity),
-        txt(r.variety), txt(r.grade), num(r.min_price), num(r.max_price), modal, started));
+    const errors = [];
+    for (const base of RESOURCES) {
+      try {
+        const rows = [];
+        for (const st of states) rows.push(...await pullState(env, st, base));
+        return await save(env, rows, started, `${where} via ${new URL(base).hostname}`);
+      } catch (e) { errors.push(String(e && e.message || e)); }
     }
-    for (let i = 0; i < batch.length; i += 100) await env.DB.batch(batch.slice(i, i + 100));
-
-    await buildSnapshot(env);
-    await log(env, 1, batch.length, `ok: ${rows.length} fetched, ${batch.length} saved${where}`);
-    return { ok: true, fetched: rows.length, saved: batch.length };
+    throw new Error(errors.join(' | '));
   } catch (e) {
     await log(env, 0, 0, (String(e && e.message || e) + where).slice(0, 300));
     return { ok: false, error: String(e && e.message || e) };
   }
+}
+
+// Store raw data.gov.in records (from this Worker's own pull or handed over by the PC script).
+async function save(env, rows, started, where) {
+  const stmt = env.DB.prepare(
+    `INSERT INTO prices (d, state, district, market, commodity, variety, grade, min_p, max_p, modal_p, fetched)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+     ON CONFLICT (d, market, commodity, variety, grade) DO UPDATE SET
+       min_p = excluded.min_p, max_p = excluded.max_p, modal_p = excluded.modal_p,
+       district = excluded.district, state = excluded.state, fetched = excluded.fetched`
+  );
+  const batch = [];
+  for (const r of rows) {
+    if (!r || typeof r !== 'object') continue;
+    const d = isoDate(r.arrival_date);
+    const modal = num(r.modal_price);
+    if (!d || !modal || !r.market || !r.commodity) continue;
+    if (d > daysAgo(-1)) continue; // no future dates
+    batch.push(stmt.bind(d, txt(r.state), txt(r.district), txt(r.market), txt(r.commodity),
+      txt(r.variety), txt(r.grade), num(r.min_price), num(r.max_price), modal, started));
+  }
+  for (let i = 0; i < batch.length; i += 100) await env.DB.batch(batch.slice(i, i + 100));
+  await buildSnapshot(env);
+  await log(env, 1, batch.length, `ok: ${rows.length} fetched, ${batch.length} saved${where}`);
+  return { ok: true, fetched: rows.length, saved: batch.length };
 }
 
 // Run the fetch from the Worker's placed location (Mumbai) when the SELF binding exists.
@@ -226,6 +249,20 @@ export default {
       return J({ runs: results, stored: days, colo: (req.cf && req.cf.colo) || null });
     }
 
+    // Hand-over from the PC script (tools/pc-mandi/): POST {"key":"<DATA_GOV_KEY>","records":[...]}
+    // The PC fetches data.gov.in from an Indian home connection and sends the raw records here.
+    if (path === '/api/mandi/ingest' && req.method === 'POST') {
+      let d; try { d = await req.json(); } catch { return J({ error: 'Bad request.' }, 400); }
+      if (!env.DATA_GOV_KEY || !same(d && d.key, env.DATA_GOV_KEY)) return J({ error: 'Wrong key.' }, 403);
+      if (!Array.isArray(d.records) || d.records.length > 20000) return J({ error: 'records must be a list (max 20000).' }, 400);
+      const from = txt(d.from || 'pc').replace(/[^\w .-]/g, '').slice(0, 30);
+      try { return J(await save(env, d.records, Date.now(), ` (via ${from})`)); }
+      catch (e) {
+        await log(env, 0, 0, ('ingest failed: ' + String(e && e.message || e)).slice(0, 300));
+        return J({ ok: false, error: 'save failed' }, 500);
+      }
+    }
+
     // Manual refresh: POST {"key":"<ADMIN_KEY>"} — runs from the placed location too
     if (path === '/api/mandi/run' && req.method === 'POST') {
       let d; try { d = await req.json(); } catch { return J({ error: 'Bad request.' }, 400); }
@@ -240,7 +277,7 @@ export default {
 
 // ---- Health alerts (email via Email Routing; binding: ALERT = send_email → sagittarian.manjeet@gmail.com) ----
 // Runs after the 12:30 UTC cron (18:00 IST). At most one email per 20 hours.
-// Alerts when: no successful mandi run in 24 h, newest price older than 4 days, or karsog.com pages not loading.
+// Alerts when: newest price older than 3 days, or karsog.com pages not loading.
 const ALERT_TO = 'sagittarian.manjeet@gmail.com';
 const ALERT_FROM = 'alerts@karsog.com';
 const CHECK_PAGES = ['https://karsog.com/', 'https://karsog.com/karsog-bus-stand/', 'https://karsog.com/mandi-rates/'];
@@ -266,14 +303,9 @@ async function sendAlert(env, subject, body) {
 async function healthCheck(env) {
   const problems = [];
   const now = Date.now();
-  const okRun = await env.DB.prepare('SELECT MAX(ts) AS t FROM runs WHERE ok = 1').first();
-  if (!okRun || !okRun.t || now - okRun.t > 24 * 3600e3) {
-    const last = await env.DB.prepare('SELECT msg FROM runs WHERE ok = 0 ORDER BY ts DESC LIMIT 1').first();
-    problems.push(`Mandi rates: no successful update in 24 hours.${last ? ' Last error: ' + last.msg : ''}`);
-  }
   const newest = await env.DB.prepare('SELECT MAX(d) AS d FROM prices').first();
-  if (!newest || !newest.d || newest.d < daysAgo(4)) {
-    problems.push(`Mandi rates: newest price is dated ${newest && newest.d || 'never'} (data.gov.in may have stopped sending Himachal reports).`);
+  if (!newest || !newest.d || newest.d < daysAgo(3)) {
+    problems.push(`Mandi rates: newest price is dated ${newest && newest.d || 'never'} Is the Ubuntu PC being switched on? Its script hands the prices over (tools/pc-mandi/).`);
   }
   for (const p of CHECK_PAGES) {
     try {

@@ -35,7 +35,7 @@ learn something the next assistant needs. The owner is Manjeet (GitHub: sagittar
   `public/sw.js` when the page shell changes.
 - The comments box talks to `/api/comments` (Cloudflare Worker + D1, code in `tools/comments-worker.js`, deployed
   separately). Mandi rates come from `/api/mandi` (Worker `karsog-mandi`, code in `tools/mandi-worker.js`, also deployed
-  separately from the dashboard; data.gov.in refuses connections from outside India, so the Worker runs from Mumbai). A page's comment id is its path without the outer slashes
+  separately from the dashboard). Since 26 Sep 2026 `api.data.gov.in` refuses connections from everywhere; the same dataset is served at `www.data.gov.in/backend/dataapi/v1/resource/<id>`, which works from India but is Akamai-blocked for US servers. The Worker tries that address first; Manjeet's Ubuntu PC runs `tools/pc-mandi/` (systemd user timer, 10 min after start, then every 4 h) and POSTs the records to `/api/mandi/ingest` as a guaranteed backup. A page's comment id is its path without the outer slashes
   (`mahunag`, `bus/karsog-to-thunag`); the Hindi page uses the same id. Never change an id, or that page's
   comments disappear.
 

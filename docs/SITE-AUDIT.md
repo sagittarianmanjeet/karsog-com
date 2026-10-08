@@ -1,5 +1,17 @@
 # karsog.com — audit of the live site, 6 Oct 2026
 
+## 8 Oct 2026: mandi source found, PC backup added
+
+- Mumbai placement did not help. Tests: GitHub Actions (US) could not connect to `api.data.gov.in`, and neither
+  could Manjeet's home connection in Himachal, so that host is down for everyone, not blocking Cloudflare.
+- The data.gov.in site itself reads the same dataset from `www.data.gov.in/backend/dataapi/v1/resource/<id>` (same
+  JSON, same API key). It worked from the home connection (476 Himachal prices dated 8 Oct) but returned Akamai
+  "Access Denied" to GitHub Actions.
+- `tools/mandi-worker.js` now tries that address first, then the old one, and accepts records from the PC at
+  `POST /api/mandi/ingest` (authorised by the same data.gov.in key). Alert emails now fire only when the newest
+  price is older than 3 days (no more daily "no update in 24 h" mails).
+- `tools/pc-mandi/`: script + installer for the Ubuntu PC.
+
 ## Mandi rates stopped updating on 25 Sep 2026
 
 - The Worker `karsog-mandi` ran on schedule (12:00, 15:00, 18:00 IST) but every run since 26 Sep failed:
