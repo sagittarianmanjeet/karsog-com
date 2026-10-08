@@ -7,10 +7,12 @@
 - The data.gov.in site itself reads the same dataset from `www.data.gov.in/backend/dataapi/v1/resource/<id>` (same
   JSON, same API key). It worked from the home connection (476 Himachal prices dated 8 Oct) but returned Akamai
   "Access Denied" to GitHub Actions.
-- `tools/mandi-worker.js` now tries that address first, then the old one, and accepts records from the PC at
-  `POST /api/mandi/ingest` (authorised by the same data.gov.in key). Alert emails now fire only when the newest
+- `tools/mandi-worker.js` now tries that address first, then the old one, and accepts records at
+  `POST /api/mandi/ingest` (authorised by ADMIN_KEY). Alert emails now fire only when the newest
   price is older than 3 days (no more daily "no update in 24 h" mails).
-- `tools/pc-mandi/`: script + installer for the Ubuntu PC.
+- Manual fallback: karsog.com/mandi-update (`public/mandi-update.html`). Manjeet enters the ADMIN_KEY password; his
+  browser fetches the prices from data.gov.in (CORS allows karsog.com, tested 8 Oct) and sends them to the Worker.
+- `tools/pc-mandi/`: script + installer for the Ubuntu PC, using the same password and endpoints.
 
 ## Mandi rates stopped updating on 25 Sep 2026
 

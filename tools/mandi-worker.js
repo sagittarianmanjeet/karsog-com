@@ -7,7 +7,7 @@
 //   D1 binding       DB            → database "karsog-mandi"
 //   Service binding  SELF          → this same Worker, "karsog-mandi"
 //   Secret           DATA_GOV_KEY  → your data.gov.in API key
-//   Secret           ADMIN_KEY     → optional; any long password, only for a manual refresh via /api/mandi/run
+//   Secret           ADMIN_KEY     → a password of your choice (12+ characters) for karsog.com/mandi-update and the PC script
 //   Variable         STATES        → optional, default "Himachal Pradesh" (comma-separated list)
 //   Email binding    ALERT         → send_email to sagittarian.manjeet@gmail.com
 //   Placement        Region: aws:ap-south-1 (Mumbai)
@@ -20,10 +20,10 @@
 // them, so the scheduled handler calls this Worker's own fetch handler through the SELF binding;
 // fetch handlers do follow the placement, so the data.gov.in request leaves from Mumbai.
 //
-// 8 Oct 2026: the Mumbai placement did NOT help, and a test from GitHub Actions (US) was refused too:
-// data.gov.in refuses connections from data-centre/foreign networks. Prices now come from Manjeet's Ubuntu PC
-// (tools/pc-mandi/), which fetches them ~10 min after it is switched on and POSTs them to /api/mandi/ingest.
-// The Worker's own scheduled pull is kept: it costs nothing and resumes by itself if NIC lifts the block.
+// 8 Oct 2026: api.data.gov.in is down for everyone; the scheduled pull now tries www.data.gov.in/backend/dataapi
+// first (see RESOURCES). If Cloudflare is refused there too, prices come from an Indian connection instead:
+// the manual page karsog.com/mandi-update (any phone/PC browser) or the Ubuntu PC script (tools/pc-mandi/),
+// both via /api/mandi/source + /api/mandi/ingest, authorised by ADMIN_KEY.
 // The internal run is reachable only through SELF: public requests arrive with karsog.com or a
 // workers.dev hostname, never the made-up host INTERNAL_HOST.
 
@@ -192,6 +192,7 @@ async function cached(req, ctx, ttl, make) {
   return res;
 }
 
+const slow = () => new Promise(r => setTimeout(r, 1500)); // makes password guessing slow
 const SAFE = /^[\p{L}\p{N} ().,&'\/-]{1,80}$/u;
 
 export default {
@@ -249,13 +250,22 @@ export default {
       return J({ runs: results, stored: days, colo: (req.cf && req.cf.colo) || null });
     }
 
-    // Hand-over from the PC script (tools/pc-mandi/): POST {"key":"<DATA_GOV_KEY>","records":[...]}
-    // The PC fetches data.gov.in from an Indian home connection and sends the raw records here.
-    if (path === '/api/mandi/ingest' && req.method === 'POST') {
+    // Manual update page (/mandi-update) and the PC script: both fetch data.gov.in from an Indian connection.
+    // Step 1, POST /api/mandi/source {"key":"<ADMIN_KEY>"} → where and how to fetch (includes the data.gov.in key).
+    // Step 2, POST /api/mandi/ingest {"key":"<ADMIN_KEY or DATA_GOV_KEY>","records":[...]} → saved like a normal run.
+    if ((path === '/api/mandi/source' || path === '/api/mandi/ingest') && req.method === 'POST') {
       let d; try { d = await req.json(); } catch { return J({ error: 'Bad request.' }, 400); }
-      if (!env.DATA_GOV_KEY || !same(d && d.key, env.DATA_GOV_KEY)) return J({ error: 'Wrong key.' }, 403);
+      const k = d && d.key;
+      const admin = env.ADMIN_KEY && String(env.ADMIN_KEY).length >= 12 && same(k, env.ADMIN_KEY);
+      if (path === '/api/mandi/source') {
+        if (!admin) { await slow(); return J({ error: env.ADMIN_KEY ? 'Wrong password.' : 'ADMIN_KEY is not set in Cloudflare.' }, 403); }
+        if (!env.DATA_GOV_KEY) return J({ error: 'DATA_GOV_KEY is not set in Cloudflare.' }, 500);
+        return J({ sources: RESOURCES, apiKey: env.DATA_GOV_KEY,
+          states: String(env.STATES || 'Himachal Pradesh').split(',').map(s => s.trim()).filter(Boolean) });
+      }
+      if (!admin && !(env.DATA_GOV_KEY && same(k, env.DATA_GOV_KEY))) { await slow(); return J({ error: 'Wrong password.' }, 403); }
       if (!Array.isArray(d.records) || d.records.length > 20000) return J({ error: 'records must be a list (max 20000).' }, 400);
-      const from = txt(d.from || 'pc').replace(/[^\w .-]/g, '').slice(0, 30);
+      const from = txt(d.from || 'manual').replace(/[^\w .-]/g, '').slice(0, 40);
       try { return J(await save(env, d.records, Date.now(), ` (via ${from})`)); }
       catch (e) {
         await log(env, 0, 0, ('ingest failed: ' + String(e && e.message || e)).slice(0, 300));

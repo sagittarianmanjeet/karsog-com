@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Update mandi rates</title>
+<style>
+  :root { --bg:#f7f5f0; --card:#fff; --ink:#1d2321; --muted:#5d6763; --line:#dcd8cf; --accent:#2f6b4f; --ok:#2f6b4f; --bad:#a3392b; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#141816; --card:#1d2321; --ink:#eef1ee; --muted:#a3ada8; --line:#33403b; --accent:#6fbf94; --ok:#6fbf94; --bad:#e8857a; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width:520px; margin:0 auto; padding:24px 16px 48px; }
+  h1 { font-size:1.4rem; margin:0 0 4px; }
+  p.sub { color:var(--muted); margin:0 0 20px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px; margin-bottom:16px; }
+  label { display:block; font-weight:600; margin-bottom:6px; }
+  input[type=password] { width:100%; padding:12px; font-size:1rem; border:1px solid var(--line); border-radius:8px; background:var(--bg); color:var(--ink); }
+  .row { display:flex; align-items:center; gap:8px; margin-top:10px; color:var(--muted); font-size:.92rem; }
+  button { width:100%; margin-top:14px; padding:14px; font-size:1.05rem; font-weight:600; border:0; border-radius:10px; background:var(--accent); color:#fff; cursor:pointer; }
+  button:disabled { opacity:.6; cursor:wait; }
+  ol { margin:0; padding-left:20px; }
+  li { margin:4px 0; }
+  li.ok { color:var(--ok); } li.bad { color:var(--bad); }
+  .status { font-size:.92rem; color:var(--muted); }
+  .status b { color:var(--ink); }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Update mandi rates</h1>
+  <p class="sub">For when the automatic update fails. Your browser fetches today's prices from data.gov.in and sends them to karsog.com. Works from any phone or computer in India.</p>
+
+  <div class="card status" id="status">Checking current status…</div>
+
+  <div class="card">
+    <label for="pw">Password</label>
+    <input id="pw" type="password" autocomplete="current-password" placeholder="The ADMIN_KEY set in Cloudflare">
+    <div class="row"><input id="remember" type="checkbox" checked><label for="remember" style="margin:0;font-weight:400">Remember on this device</label></div>
+    <button id="go">Update now</button>
+  </div>
+
+  <div class="card" id="logCard" hidden><ol id="log"></ol></div>
+  <p class="status"><a href="/mandi-rates/">← Mandi rates page</a></p>
+</main>
+<script>
+(() => {
+  const $ = id => document.getElementById(id);
+  const store = { get(){ try { return localStorage.getItem('mandiPw') || ''; } catch { return ''; } },
+                  set(v){ try { v ? localStorage.setItem('mandiPw', v) : localStorage.removeItem('mandiPw'); } catch {} } };
+  $('pw').value = store.get();
+
+  const step = (text, cls) => { const li = document.createElement('li'); li.textContent = text; if (cls) li.className = cls; $('log').appendChild(li); $('logCard').hidden = false; return li; };
+  const fmtTime = ts => new Date(ts).toLocaleString('en-IN', { day:'numeric', month:'short', hour:'2-digit', minute:'2-digit' });
+
+  async function showStatus() {
+    try {
+      const s = await fetch('/api/mandi/status', { cache: 'no-store' }).then(r => r.json());
+      const lastOk = (s.runs || []).find(r => r.ok === 1);
+      $('status').innerHTML = `Newest prices on the site: <b>${s.stored && s.stored.last || 'none'}</b><br>` +
+        `Last successful update: <b>${lastOk ? fmtTime(lastOk.ts) : 'none in recent log'}</b>`;
+    } catch { $('status').textContent = 'Could not read the current status.'; }
+  }
+
+  async function post(path, body) {
+    const r = await fetch(path, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body) });
+    let j = {}; try { j = await r.json(); } catch {}
+    if (!r.ok) throw new Error(j.error || ('HTTP ' + r.status));
+    return j;
+  }
+
+  async function pull(base, apiKey, state) {
+    const out = [];
+    for (let offset = 0, page = 0; page < 40; page++) {
+      const u = new URL(base);
+      u.searchParams.set('api-key', apiKey); u.searchParams.set('format', 'json'); u.searchParams.set('limit', '1000');
+      u.searchParams.set('offset', String(offset)); u.searchParams.set('filters[state.keyword]', state);
+      const r = await fetch(u, { credentials: 'omit', cache: 'no-store' });
+      if (!r.ok) throw new Error(new URL(base).hostname + ' HTTP ' + r.status);
+      const j = await r.json();
+      if (j.status && j.status !== 'ok') throw new Error('data.gov.in: ' + (j.message || j.status));
+      const recs = Array.isArray(j.records) ? j.records : [];
+      out.push(...recs); offset += recs.length;
+      if (!recs.length || offset >= (Number(j.total) || 0)) break;
+    }
+    return out;
+  }
+
+  $('go').addEventListener('click', async () => {
+    const pw = $('pw').value.trim();
+    if (!pw) { $('pw').focus(); return; }
+    $('go').disabled = true; $('log').innerHTML = '';
+    try {
+      let s = step('Checking password…');
+      const src = await post('/api/mandi/source', { key: pw });
+      s.textContent = 'Password OK'; s.className = 'ok';
+      store.set($('remember').checked ? pw : '');
+
+      let records = null, host = '', errors = [];
+      for (const base of src.sources) {
+        host = new URL(base).hostname;
+        s = step('Fetching prices from ' + host + '…');
+        try {
+          records = [];
+          for (const st of src.states) records.push(...await pull(base, src.apiKey, st));
+          s.textContent = 'Got ' + records.length + ' prices from ' + host; s.className = 'ok';
+          break;
+        } catch (e) { records = null; errors.push(e.message); s.textContent = host + ' failed: ' + e.message; s.className = 'bad'; }
+      }
+      if (!records) throw new Error('data.gov.in could not be reached. Try again later or from another connection.');
+      if (!records.length) throw new Error('data.gov.in has no Himachal prices yet today. Try again in a few hours.');
+
+      s = step('Saving to karsog.com…');
+      const device = /Android|iPhone|iPad/i.test(navigator.userAgent) ? 'phone' : 'browser';
+      const res = await post('/api/mandi/ingest', { key: pw, from: 'manual ' + device + ' via ' + host, records });
+      s.textContent = 'Saved ' + res.saved + ' prices. Done. The mandi page shows them within 15 minutes.'; s.className = 'ok';
+      showStatus();
+    } catch (e) {
+      step(e.message, 'bad');
+      if (/password/i.test(e.message)) store.set('');
+    } finally { $('go').disabled = false; }
+  });
+
+  showStatus();
+})();
+</script>
+</body>
+</html>

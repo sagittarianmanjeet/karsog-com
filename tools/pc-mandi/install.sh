@@ -18,19 +18,19 @@ mkdir -p "$APP" "$CONF" "$UNITS"
 curl -fsSL "$SRC" -o "$APP/karsog-mandi.py"
 chmod 755 "$APP/karsog-mandi.py"
 
-if [ ! -s "$CONF/key" ]; then
+if [ ! -s "$CONF/password" ]; then
   echo
-  echo "Paste your data.gov.in API key (from data.gov.in → login → My Account → API key), then press Enter."
-  echo "(Nothing will show while you paste; that's normal.)"
+  echo "Type the karsog.com mandi password (the ADMIN_KEY you set in Cloudflare), then press Enter."
+  echo "(Nothing will show while you type; that's normal.)"
   read -rs KEY < /dev/tty
   echo
   KEY="$(printf '%s' "$KEY" | tr -d '[:space:]')"
-  [ -n "$KEY" ] || { echo "No key entered. Run this command again."; exit 1; }
-  ( umask 077; printf '%s\n' "$KEY" > "$CONF/key" )
+  [ -n "$KEY" ] || { echo "Nothing entered. Run this command again."; exit 1; }
+  ( umask 077; printf '%s\n' "$KEY" > "$CONF/password" )
 else
-  echo "API key already saved in $CONF/key (delete that file to enter a new one)."
+  echo "Password already saved in $CONF/password (delete that file to enter a new one)."
 fi
-chmod 600 "$CONF/key"
+chmod 600 "$CONF/password"
 
 cat > "$UNITS/karsog-mandi.service" <<EOF
 [Unit]

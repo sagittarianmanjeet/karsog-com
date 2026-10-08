@@ -5,9 +5,9 @@ Runs on Manjeet's Ubuntu PC (systemd user timer, ~10 min after the PC starts, th
 stays on). It downloads today's Himachal mandi prices from data.gov.in over the home connection, which
 data.gov.in accepts, and hands them to the karsog.com Worker at /api/mandi/ingest.
 
-Needs only Python 3 (standard library). The data.gov.in API key is read from
-~/.config/karsog-mandi/key (one line, file readable only by you). The same key authorises the hand-over,
-because the Worker already holds it as its DATA_GOV_KEY secret.
+Needs only Python 3 (standard library). The password (the Worker's ADMIN_KEY secret) is read from
+~/.config/karsog-mandi/password (one line, readable only by you). With it, the Worker lends the data.gov.in key
+(/api/mandi/source) and accepts the prices (/api/mandi/ingest); the same flow as karsog.com/mandi-update.
 
 Log: ~/.local/state/karsog-mandi/log.txt   Manual run: python3 ~/.local/share/karsog-mandi/karsog-mandi.py
 """
@@ -21,18 +21,13 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
-RESOURCE_ID = "9ef84268-d588-465a-a308-a864a43d0070"
-SOURCES = [
-    f"https://www.data.gov.in/backend/dataapi/v1/resource/{RESOURCE_ID}",
-    f"https://api.data.gov.in/resource/{RESOURCE_ID}",
-]
+SOURCE_URL = "https://karsog.com/api/mandi/source"
 INGEST_URL = "https://karsog.com/api/mandi/ingest"
-STATES = ["Himachal Pradesh"]
 UA = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0 Safari/537.36 "
       "(karsog.com mandi rates; +https://karsog.com/mandi-rates/)")
 
 HOME = Path.home()
-KEY_FILE = HOME / ".config/karsog-mandi/key"
+KEY_FILE = HOME / ".config/karsog-mandi/password"
 STATE_DIR = HOME / ".local/state/karsog-mandi"
 LOG_FILE = STATE_DIR / "log.txt"
 TRIES = 6            # network may not be up right after boot
@@ -57,9 +52,19 @@ def get_json(url, timeout=60):
         return json.loads(r.read().decode("utf-8"))
 
 
-def pull(base, key):
+def post_json(url, payload, timeout=90):
+    req = urllib.request.Request(url, data=json.dumps(payload).encode(), method="POST", headers={
+        "Content-Type": "application/json", "User-Agent": "karsog-mandi-pc/1.1"})
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            return json.loads(r.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        raise RuntimeError(f"karsog.com HTTP {e.code}: {e.read().decode('utf-8', 'replace')[:200]}")
+
+
+def pull(base, key, states):
     records = []
-    for state in STATES:
+    for state in states:
         offset, total = 0, None
         for _ in range(40):
             q = urllib.parse.urlencode({"api-key": key, "format": "json", "limit": "1000",
@@ -76,12 +81,12 @@ def pull(base, key):
     return records
 
 
-def pull_any(key):
+def pull_any(src):
     errors = []
-    for base in SOURCES:
+    for base in src["sources"]:
         host = urllib.parse.urlparse(base).hostname
         try:
-            recs = pull(base, key)
+            recs = pull(base, src["apiKey"], src["states"])
             return recs, host
         except urllib.error.HTTPError as e:
             errors.append(f"{host} HTTP {e.code}")
@@ -90,31 +95,25 @@ def pull_any(key):
     raise RuntimeError(" | ".join(errors))
 
 
-def hand_over(key, records, host):
-    body = json.dumps({"key": key, "from": f"{socket.gethostname()} via {host}", "records": records}).encode()
-    req = urllib.request.Request(INGEST_URL, data=body, method="POST", headers={
-        "Content-Type": "application/json", "User-Agent": "karsog-mandi-pc/1.0"})
-    try:
-        with urllib.request.urlopen(req, timeout=90) as r:
-            return json.loads(r.read().decode("utf-8"))
-    except urllib.error.HTTPError as e:
-        raise RuntimeError(f"karsog.com HTTP {e.code}: {e.read().decode('utf-8', 'replace')[:200]}")
+def hand_over(password, records, host):
+    return post_json(INGEST_URL, {"key": password, "from": f"{socket.gethostname()} via {host}", "records": records})
 
 
 def main():
     try:
         key = KEY_FILE.read_text().strip()
     except OSError:
-        log(f"No API key: put your data.gov.in key in {KEY_FILE}")
+        log(f"No password: put the karsog.com mandi password (ADMIN_KEY) in {KEY_FILE}")
         return 2
     if not key:
-        log(f"Empty API key file: {KEY_FILE}")
+        log(f"Empty password file: {KEY_FILE}")
         return 2
 
     last = ""
     for attempt in range(1, TRIES + 1):
         try:
-            records, host = pull_any(key)
+            src = post_json(SOURCE_URL, {"key": key}, timeout=60)
+            records, host = pull_any(src)
             if not records:
                 log(f"data.gov.in ({host}) returned no Himachal prices yet; will try again next run")
                 return 0
