@@ -169,6 +169,7 @@ def mandi_rates(lang):
              f'<div><b id="mr-mkts">—</b><small>{L(lang, "Markets", "मंडियाँ")}</small></div>'
              f'<div><b id="mr-items">—</b><small>{L(lang, "Price lines", "भाव")}</small></div></div>')
     tool = section(
+        '<p id="mr-stale" class="note" role="status" hidden></p>' +
         note(L(lang, '<b>Karsog has no reporting APMC yard.</b> The nearest official prices are from the Mandi district yards (Kangni, Takoli, Dhanotu, Jogindernagar, Chail Chowk) '
                      'and from Shimla and Solan. Prices are <b>₹ per quintal (100 kg)</b>; ₹ per kg is shown for convenience.',
                '<b>करसोग में भाव भेजने वाली एपीएमसी मंडी नहीं है।</b> सबसे पास के सरकारी भाव मंडी ज़िले की मंडियों (कांगणी, टकोली, धनोटू, जोगिंदरनगर, चैलचौक) '

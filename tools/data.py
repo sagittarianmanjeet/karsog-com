@@ -137,7 +137,7 @@ def hi_places(text):
 
 def next_bus_json(lang_rows='all'):
     """Departures for the live next-bus boards: [{t, to, hi, u, p}]."""
-    out = [{'t': b['time'], 'to': b['dest'] or 'see board', 'hi': b['dest_hi'] or 'बोर्ड देखें',
+    out = [{'t': b['time'], 'to': b['dest'] or 'ask at the stand', 'hi': b['dest_hi'] or 'बस अड्डे पर पूछें',
             'u': bus_url(b['slug']) if b['slug'] else ''} for b in HRTC]
     if lang_rows == 'all':
         out += [{'t': r['karsog_time'], 'to': r['to'], 'hi': PLACE_HI.get(r['to'], r['to']), 'u': '/karsog-private-bus/', 'p': 1}
@@ -195,7 +195,7 @@ MELAS = [
        'Krishna’s birthday celebrated in Karsog’s old bazaar.', 'करसोग के पुराने बाज़ार में श्रीकृष्ण जन्मोत्सव।', '/temples/#laxmi_narayan'),
     _m(10, 'Sharadiya Navratri', 'शारदीय नवरात्रि', 'Kamaksha Devi (Kao), Shikari Devi and other goddess temples',
        'कामाक्षा देवी (काओ), शिकारी देवी और देवी के दूसरे मंदिर', 'September–October, nine days', 'सितंबर–अक्टूबर, नौ दिन',
-       'Hindu calendar', 'हिंदू पंचांग के अनुसार', ('', '', ''), 'Sept–Oct',
+       'Hindu calendar', 'हिंदू पंचांग के अनुसार', ('3–11 Oct', '22 Sep–1 Oct', '11–19 Oct'), 'Sept–Oct',
        'Autumn Navratri; Ashtami night is especially busy at Kamaksha Devi, Kao.',
        'शरद ऋतु की नवरात्रि; अष्टमी की रात काओ के कामाक्षा देवी मंदिर में ख़ास भीड़ रहती है।', '/temples/#kamaksha'),
     _m(12, 'Budhi Diwali', 'बूढ़ी दिवाली', 'Mamleshwar Mahadev (Mamel) and Mahog', 'ममलेश्वर महादेव (ममेल) और महोग',
