@@ -1,4 +1,4 @@
-# Temporary: checks whether GitHub's servers can reach api.data.gov.in. Delete after the test.
+# Temporary: checks whether GitHub's servers can reach data.gov.in. Delete after the test.
 name: mandi reach test
 on:
   push:
@@ -8,11 +8,11 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Try data.gov.in
+      - name: Try data.gov.in addresses
         run: |
-          U='https://api.data.gov.in/resource/9ef84268-d588-465a-a308-a864a43d0070?api-key=579b464db66ec23bdd000001cdd3946e44ce4aad7209ff7b23ac571b&format=json&limit=2&filters%5Bstate.keyword%5D=Himachal%20Pradesh'
-          for UA in "Mozilla/5.0 (compatible; karsog.com mandi rates; +https://karsog.com/mandi-rates/)" "none"; do
-            if [ "$UA" = none ]; then H=(); else H=(-A "$UA"); fi
-            R=$(curl -sS -m 40 "${H[@]}" -o body.txt -w "%{http_code} %{time_total}s" "$U" 2>&1) || true
-            echo "::notice title=UA=$UA::result=$R ip=$(curl -s -m 10 https://api.ipify.org) body=$(head -c 160 body.txt 2>/dev/null | tr -d '\n\"')"
+          Q='9ef84268-d588-465a-a308-a864a43d0070?api-key=579b464db66ec23bdd000001cdd3946e44ce4aad7209ff7b23ac571b&format=json&limit=2&filters%5Bstate.keyword%5D=Himachal%20Pradesh'
+          for U in "https://www.data.gov.in/backend/dataapi/v1/resource/$Q" "https://data.gov.in/backend/dataapi/v1/resource/$Q" "https://api.data.gov.in/resource/$Q"; do
+            R=$(curl -sS -m 40 -A "Mozilla/5.0 (compatible; karsog.com mandi rates; +https://karsog.com/mandi-rates/)" -o body.txt -w "%{http_code}" "$U" 2>&1) || true
+            echo "::notice title=${U:8:40}::result=$R body=$(head -c 140 body.txt 2>/dev/null | tr -d '\n\"')"
           done
+          echo "::notice title=dns::$(getent hosts www.data.gov.in api.data.gov.in | tr '\n' ' ')"
