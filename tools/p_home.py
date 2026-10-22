@@ -188,7 +188,7 @@ def model(lang):
            'description': L(lang, 'Karsog valley in Mandi district, Himachal Pradesh: temples, fairs, apple orchards and treks.',
                             'करसोग घाटी, ज़िला मंडी, हिमाचल प्रदेश: मंदिर, मेले, सेब के बगीचे और ट्रेक।'),
            'geo': {'@type': 'GeoCoordinates', 'latitude': 31.383, 'longitude': 77.2},
-           'containedInPlace': {'@type': 'AdministrativeArea', 'name': 'Mandi, Himachal Pradesh, India'}, 'url': 'https://karsog.com/'},
+           'containedInPlace': {'@type': 'AdministrativeArea', 'name': 'Mandi, Himachal Pradesh, India'}, 'url': L(lang, 'https://karsog.com/', 'https://karsog.com/hi/')},
           faq_ld(fq)]
     return dict(
         path='/', lang=lang, kind='home', hero='home',

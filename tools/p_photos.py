@@ -5,7 +5,7 @@ the Mac); English/Hindi place names from data/photo-places.json, Hindi captions 
 Places that have a written guide (content/) show their photos on the guide page instead of a page of their own."""
 import json, math, os, re
 from collections import Counter
-from layout import L, icon, img, section, shead, comments, esc, href, gallery, pcard, ROOT
+from layout import L, icon, img, section, shead, comments, esc, href, gallery, pcard, ROOT, WA
 from data import (PHOTOS, PLACES, BY_SLUG, PHOTO_PLACES, MON_EN, MON_HI, pbase, place_title, photo_label, photo_alt,
                   TOWN, km, centre, in_karsog)
 from p_guide import VIDEOS, video_cards
@@ -13,6 +13,7 @@ from p_guide import VIDEOS, video_cards
 DIRS = [('north', 'उत्तर'), ('north-east', 'उत्तर-पूर्व'), ('east', 'पूर्व'), ('south-east', 'दक्षिण-पूर्व'),
         ('south', 'दक्षिण'), ('south-west', 'दक्षिण-पश्चिम'), ('west', 'पश्चिम'), ('north-west', 'उत्तर-पश्चिम')]
 CHANNEL = 'https://www.youtube.com/@KarsogMiles'
+LICENSE_URL = 'https://karsog.com/photos/license/'
 
 
 def guide_pages():
@@ -65,7 +66,9 @@ def hub(lang):
                          L(lang, f'{n_ph} drone photos, <em>{len(order)} places</em>', f'{len(order)} जगहों की <em>{n_ph} ड्रोन फ़ोटो</em>'),
                          L(lang, 'Aerial photos of Karsog’s villages, temples, fairs and the Satluj valley, taken by Karsog Miles in 2026. Pick a place to see all its photos.',
                            'करसोग के गाँवों, मंदिरों, मेलों और सतलुज घाटी की हवाई फ़ोटो, जो Karsog Miles ने 2026 में लीं। किसी जगह की सभी फ़ोटो देखने के लिए उसे चुनें।'))
-                   + f'<div class="grid g4 places-grid">{cards}</div>', '', 'places')
+                   + f'<div class="grid g4 places-grid">{cards}</div>'
+                   + f'<p class="mt1"><a class="more-link" href="{href("/photos/license/", lang)}">{L(lang, "Want to use a photo?", "कोई फ़ोटो इस्तेमाल करनी है?")} {icon("arrow")}</a></p>',
+                   '', 'places')
     vids = list(VIDEOS)[:6]
     rides = section(shead(L(lang, 'Karsog Miles', 'Karsog Miles'), L(lang, 'Ride the valley <em>on YouTube</em>', 'यूट्यूब पर <em>घाटी की सैर</em>'),
                           L(lang, 'No commentary, no music: just engine sound and real Himachal roads, filmed through Karsog, Shikari Devi, Janjehli, Tattapani and the hidden lanes in between.',
@@ -134,7 +137,8 @@ def place(slug, lang):
     ld = [{'@context': 'https://schema.org', '@type': 'ImageGallery', 'name': L(lang, f'{place_title(slug)} — aerial photos', f'{title} — हवाई फ़ोटो'),
            'url': 'https://karsog.com' + href(page_of(slug), lang), 'inLanguage': L(lang, 'en-IN', 'hi-IN'),
            'image': [{'@type': 'ImageObject', 'contentUrl': f'https://karsog.com/photos/{slug}/{p["file"]}-1600.webp', 'caption': photo_alt(p, lang),
-                      'creator': {'@type': 'Person', 'name': 'Karsog Miles'}, 'copyrightNotice': 'karsog.com'} for p in ps]}]
+                      'creator': {'@type': 'Person', 'name': 'Karsog Miles', 'url': CHANNEL}, 'creditText': 'Karsog Miles / karsog.com',
+                      'copyrightNotice': '© Karsog Miles', 'license': LICENSE_URL, 'acquireLicensePage': LICENSE_URL} for p in ps]}]
     if g:
         ld[0]['contentLocation'] = {'@type': 'Place', 'name': place_title(slug), 'geo': {'@type': 'GeoCoordinates', 'latitude': round(g[0], 4), 'longitude': round(g[1], 4)}}
     c = ps[0]
@@ -175,3 +179,28 @@ def rides(lang):
                        'न कमेंट्री, न संगीत, न कोई शोर: सिर्फ़ इंजन की आवाज़, बदलता मौसम और हिमाचल की असली सड़कें। Karsog Miles उन्हीं रास्तों को फ़िल्माता है जिनके बारे में यह साइट बताती है। नई राइड लगातार आती रहती हैं।'),
                 chips=[('play', L(lang, f'{len(ids)} videos', f'{len(ids)} वीडियो'))],
                 crumbs=[(L(lang, 'Photos', 'फ़ोटो'), '/photos/'), (L(lang, 'Ride videos', 'राइड वीडियो'), '/rides/')], body=top + allv)
+
+
+# ---------------------------------------------------------------- /photos/license/
+def license(lang):
+    wa = f'<a href="https://wa.me/{WA}" target="_blank" rel="noopener">WhatsApp</a>'
+    yt = f'<a href="{CHANNEL}" target="_blank" rel="noopener">Karsog Miles</a>'
+    body = L(lang,
+             f'<p>Every drone photo and video on karsog.com was taken by {yt} and is © Karsog Miles. All rights are reserved.</p>'
+             f'<p><b>Sharing a link</b> to any page or photo on karsog.com is always welcome.</p>'
+             f'<p><b>To use a photo</b> anywhere else (a website, a news story, social media, print or a video), ask first on {wa}. '
+             'Tell us which photo, where it will appear and whether the use is commercial.</p>'
+             '<p>If permission is given, credit the photo as <b>“Photo: Karsog Miles / karsog.com”</b>, with a link to karsog.com where the medium allows.</p>',
+             f'<p>karsog.com की हर ड्रोन फ़ोटो और वीडियो {yt} ने लिया है और उसका © Karsog Miles के पास है। सभी अधिकार सुरक्षित हैं।</p>'
+             f'<p>karsog.com के किसी भी पेज या फ़ोटो का <b>लिंक शेयर करना</b> हमेशा स्वागत है।</p>'
+             f'<p><b>फ़ोटो कहीं और इस्तेमाल करने</b> के लिए (वेबसाइट, ख़बर, सोशल मीडिया, छपाई या वीडियो) पहले {wa} पर पूछें। '
+             'बताएँ कि कौन-सी फ़ोटो, कहाँ लगेगी और क्या इस्तेमाल व्यावसायिक है।</p>'
+             '<p>अनुमति मिलने पर फ़ोटो के साथ <b>“फ़ोटो: Karsog Miles / karsog.com”</b> लिखें, और जहाँ संभव हो karsog.com का लिंक दें।</p>')
+    return dict(path='/photos/license/', lang=lang, kind='page', hero='band',
+                title=L(lang, 'Using Karsog Miles Drone Photos — karsog.com', 'Karsog Miles की ड्रोन फ़ोटो का इस्तेमाल — karsog.com'),
+                desc=L(lang, 'How to get permission to use and credit the Karsog Miles drone photos shown on karsog.com.',
+                       'karsog.com पर दिखी Karsog Miles की ड्रोन फ़ोटो इस्तेमाल करने की अनुमति कैसे लें और क्रेडिट कैसे दें।'),
+                kicker=L(lang, 'Photos', 'फ़ोटो'), h1=L(lang, 'Using our <em>photos</em>', 'हमारी <em>फ़ोटो</em> का इस्तेमाल'),
+                lede=L(lang, 'Links are welcome. For anything else, ask first.', 'लिंक शेयर करें, बाकी के लिए पहले पूछें।'),
+                crumbs=[(L(lang, 'Photos', 'फ़ोटो'), '/photos/'), (L(lang, 'Photo use', 'फ़ोटो का इस्तेमाल'), '/photos/license/')],
+                body=section(f'<div class="prose">{body}</div>', 'sec-tight', 'license', 'wrap wrap-n'))

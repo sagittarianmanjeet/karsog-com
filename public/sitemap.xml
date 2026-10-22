@@ -905,6 +905,16 @@
     <xhtml:link rel="alternate" hreflang="hi" href="https://karsog.com/hi/photos/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://karsog.com/photos/"/>
   </url>
+  <url><loc>https://karsog.com/photos/license/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://karsog.com/photos/license/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://karsog.com/hi/photos/license/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://karsog.com/photos/license/"/>
+  </url>
+  <url><loc>https://karsog.com/hi/photos/license/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://karsog.com/photos/license/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://karsog.com/hi/photos/license/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://karsog.com/photos/license/"/>
+  </url>
   <url><loc>https://karsog.com/places/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://karsog.com/places/"/>
     <xhtml:link rel="alternate" hreflang="hi" href="https://karsog.com/hi/places/"/>

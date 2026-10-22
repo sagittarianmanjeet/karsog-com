@@ -1,6 +1,6 @@
 // Karsog.com service worker — offline bus timings & emergency numbers
-const CACHE = 'karsog-v21';
-const CORE = ['/', '/index.html', '/contacts/', '/karsog-bus-stand/', '/karsog-valley.jpg', '/manifest.webmanifest', '/icon-192.png', '/icon-512.png'];
+const CACHE = 'karsog-v22';
+const CORE = ['/', '/contacts/', '/karsog-bus-stand/', '/karsog-valley.jpg', '/manifest.webmanifest', '/icon-192.png', '/icon-512.png'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(CORE)).then(() => self.skipWaiting()));
@@ -26,7 +26,7 @@ self.addEventListener('fetch', e => {
     e.respondWith(
       fetch(e.request)
         .then(r => { const copy = r.clone(); caches.open(CACHE).then(c => c.put(e.request, copy)); return r; })
-        .catch(() => caches.match(e.request).then(m => m || caches.match('/index.html')))
+        .catch(() => caches.match(e.request).then(m => m || caches.match('/')))
     );
     return;
   }

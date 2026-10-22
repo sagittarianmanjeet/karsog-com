@@ -93,3 +93,13 @@ by Claude from GitHub Desktop at Manjeet's request. Every page is built by the n
   - needs Playwright, using `/opt/pw-browsers/chromium`
   - mocks the weather and mandi APIs with `tools/dev/mock.json`
   - then `python3 tools/dev/sheet.py <outdir> m_ 4 0.5` makes phone-screen sheets.
+
+## 22 Oct 2026 — checks after Gemini's SEO handoff
+
+Gemini's PDF (22 Oct) was checked against the code. Already fine, no change needed: Hindi uses करसोग everywhere
+(no कारसोग), every sitemap page has hreflang pairs, all URLs end in `/`, `/hi/` uses root-relative assets.
+Changed: `/photos/license/` (en + hi) added and linked from `/photos/`; drone-photo ImageObjects now carry
+`license`, `acquireLicensePage` and `creditText` (Search Console image-metadata warning); the Hindi home page's
+TouristDestination points to `/hi/`; `sw.js` no longer caches `/index.html` (cache `karsog-v22`).
+Not adopted: renaming `/kao/` or `/karsog-bus-stand/` (would create redirects), `sameAs` to the shop sites (different
+entities), unsourced temple claims.
