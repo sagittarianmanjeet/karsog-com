@@ -5,7 +5,7 @@ Background: `docs/REDESIGN-STATUS.md` (22 Oct sections cover the Gemini / ChatGP
 
 ## Manjeet (only he can do these)
 
-- [ ] Search Console → URL Inspection → Request indexing: `/places/` and `/about/` first, then ~10 key pages every few days.
+- [ ] Search Console → Request indexing, ~9 pages a day (daily quota). 22 Oct done: /about/, /hi/about/, /places/, /hi/places/, /, /hi/, /photos/, /karsog-bus-stand/, /mahunag/. Next: /photos/license/, /temples/, /plan/, /mandi-to-karsog-bus/, /shimla-to-karsog-bus/, /mamleshwar/, /shikari-devi/, /kao/, /tattapani/.
 - [ ] Each Karsog Miles YouTube video description: link to the matching karsog.com page (Shikari Devi ride → `/shikari-devi/`, etc.).
 - [ ] karsog.com link in the YouTube channel, Instagram and Facebook bios.
 - [ ] Add the site to Bing Webmaster Tools (can import from Search Console).
