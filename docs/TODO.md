@@ -16,7 +16,7 @@ Background: `docs/REDESIGN-STATUS.md` (22 Oct sections cover the Gemini / ChatGP
 
 ## Site work (Claude can do)
 
-- [ ] Mandi rates: no new data since 25 Sep 2026. Branches `mandi-from-pc` and `mandi-via-actions` are not merged. Finish one feed, or hide/noindex `/mandi-rates/` until data flows.
+- [ ] Mandi rates: working again (22 Oct 2026: last 10 runs OK via api.data.gov.in, prices dated 22 Oct, 20 Himachal markets) — no code change was needed, data.gov.in came back. If it breaks again (the alert email says so), the ready fallback is branch `mandi-from-pc` (manual /mandi-update page + Ubuntu PC script); it needs the Worker redeployed from the Cloudflare dashboard and an ADMIN_KEY secret set by Manjeet. Put api.data.gov.in first in its RESOURCES list, since the Worker still runs from IAD (USA). `mandi-via-actions` was only a reachability test and can be deleted.
 - [ ] Drone-photo place pages are thin (about 130–200 words) and don't link to their bus pages: add "How to get there" with the matching `/bus/karsog-to-*/` link.
 - [ ] 28 `/bus/karsog-to-*/` pages are thin (about 200 words, one template): enrich or noindex.
 - [ ] Apple season wording: "September–October" on most pages, "roughly July to October" on `/hotels/` — make consistent.
