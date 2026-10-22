@@ -60,4 +60,4 @@ learn something the next assistant needs. The owner is Manjeet (GitHub: sagittar
 
 ## Where things stand
 
-See `docs/REDESIGN-STATUS.md` (what's done, what's left, open questions) and `docs/SITE-AUDIT.md` (latest checks).
+See `docs/TODO.md` (current to-do list), `docs/REDESIGN-STATUS.md` (what's done, open questions) and `docs/SITE-AUDIT.md` (latest checks).
