@@ -10,6 +10,16 @@
     <xhtml:link rel="alternate" hreflang="hi" href="https://karsog.com/hi/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://karsog.com/"/>
   </url>
+  <url><loc>https://karsog.com/about/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://karsog.com/about/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://karsog.com/hi/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://karsog.com/about/"/>
+  </url>
+  <url><loc>https://karsog.com/hi/about/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://karsog.com/about/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://karsog.com/hi/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://karsog.com/about/"/>
+  </url>
   <url><loc>https://karsog.com/bakhrot/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://karsog.com/bakhrot/"/>
     <xhtml:link rel="alternate" hreflang="hi" href="https://karsog.com/hi/bakhrot/"/>

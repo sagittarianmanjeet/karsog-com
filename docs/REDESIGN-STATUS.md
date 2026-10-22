@@ -103,3 +103,14 @@ Changed: `/photos/license/` (en + hi) added and linked from `/photos/`; drone-ph
 TouristDestination points to `/hi/`; `sw.js` no longer caches `/index.html` (cache `karsog-v22`).
 Not adopted: renaming `/kao/` or `/karsog-bus-stand/` (would create redirects), `sameAs` to the shop sites (different
 entities), unsourced temple claims.
+
+## 22 Oct 2026 — ChatGPT, DeepSeek and Meta AI reviews
+
+Same question asked of all three; their points were checked against the code before building.
+Built: `/about/` (en + hi: who makes the site, where each kind of fact comes from, how to send a correction; AboutPage +
+Person JSON-LD; linked from the footer); `/places/` gained an "at a glance" distance table for the 9 guides and links to
+every other photographed place (Kunhoo, Jarli Mata, villages…); the next-bus widget now shows a link to the full
+timetable instead of "Loading…" when JavaScript doesn't run.
+Rejected: listing karsog.com as Karsog's "official website" on Wikipedia/Wikidata/OSM (untrue, conflict of interest);
+a new `/places-to-visit-in-karsog/` URL (strengthen `/places/` instead); "Cloudflare blocks Googlebot" (robots.txt allows
+all and pages fetch normally — confirm once with a Search Console live test); "bus table is JS-only" (it is static).

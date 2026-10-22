@@ -355,6 +355,7 @@ def _footer(m):
                        lk('/kamru-nag/', 'Kamru Nag', 'कमरूनाग'), lk('/tattapani/', 'Tattapani', 'तत्तापानी')])
     local = ''.join([lk('/contacts/', 'Useful numbers', 'ज़रूरी नंबर'), lk('/mandi-rates/', 'Mandi rates', 'मंडी भाव'),
                      lk('/rti/', 'RTI replies', 'आरटीआई जवाब'),
+                     lk('/about/', 'About karsog.com', 'karsog.com के बारे में'),
                      f'<li><a href="#update" data-open="upd">{t("send_update", lang)}</a></li>',
                      '<li><a href="https://www.youtube.com/@KarsogMiles" target="_blank" rel="noopener">Karsog Miles · YouTube</a></li>',
                      '<li><a href="https://www.facebook.com/KarsogMiles/" target="_blank" rel="noopener">Karsog Miles · Facebook</a></li>'])

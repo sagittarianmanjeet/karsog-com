@@ -55,7 +55,7 @@ def nextbus(lang, src='j-bd', n=6, title=None, foot=None):
     title = title or L(lang, 'Next buses from Karsog', 'करसोग से अगली बसें')
     foot = foot or L(lang, 'By the time in India right now · confirm at the stand', 'भारत के अभी के समय के हिसाब से · बस अड्डे पर पुष्टि कर लें')
     return (f'<div class="nextbus" data-src="{src}" data-n="{n}"><h2 class="h"><span class="pulse"></span>{title}<span class="when"></span></h2>'
-            f'<ol><li><span class="tm">—</span><span class="to">{L(lang, "Loading…", "लोड हो रहा है…")}</span></li></ol><p class="f">{foot}</p></div>')
+            f'<ol><li><span class="tm">—</span><span class="to"><a href="{href('/karsog-bus-stand/', lang)}">{L(lang, "See every departure from Karsog", "करसोग से सभी बसें देखें")}</a></span></li></ol><p class="f">{foot}</p></div>')
 
 
 def stand(lang):

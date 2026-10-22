@@ -4,7 +4,7 @@ Only facts already checked elsewhere on the site are used here: distances from D
 28 Sep 2026), taxi fares and day plans as written in the guides, and the contact list from the old /contacts/ page
 ("Karsog at a glance" checked 27 Sep 2026)."""
 from layout import L, icon, section, shead, faq_block, faq_ld, comments, note, esc, href
-from data import DIST, DIST_CHECKED, DIST_CHECKED_HI, GUIDES
+from data import DIST, DIST_CHECKED, DIST_CHECKED_HI, GUIDES, CHECKED, CHECKED_HI, PLACES, BY_SLUG, place_title
 from p_guide import guide_card
 
 ORDER = ['mahunag', 'shikari-devi', 'mamleshwar', 'kao', 'kamru-nag', 'tattapani', 'pangna-fort', 'chindi', 'janjehli']
@@ -26,6 +26,24 @@ def places(lang):
                          L(lang, 'Each place has its own page: how to get there, when to go, the stories behind it and drone photos.',
                            'हर जगह का अपना पेज है: कैसे पहुँचें, कब जाएँ, उससे जुड़ी कथाएँ और ड्रोन फ़ोटो।'))
                    + f'<div class="grid g3">{cards}</div>', '', 'guides')
+    rows = ''
+    for d in DIST:
+        if d[5] and d[5].strip('/') in ORDER:
+            nt = L(lang, d[6], d[7])
+            rows += (f'<tr><td><a href="{hl(d[5])}">{esc(L(lang, d[0], d[1]))}</a></td><td>{d[2]:g} {L(lang, "km", "किमी")}</td>'
+                     f'<td>{L(lang, d[3], d[4])}</td><td>{esc(nt) if nt else "—"}</td></tr>')
+    table = section(shead(L(lang, 'At a glance', 'एक नज़र में'), L(lang, 'How far is <em>each place</em>?', 'हर जगह <em>कितनी दूर</em> है?'),
+                          L(lang, f'By road from Karsog bus stand, by the fastest route on Google Maps, checked on {DIST_CHECKED}. Times are by car; buses take longer.',
+                            f'करसोग बस अड्डे से सड़क के रास्ते, गूगल मैप्स के सबसे तेज़ रास्ते से, {DIST_CHECKED_HI} को देखा गया। समय कार का है; बसें ज़्यादा समय लेती हैं।'))
+                    + f'<div class="tbl"><div class="tbl-scroll"><table><thead><tr><th>{L(lang, "Place", "जगह")}</th><th>{L(lang, "Distance", "दूरी")}</th>'
+                      f'<th>{L(lang, "By car", "कार से")}</th><th>{L(lang, "Note", "टिप्पणी")}</th></tr></thead><tbody>{rows}</tbody></table></div></div>',
+                    'sec-alt', 'glance')
+    others = [p['slug'] for p in PLACES if BY_SLUG.get(p['slug']) and p['slug'] not in ORDER]
+    chips = ''.join(f'<a class="btn btn-o" href="{hl("/" + sl + "/")}">{esc(place_title(sl, lang))}</a>' for sl in others)
+    villages = section(shead(L(lang, 'Villages and valleys', 'गाँव और घाटियाँ'), L(lang, f'{len(others)} more places <em>from the air</em>', f'ऊपर से <em>{len(others)} और जगहें</em>'),
+                             L(lang, 'Villages, viewpoints and smaller temples around Karsog, each with its own page of drone photos by Karsog Miles.',
+                               'करसोग के आसपास के गाँव, नज़ारे और छोटे मंदिर, हर एक का अपना पेज, Karsog Miles की ड्रोन फ़ोटो के साथ।'))
+                       + f'<div class="btns">{chips}</div>', '', 'villages')
     more = section('<div class="grid g3">'
                    + f'<a class="card icard" href="{hl("/temples/")}"><span class="i">{icon("temple")}</span><span><b>{L(lang, "Temples of Karsog", "करसोग के मंदिर")}</b>'
                      f'<span>{L(lang, "Ten temples, the story behind each and when to go", "दस मंदिर, हर एक की कथा और कब जाएँ")}</span></span></a>'
@@ -60,7 +78,7 @@ def places(lang):
                        'करसोग घाटी और आसपास के मंदिर, ट्रेक, क़िले और गर्म चश्मे, हर एक की पूरी गाइड के साथ।'),
                 chips=[('pin', L(lang, f'{len(ORDER)} full guides', f'{len(ORDER)} पूरी गाइड')), ('camera', L(lang, 'Drone photos of each', 'हर जगह की ड्रोन फ़ोटो'))],
                 crumbs=[(L(lang, 'Places', 'घूमने की जगहें'), '/places/')],
-                body=grid + more + plan + faq_block(fq, lang), ld=[faq_ld(fq)])
+                body=grid + table + villages + more + plan + faq_block(fq, lang), ld=[faq_ld(fq)])
 
 
 # ---------------------------------------------------------------- /plan/
@@ -256,3 +274,56 @@ def contacts(lang):
                 body=s_sos + s_glance + s_off + comments('contacts', lang, None,
                                                          L(lang, 'Number not working, or one missing? Tell others here.', 'कोई नंबर नहीं लग रहा, या कोई नंबर छूट गया है? यहाँ बताइए।')) + faq_block(fq, lang),
                 ld=[faq_ld(fq)])
+
+
+# ---------------------------------------------------------------- /about/
+def about(lang):
+    hl = lambda p: href(p, lang)
+    yt = '<a href="https://www.youtube.com/@KarsogMiles" target="_blank" rel="noopener">Karsog Miles</a>'
+    who = L(lang,
+            f'<p>karsog.com is made in Karsog by Manjeet Kumar, who lives in the town and films the valley’s roads and villages as {yt}. '
+            'It is an independent guide: it is not a government or tourism-department site, and it carries no ads.</p>'
+            '<p>It is written for travellers first, and for people from Karsog who need a bus time or a phone number.</p>',
+            f'<p>karsog.com करसोग में मनजीत कुमार बनाते हैं, जो इसी शहर में रहते हैं और {yt} के नाम से घाटी की सड़कों और गाँवों को फ़िल्माते हैं। '
+            'यह एक स्वतंत्र गाइड है: यह सरकारी या पर्यटन विभाग की साइट नहीं है, और इस पर कोई विज्ञापन नहीं है।</p>'
+            '<p>यह सबसे पहले यात्रियों के लिए लिखी गई है, और करसोग के उन लोगों के लिए जिन्हें किसी बस का समय या कोई फ़ोन नंबर चाहिए।</p>')
+    li = lambda en, hi: f'<li>{L(lang, en, hi)}</li>'
+    how = '<ul>' + ''.join([
+        li(f'<b>Bus times</b> are copied from the timetable board at Karsog bus stand, photographed on {CHECKED}. Online-bookable HRTC buses are marked as such.',
+           f'<b>बसों का समय</b> करसोग बस अड्डे के टाइम-टेबल बोर्ड से लिया गया है, जिसकी फ़ोटो {CHECKED_HI} को ली गई। एचआरटीसी की ऑनलाइन बुक होने वाली बसें अलग से बताई गई हैं।'),
+        li(f'<b>Distances</b> are measured from Karsog bus stand by the fastest route on Google Maps, checked on {DIST_CHECKED}.',
+           f'<b>दूरियाँ</b> करसोग बस अड्डे से गूगल मैप्स के सबसे तेज़ रास्ते से मापी गई हैं, {DIST_CHECKED_HI} को देखी गईं।'),
+        li('<b>Heights and trek distances</b> come from the Mandi district website (hpmandi.nic.in).',
+           '<b>ऊँचाई और ट्रेक की दूरी</b> मंडी ज़िले की वेबसाइट (hpmandi.nic.in) से ली गई है।'),
+        li('<b>Fair dates</b> are matched against earlier years; check locally, as dates follow the calendar of each devta.',
+           '<b>मेलों की तारीख़ें</b> पिछले सालों से मिलाकर देखी गई हैं; स्थानीय तौर पर पुष्टि करें, क्योंकि तारीख़ें हर देवता के पंचांग पर चलती हैं।'),
+        li('<b>Legends</b> are written as what local people believe, not as history.',
+           '<b>कथाएँ</b> वैसे लिखी गई हैं जैसे स्थानीय लोग मानते हैं, इतिहास की तरह नहीं।'),
+        li('<b>Weather</b> comes live from Open-Meteo, and <b>mandi rates</b> from the government’s data.gov.in.',
+           '<b>मौसम</b> सीधे Open-Meteo से आता है, और <b>मंडी भाव</b> सरकार की data.gov.in साइट से।'),
+        li(f'<b>Photos and videos</b> are original, taken by Karsog Miles. <a href="{hl("/photos/license/")}">How to use them</a>.',
+           f'<b>फ़ोटो और वीडियो</b> मूल हैं, Karsog Miles ने लिए हैं। <a href="{hl("/photos/license/")}">इस्तेमाल कैसे करें</a>।'),
+        li(f'<b>RTI replies</b> on the <a href="{hl("/rti/")}">RTI page</a> are published as the offices sent them.',
+           f'<a href="{hl("/rti/")}">आरटीआई पेज</a> पर <b>आरटीआई जवाब</b> वैसे ही छापे गए हैं जैसे दफ़्तरों ने भेजे।'),
+    ]) + '</ul>'
+    fix = L(lang, '<p>Hill timetables, roads and phone numbers change. If something here is out of date, use <a href="#update" data-open="upd">Send an update</a> '
+                  '(it opens WhatsApp) and it will be checked and corrected.</p>',
+            '<p>पहाड़ों में बसों का समय, सड़कें और फ़ोन नंबर बदलते रहते हैं। अगर यहाँ कुछ पुराना हो गया हो, तो <a href="#update" data-open="upd">अपडेट भेजें</a> '
+            '(यह व्हाट्सऐप खोलता है), जाँच कर उसे ठीक कर दिया जाएगा।</p>')
+    body = (section(f'<div class="prose">{who}</div>', 'sec-tight', 'who', 'wrap wrap-n')
+            + section(shead(L(lang, 'Sources', 'स्रोत'), L(lang, 'How the facts are <em>checked</em>', 'जानकारी कैसे <em>जाँची</em> जाती है'))
+                      + f'<div class="prose">{how}</div>', 'sec-alt', 'how', 'wrap wrap-n')
+            + section(shead(L(lang, 'Corrections', 'सुधार'), L(lang, 'Seen a <em>mistake</em>?', 'कोई <em>ग़लती</em> दिखी?')) + f'<div class="prose">{fix}</div>',
+                      '', 'fix', 'wrap wrap-n'))
+    ld = [{'@context': 'https://schema.org', '@type': 'AboutPage', 'url': 'https://karsog.com' + hl('/about/'), 'inLanguage': L(lang, 'en-IN', 'hi-IN'),
+           'about': {'@type': 'WebSite', 'name': 'karsog.com', 'url': 'https://karsog.com/'},
+           'author': {'@type': 'Person', 'name': 'Manjeet Kumar', 'homeLocation': {'@type': 'Place', 'name': 'Karsog, Mandi, Himachal Pradesh'},
+                      'sameAs': ['https://www.youtube.com/@KarsogMiles']}}]
+    return dict(path='/about/', lang=lang, kind='page', hero='band',
+                title=L(lang, 'About karsog.com — Who Makes It and How Facts Are Checked', 'karsog.com के बारे में — कौन बनाता है और जानकारी कैसे जाँची जाती है'),
+                desc=L(lang, 'karsog.com is an independent, ad-free guide made in Karsog. Where its bus times, distances, heights and fair dates come from, and how to send a correction.',
+                       'karsog.com करसोग में बनी एक स्वतंत्र, बिना विज्ञापन की गाइड है। बसों का समय, दूरी, ऊँचाई और मेलों की तारीख़ें कहाँ से आती हैं, और सुधार कैसे भेजें।'),
+                kicker=L(lang, 'About', 'परिचय'), h1=L(lang, 'Made in <em>Karsog</em>', '<em>करसोग</em> में बनी'),
+                lede=L(lang, 'Who makes this guide, where its facts come from, and how to correct them.',
+                       'यह गाइड कौन बनाता है, इसकी जानकारी कहाँ से आती है, और उसे कैसे सुधारें।'),
+                crumbs=[(L(lang, 'About', 'परिचय'), '/about/')], body=body, ld=ld)

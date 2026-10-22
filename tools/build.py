@@ -14,7 +14,7 @@ GROUPS = {
     'guides': lambda lang: [p_guide.model(n, lang) for n in p_guide.available(lang)],
     'tools': lambda lang: [p_tools.weather(lang), p_tools.distance(lang), p_tools.hotels(lang), p_tools.mandi_rates(lang)],
     'culture': lambda lang: [p_culture.melas(lang), p_culture.temples(lang)],
-    'info': lambda lang: [p_info.places(lang), p_info.plan(lang), p_info.contacts(lang)],
+    'info': lambda lang: [p_info.places(lang), p_info.plan(lang), p_info.contacts(lang), p_info.about(lang)],
     'photos': lambda lang: [p_photos.hub(lang), p_photos.rides(lang), p_photos.license(lang)] + p_photos.places(lang),
     'rti': lambda lang: [p_rti.model(lang)],
     'misc': lambda lang: [p_misc.not_found()] if lang == 'en' else [],

@@ -128,7 +128,7 @@ def model(lang):
     # --- buses + distances
     board = (f'<div class="nextbus" data-src="j-bd" data-n="6"><div class="h"><span class="pulse"></span>'
              f'{L(lang, "Next buses from Karsog", "करसोग से अगली बसें")}<span class="when"></span></div>'
-             f'<ol><li><span class="tm">—</span><span class="to">{L(lang, "Loading…", "लोड हो रहा है…")}</span></li></ol>'
+             f'<ol><li><span class="tm">—</span><span class="to"><a href="{hl('/karsog-bus-stand/')}">{L(lang, "See every departure from Karsog", "करसोग से सभी बसें देखें")}</a></span></li></ol>'
              f'<p class="f">{L(lang, "HRTC and private · times from the stand’s timetable board · confirm at the stand", "एचआरटीसी और प्राइवेट · समय बस अड्डे के बोर्ड से · निकलने से पहले पुष्टि कर लें")}</p></div>')
     btns = ''.join(f'<a class="btn {c}" href="{hl(u)}">{L(lang, en, hi)}</a>' for u, en, hi, c in [
         ('/karsog-bus-stand/', 'All buses from Karsog', 'करसोग से सभी बसें', 'btn-p'),
