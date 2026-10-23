@@ -33,6 +33,7 @@ learn something the next assistant needs. The owner is Manjeet (GitHub: sagittar
 - Assets: `public/assets/site.css`, `site.js` (whole site), `weather.js`, `mandi.js`, `rti.css`, `rti.js`. Pages link
   them with `?v=<hash>`, so a rebuild after a CSS/JS change is enough to refresh browsers. Bump `CACHE` in
   `public/sw.js` when the page shell changes.
+- The same Worker also serves `/api/votes` ("Was this useful?" Yes/No for toolninja.in and kheloaurseekho.in; table `votes` made on first use) and kheloaurseekho.in's messages (all held for approval). Its routes must include `toolninja.in/api/votes*` and `kheloaurseekho.in/api/*`.
 - The comments box talks to `/api/comments` (Cloudflare Worker + D1, code in `tools/comments-worker.js`, deployed
   separately). Mandi rates come from `/api/mandi` (Worker `karsog-mandi`, code in `tools/mandi-worker.js`, also deployed
   separately from the dashboard; data.gov.in refuses connections from outside India, so the Worker runs from Mumbai). A page's comment id is its path without the outer slashes
